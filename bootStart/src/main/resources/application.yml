@@ -1,0 +1,28 @@
+server:
+  port: 80
+
+name: abc
+
+person:
+  name: def
+  denomination: ${name}
+  age: 20
+
+address:
+  - beijing
+  - shijiazhuang
+  - shanghai
+
+location: { xian,chengdu,chongqing }
+msg1: 'hello /n world'
+msg2: "hello /n world"
+
+---
+name: abc-test
+spring:
+  profiles: test
+---
+name: abc-dev
+spring:
+  profiles: dev
+---
