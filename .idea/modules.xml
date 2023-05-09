@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/bootStart/bootStart.iml" filepath="$PROJECT_DIR$/bootStart/bootStart.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springbootTest/demo.iml" filepath="$PROJECT_DIR$/springbootTest/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
     </modules>
   </component>

@@ -2,6 +2,13 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
+        <module name="mvcGetStarted" />
+      </profile>
       <profile name="Annotation profile for bootStart" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -12,16 +19,8 @@
         </processorPath>
         <module name="bootStart" />
       </profile>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="demo" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="bootStart" target="11" />
-      <module name="demo" target="1.8" />
       <module name="ja-netfilter" target="1.8" />
       <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
