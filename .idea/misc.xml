@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/mvcGetStarted" />
+    <file type="web" url="file://$PROJECT_DIR$/springMVC-demo1" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -10,6 +11,7 @@
         <option value="$PROJECT_DIR$/bootStart/pom.xml" />
         <option value="$PROJECT_DIR$/springbootTest/pom.xml" />
         <option value="$PROJECT_DIR$/mvcGetStarted/pom.xml" />
+        <option value="$PROJECT_DIR$/springMVC-demo1/pom.xml" />
       </list>
     </option>
   </component>
