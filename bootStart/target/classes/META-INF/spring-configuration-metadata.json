@@ -10,8 +10,7 @@
     {
       "name": "person.age",
       "type": "java.lang.Integer",
-      "sourceType": "com.test.pojo.Person",
-      "defaultValue": 0
+      "sourceType": "com.test.pojo.Person"
     },
     {
       "name": "person.denomination",
