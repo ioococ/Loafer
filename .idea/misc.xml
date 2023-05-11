@@ -8,10 +8,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/bootStart/pom.xml" />
-        <option value="$PROJECT_DIR$/springbootTest/pom.xml" />
         <option value="$PROJECT_DIR$/mvcGetStarted/pom.xml" />
-        <option value="$PROJECT_DIR$/springMVC-demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/bootStart/pom.xml" />
       </list>
     </option>
   </component>

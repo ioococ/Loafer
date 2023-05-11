@@ -6,8 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springMVC-demo1" />
-        <module name="demo" />
         <module name="mvcGetStarted" />
       </profile>
       <profile name="Annotation profile for bootStart" enabled="true">
@@ -18,11 +16,13 @@
           <entry name="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/2.4.2/spring-boot-configuration-processor-2.4.2.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar" />
         </processorPath>
-        <module name="bootStart" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bootStart" target="11" />
+      <module name="demo" target="14" />
       <module name="ja-netfilter" target="1.8" />
+      <module name="springMVC-demo1" target="14" />
       <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>
