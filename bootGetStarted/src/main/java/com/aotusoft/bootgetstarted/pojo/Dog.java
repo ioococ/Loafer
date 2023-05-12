@@ -1,8 +1,10 @@
 package com.aotusoft.bootgetstarted.pojo;
 
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
+@NoArgsConstructor
 public class Dog {
     private String name;
     private Integer age;
