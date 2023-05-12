@@ -1,1 +1,16 @@
 #给实体类赋值
+person:
+  name: aotusoft
+  age: ${random.int}
+  happy: true
+  hello: happy
+  birth: 2001/08/14
+  maps: {k1: v1,k2: v2}
+  list:
+    - code
+    - music
+    - girls
+  uuid: ${random.uuid}
+  dog:
+    name: ${person.dog.hello:hello}
+    age: ${person.age}
