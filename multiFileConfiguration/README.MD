@@ -12,3 +12,4 @@
 使用 `spring.config.location`, 配置自定义配置路径
 1.  `file:./custom-config/`
 2.  `classpath:custom-config/`
+
