@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bootGetStarted" />
         <module name="mvcGetStarted" />
         <module name="mfc" />
+        <module name="bootGetStarted" />
+        <module name="web" />
       </profile>
       <profile name="Annotation profile for bootStart" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -26,6 +27,7 @@
       <module name="demo" target="14" />
       <module name="ja-netfilter" target="1.8" />
       <module name="springMVC-demo1" target="14" />
+      <module name="webDep" target="14" />
       <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>
@@ -35,6 +37,8 @@
       <module name="bootStart" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="mfc" options="-parameters" />
+      <module name="web" options="-parameters" />
+      <module name="webDep" options="-parameters" />
     </option>
   </component>
 </project>
