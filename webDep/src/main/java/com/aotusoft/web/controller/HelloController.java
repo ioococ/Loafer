@@ -14,6 +14,7 @@ public class HelloController {
 //    }
     @RequestMapping("/")
     public String index(){
+        //在不加入thymeleaf模板引擎的情况下需要加入后缀名
         return "index.html";
     }
 }
