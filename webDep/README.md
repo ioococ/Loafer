@@ -108,3 +108,39 @@ spring.resources.static-locations=classpath:/coding/,classpath:/aotusoft/
 ```
 
 一旦自己定义了静态文件夹的路径，原来的自动配置就都会失效了！
+
+
+`ContentNegotiatingViewResolver`实现`ViewResolver`视图解析器接口,是一个视图解析器类
+```java
+public class ContentNegotiatingViewResolver extends WebApplicationObjectSupport implements ViewResolver, Ordered, InitializingBean {}
+```
+实现方法:
+```java
+    @Nullable
+    public View resolveViewName(String viewName, Locale locale) throws Exception {
+        RequestAttributes attrs = RequestContextHolder.getRequestAttributes();
+        Assert.state(attrs instanceof ServletRequestAttributes, "No current ServletRequestAttributes");
+        List<MediaType> requestedMediaTypes = this.getMediaTypes(((ServletRequestAttributes)attrs).getRequest());
+        if (requestedMediaTypes != null) {
+            //getCandidateViews获取候选视图
+            List<View> candidateViews = this.getCandidateViews(viewName, locale, requestedMediaTypes);
+            //getBestView得到最好的视图
+            View bestView = this.getBestView(candidateViews, requestedMediaTypes, attrs);
+            if (bestView != null) {
+                return bestView;
+            }
+        }
+
+        String mediaTypeInfo = this.logger.isDebugEnabled() && requestedMediaTypes != null ? " given " + requestedMediaTypes.toString() : "";
+        if (this.useNotAcceptableStatusCode) {
+            if (this.logger.isDebugEnabled()) {
+                this.logger.debug("Using 406 NOT_ACCEPTABLE" + mediaTypeInfo);
+            }
+
+            return NOT_ACCEPTABLE_VIEW;
+        } else {
+            this.logger.debug("View remains unresolved" + mediaTypeInfo);
+            return null;
+        }
+    }
+```

@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/bootGetStarted/pom.xml" />
         <option value="$PROJECT_DIR$/multiFileConfiguration/pom.xml" />
         <option value="$PROJECT_DIR$/webDep/pom.xml" />
+        <option value="$PROJECT_DIR$/webDep/lib/pom.xml" />
       </list>
     </option>
   </component>

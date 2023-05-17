@@ -10,6 +10,7 @@
         <module name="mvcGetStarted" />
         <module name="mfc" />
         <module name="bootGetStarted" />
+        <module name="lib" />
         <module name="web" />
       </profile>
       <profile name="Annotation profile for bootStart" enabled="true">
@@ -36,6 +37,7 @@
       <module name="bootGetStarted" options="-parameters" />
       <module name="bootStart" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="lib" options="-parameters" />
       <module name="mfc" options="-parameters" />
       <module name="web" options="-parameters" />
       <module name="webDep" options="-parameters" />
