@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/multiFileConfiguration/pom.xml" />
         <option value="$PROJECT_DIR$/webDep/pom.xml" />
         <option value="$PROJECT_DIR$/webDep/lib/pom.xml" />
+        <option value="$PROJECT_DIR$/employeeManager/pom.xml" />
       </list>
     </option>
   </component>

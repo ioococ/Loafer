@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mvcGetStarted" />
         <module name="mfc" />
+        <module name="employeeManager" />
         <module name="bootGetStarted" />
         <module name="lib" />
         <module name="web" />
@@ -37,6 +38,7 @@
       <module name="bootGetStarted" options="-parameters" />
       <module name="bootStart" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="employeeManager" options="-parameters" />
       <module name="lib" options="-parameters" />
       <module name="mfc" options="-parameters" />
       <module name="web" options="-parameters" />
