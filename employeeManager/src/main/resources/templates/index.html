@@ -31,5 +31,12 @@
 </form>
 
 </body>
-
+<script !src="" th:inline="javascript">
+    onload=function () {
+        var msg = [[${msg}]]
+        if (msg){
+            alert(msg)
+        }
+    }
+</script>
 </html>

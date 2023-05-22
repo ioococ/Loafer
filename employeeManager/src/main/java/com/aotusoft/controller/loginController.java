@@ -1,5 +1,6 @@
 package com.aotusoft.controller;
 
+import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,12 +12,12 @@ import org.thymeleaf.util.StringUtils;
 public class loginController {
     @RequestMapping("/login")
 //    @ResponseBody
-    public String login(@RequestParam("username") String username,@RequestParam("password") String password, Model model) {
+    public String login(@RequestParam("username") String username, @RequestParam("password") String password, Model model,HttpSession session) {
         if (!StringUtils.isEmpty(username) && "123456".equals(password)) {
-            System.out.println(username + "    " + password);
+            session.setAttribute("loginUser",username);
             return "dashboard";
         } else {
-            model.addAttribute("msg", "登录失败");
+            model.addAttribute("msg", "登录失败 \n用户名：" + username + "\n密码：" + password);
             return "index";
         }
     }
