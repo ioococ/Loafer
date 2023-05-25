@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.aotusoft</groupId>
     <artifactId>employeeManager</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.2.5</version>
     <name>employeeManager</name>
     <description>employeeManager</description>
     <properties>
