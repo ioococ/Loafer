@@ -10,7 +10,7 @@ public class Eight {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         for (int i = 1; i < 4; i++) {
-            float num = 0F;
+            float num = 0.0F;
             System.out.println("请输入第" + i + "班的成绩");
             for (int j = 1; j < 5; j++) {
                 System.out.print("第" + j + "学员的成绩：");
