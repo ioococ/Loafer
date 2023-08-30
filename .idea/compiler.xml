@@ -11,5 +11,10 @@
         <module name="CLASS" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Begin" target="17" />
+      <module name="CLASS" target="17" />
+      <module name="OOP" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
