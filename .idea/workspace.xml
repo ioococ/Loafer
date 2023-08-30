@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f6df692-d4c0-4376-b164-edcd6ed6365d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASS/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASS/src/main/java/moe/nekotako/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASS/src/main/java/moe/nekotako/NMSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASS/src/main/java/moe/work/AvgCalculate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASS/src/main/java/moe/work/Create.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASS/src/main/java/moe/work/ShowName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASS/src/main/java/moe/work/TeacherAndStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLASS/src/main/java/moe/work/TicketsSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Loafer.iml" afterDir="false" />
+    <list default="true" id="8f6df692-d4c0-4376-b164-edcd6ed6365d" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/OOP/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP/src/main/java/moe/nekotako/Animals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP/src/main/java/moe/nekotako/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP/src/main/java/moe/nekotako/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Begin/src/main/java/moe/work/Eight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Begin/src/main/java/moe/work/Eight.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,29 +53,30 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/荣耀/Documents/IdeaProjects/Loafer/Begin&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "aspect.path.notification.shown": "true",
+    "jdk.selected.JAVA_MODULE": "zulu-17",
+    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/Begin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.TeacherAndStudent">
+}]]></component>
+  <component name="RunManager" selected="JUnit.Main.main">
     <configuration name="AvgCalculate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="moe.work.AvgCalculate" />
       <module name="CLASS" />
@@ -97,25 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NMSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="moe.nekotako.NMSum" />
-      <module name="CLASS" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="moe.nekotako.Main" />
+      <module name="OOP" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="moe.nekotako.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShowName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="moe.work.ShowName" />
-      <module name="CLASS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="moe.work.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,13 +129,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="moe.nekotako.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="moe.nekotako" />
+      <option name="MAIN_CLASS_NAME" value="moe.nekotako.Main" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TeacherAndStudent" />
         <item itemvalue="Application.AvgCalculate" />
         <item itemvalue="Application.TicketsSort" />
-        <item itemvalue="Application.ShowName" />
-        <item itemvalue="Application.NMSum" />
       </list>
     </recent_temporary>
   </component>
@@ -168,11 +164,24 @@
       <option name="presentableId" value="Default" />
       <updated>1693292803131</updated>
       <workItem from="1693292804474" duration="7482000" />
-      <workItem from="1693306616068" duration="5446000" />
+      <workItem from="1693306616068" duration="5568000" />
+      <workItem from="1693357865212" duration="7335000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1693312180566</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693312180566</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
