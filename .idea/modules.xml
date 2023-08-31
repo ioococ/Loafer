@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Begin/Begin.iml" filepath="$PROJECT_DIR$/Begin/Begin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CLASS/CLASS.iml" filepath="$PROJECT_DIR$/CLASS/CLASS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Loafer.iml" filepath="$PROJECT_DIR$/Loafer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP/OOP.iml" filepath="$PROJECT_DIR$/OOP/OOP.iml" />
     </modules>
   </component>
 </project>

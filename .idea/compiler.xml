@@ -8,13 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Begin" />
         <module name="OOP" />
+        <module name="Collection" />
         <module name="CLASS" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Begin" target="17" />
-      <module name="CLASS" target="17" />
-      <module name="OOP" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

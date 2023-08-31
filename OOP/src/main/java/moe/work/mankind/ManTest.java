@@ -30,7 +30,7 @@ public class ManTest {
         xiaoMing.setAssistant(zs);
         xiaoHong.setAssistant(zs);
 
-        System.out.println(xiaoMing.toString());
-        System.out.println(xiaoHong.toString());
+        System.out.println(xiaoMing);
+        System.out.println(xiaoHong);
     }
 }
