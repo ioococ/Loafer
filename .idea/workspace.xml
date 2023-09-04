@@ -4,50 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="modify">
-      <change afterPath="$PROJECT_DIR$/Collection/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collection/src/main/java/moe/nekotako/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collection/src/main/java/moe/work/dog/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collection/src/main/java/moe/work/dog/DogTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collection/src/main/java/moe/work/map/PTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collection/src/main/java/moe/work/map/Penguin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collection/src/main/java/moe/work/smartphone/Handset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collection/src/main/java/moe/work/smartphone/PhoneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collection/src/main/java/moe/work/smartphone/Services.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collection/src/main/java/moe/work/smartphone/SubHandset.java" afterDir="false" />
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/FastBoot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/java/neko/fastboot/FastBootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/java/neko/fastboot/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/java/neko/fastboot/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/java/neko/fastboot/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/java/neko/fastboot/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/java/neko/fastboot/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/java/neko/fastboot/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/java/neko/fastboot/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastBoot/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Maven/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Maven/src/main/java/moe/nekotako/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Begin/Begin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLASS/CLASS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP/OOP.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP/src/main/java/moe/work/mankind/ManTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP/src/main/java/moe/work/mankind/ManTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Collection/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -84,13 +95,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "aspect.path.notification.shown": "true",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "jdk.selected.JAVA_MODULE": "zulu-17",
-    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/Collection",
+    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/FastBoot/src/main/java/neko/fastboot/dao",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,42 +116,53 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editing.templates",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "MySQL"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources\templates" />
+      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources\static" />
+      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="moe.smartphone" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PenguinTest.main">
-    <configuration name="DogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Collection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="moe.work.dog.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="moe.work.dog" />
-      <option name="MAIN_CLASS_NAME" value="moe.work.dog.DogTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Spring Boot.FastBootApplication">
+    <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
     </configuration>
-    <configuration name="DogTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Collection" />
+    <configuration name="FastBootApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/FastBootApplication.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="FastBootApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FastBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="moe.work.dog.*" />
+          <option name="PATTERN" value="neko.fastboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="moe.work.dog" />
-      <option name="MAIN_CLASS_NAME" value="moe.work.dog.DogTest" />
-      <option name="METHOD_NAME" value="main" />
+      <option name="PACKAGE_NAME" value="neko.fastboot" />
+      <option name="MAIN_CLASS_NAME" value="neko.fastboot.FastBootApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,44 +184,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PhoneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Collection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="moe.smartphone.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="moe.smartphone" />
-      <option name="MAIN_CLASS_NAME" value="moe.smartphone.PhoneTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PhoneTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Collection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="moe.smartphone.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="moe.smartphone" />
-      <option name="MAIN_CLASS_NAME" value="moe.smartphone.PhoneTest" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="FastBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="FastBoot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="neko.fastboot.FastBootApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="HTTP Request.All in generated-requests" />
+        <item itemvalue="HTTP Request.FastBootApplication | #1" />
+        <item itemvalue="JUnit.FastBootApplicationTests.contextLoads" />
         <item itemvalue="JUnit.PenguinTest.main" />
-        <item itemvalue="JUnit.DogTest.main" />
-        <item itemvalue="JUnit.DogTest" />
-        <item itemvalue="JUnit.PhoneTest" />
-        <item itemvalue="JUnit.PhoneTest.main" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +211,18 @@
       <updated>1693384783772</updated>
       <workItem from="1693384784930" duration="1212000" />
       <workItem from="1693392236108" duration="143000" />
-      <workItem from="1693392412741" duration="20405000" />
+      <workItem from="1693392412741" duration="20510000" />
+      <workItem from="1693531464734" duration="4779000" />
+      <workItem from="1693565378529" duration="1406000" />
+      <workItem from="1693615326180" duration="633000" />
+      <workItem from="1693645159467" duration="59000" />
+      <workItem from="1693791929988" duration="1694000" />
+      <workItem from="1693793647412" duration="798000" />
+      <workItem from="1693794752718" duration="530000" />
+      <workItem from="1693796634347" duration="1797000" />
+      <workItem from="1693803489544" duration="1491000" />
+      <workItem from="1693808201285" duration="8567000" />
+      <workItem from="1693816969166" duration="10328000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -222,14 +238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693398630619</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1693483089825</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693483089825</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="modify" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
