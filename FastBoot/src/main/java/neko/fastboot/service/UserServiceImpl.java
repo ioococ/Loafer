@@ -5,6 +5,8 @@ import neko.fastboot.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @Author: nekotako
  * @Description: TODO
@@ -16,6 +18,7 @@ public class UserServiceImpl implements UserService {
 
     @Autowired(required = false)
     private UserMapper userMapper;
+    private List<User> users;
     @Override
     public User queryByPrimaryKey(int uID) {
         return userMapper.queryByPrimaryKey(uID);
@@ -24,5 +27,13 @@ public class UserServiceImpl implements UserService {
     @Override
     public User queryByName(String name) {
         return userMapper.queryByName(name);
+    }
+    public List<User> fuzzyQueryByName(String name) {
+        return userMapper.fuzzyQueryByName(name);
+    }
+
+    @Override
+    public List<User> queryAll() {
+        return userMapper.queryAll();
     }
 }

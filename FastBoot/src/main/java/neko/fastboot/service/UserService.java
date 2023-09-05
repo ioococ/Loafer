@@ -2,6 +2,8 @@ package neko.fastboot.service;
 
 import neko.fastboot.pojo.User;
 
+import java.util.List;
+
 /**
  * @Author: nekotako
  * @Description: TODO
@@ -11,4 +13,6 @@ import neko.fastboot.pojo.User;
 public interface UserService {
     public User queryByPrimaryKey(int uID);
     public User queryByName(String name);
+    public List<User> fuzzyQueryByName(String name);
+    public List<User> queryAll();
 }

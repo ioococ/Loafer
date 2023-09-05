@@ -23,6 +23,9 @@ mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl
 
+#    console: "%clr(%d{HH:mm:ss} [%t]) %highlight(%-5level) %logger{36}.%M - %msg%n"
+#    %M 显示方法名
+#    console: "%clr(%d{HH:mm:ss.SSS} [%t]) %highlight(%-5level) %cyan(%logger{36}) - %M - %msg%n"
 logging:
   pattern:
     console: "%clr(%d{mm:ss.S} [%t]) %highlight(%-5level) %cyan(%logger{36})\t - %msg%n"

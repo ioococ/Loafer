@@ -19,9 +19,24 @@
         from users
         where name = #{name,jdbcType=VARCHAR}
     </select>
-<!--    <select id="queryByName" parameterType="java.lang.String" resultMap="User">-->
-<!--        select *-->
+
+    <!--  resultType 返回值类型 指定泛型类型  -->
+<!--    <select id="queryAll" resultType="User">-->
+<!--        select-->
+<!--        <include refid="Base_Column_List"/>-->
 <!--        from users-->
-<!--        where name = #{name,jdbcType=VARCHAR}-->
 <!--    </select>-->
+
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from users
+    </select>
+
+    <select id="fuzzyQueryByName" parameterType="string" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from users where name like concat('%' #{name},'%')
+    </select>
+    <select id="queryByPrimaryKey" resultType="neko.fastboot.pojo.User"></select>
 </mapper>
