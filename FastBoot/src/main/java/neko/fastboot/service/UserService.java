@@ -12,7 +12,14 @@ import java.util.List;
 
 public interface UserService {
     public User queryByPrimaryKey(int uID);
+
     public User queryByName(String name);
+
     public List<User> fuzzyQueryByName(String name);
+
     public List<User> queryAll();
+
+    public void addUser(User user);
+
+    public void modifyUser(User user);
 }

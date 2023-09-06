@@ -18,4 +18,8 @@ public interface UserMapper {
     List<User> fuzzyQueryByName(String name);
 
     List<User> queryAll();
+
+    void addUser(User user);
+
+    void modifyUser(User user);
 }

@@ -31,6 +31,27 @@ public class UserController {
     @Autowired
     private UserMapper mapper;
 
+
+    @RequestMapping("/2add")
+    public String toAdd() {
+        return "add";
+    }
+
+    @RequestMapping("/add")
+    public String add(Model model,
+                      @RequestParam("name") String name,
+                      @RequestParam("password") String password,
+                      @RequestParam("age") int age,
+                      @RequestParam("sex") String sex,
+                      @RequestParam("email") String email,
+                      HttpSession session) {
+        java.util.Date currentDate = new java.util.Date();
+        java.sql.Date sqlCurrentDate = new java.sql.Date(currentDate.getTime());
+        User u = new User(0, name, password, age, sex, email, sqlCurrentDate);
+        userService.addUser(u);
+        return "redirect:/dashboard";
+    }
+
     @RequestMapping("/do")
     public String goIndex(Model model, @RequestParam("name") String name, @RequestParam("password") String password, HttpSession session) {
 //    public String goIndex(Model model, User formData, HttpSession session) {
@@ -42,10 +63,15 @@ public class UserController {
         if (password.equals(sqlData.getPassword())) {
             System.out.println(sqlData);
             session.setAttribute("user", sqlData);
-            return "dashboard";
+            return "redirect:/dashboard";
         } else {
-            return "login";
+            return "redirect:/login";
         }
+    }
+
+    @RequestMapping("/2query")
+    public String doFuzzyQuery(Model model, HttpSession session) {
+        return "query";
     }
 
     @RequestMapping("/query")
@@ -53,34 +79,43 @@ public class UserController {
         List<User> sqlData = userService.fuzzyQueryByName(name);
         model.addAttribute("name", name);
         model.addAttribute("users", sqlData);
-        return "list";
+        return "query";
     }
 
-    @RequestMapping("/dashboard")
-    public String dashboard(HttpSession session) {
-        return "dashboard";
-    }
-
-    @RequestMapping("/list")
-    public String list(Model model, HttpSession session) {
-        return "list";
-    }
-
-    @RequestMapping({"/index"})
+    @RequestMapping({"/", "/index", "/dashboard"})
     public String index(Model model, HttpSession session) {
+
+        if (session.getAttribute("user") != null) {
+            return "dashboard";
+        } else {
+            return "redirect:/login";
+        }
+    }
+
+    @RequestMapping("/alluser")
+    public String list(Model model, HttpSession session) {
 
         List<User> users = userService.queryAll();
         model.addAttribute("users", users);
+        return "alluser";
+    }
 
-        if (session.getAttribute("user") != null) {
-            return "all";
-        } else {
-            return "login";
-        }
+    @RequestMapping("/modify")
+    public String modify(Model model, HttpSession session) {
+
+        User user = userService.queryByPrimaryKey(1);
+        model.addAttribute("user", user);
+        return "alluser";
     }
 
     @RequestMapping("/login")
     public String login(Model model) {
         return "login";
+    }
+
+    @RequestMapping("/logout")
+    public String logout(Model model, HttpSession session) {
+        session.removeAttribute("user");
+        return "redirect:login";
     }
 }

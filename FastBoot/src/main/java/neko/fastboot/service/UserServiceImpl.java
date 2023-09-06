@@ -19,6 +19,7 @@ public class UserServiceImpl implements UserService {
     @Autowired(required = false)
     private UserMapper userMapper;
     private List<User> users;
+
     @Override
     public User queryByPrimaryKey(int uID) {
         return userMapper.queryByPrimaryKey(uID);
@@ -28,6 +29,7 @@ public class UserServiceImpl implements UserService {
     public User queryByName(String name) {
         return userMapper.queryByName(name);
     }
+
     public List<User> fuzzyQueryByName(String name) {
         return userMapper.fuzzyQueryByName(name);
     }
@@ -35,5 +37,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> queryAll() {
         return userMapper.queryAll();
+    }
+
+    @Override
+    public void addUser(User user) {
+        userMapper.addUser(user);
+    }
+
+    @Override
+    public void modifyUser(User user) {
+        userMapper.modifyUser(user);
     }
 }

@@ -241,7 +241,6 @@ input::placeholder {
     margin: 0 10px;
     position: relative;
     color: white;
-
     text-decoration: none;
 }
 
@@ -259,6 +258,34 @@ input::placeholder {
 }
 
 .forget a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a {
+    margin: 0 10px;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+a.warning::after {
+    background-color: #ff359b;
+}
+
+a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }

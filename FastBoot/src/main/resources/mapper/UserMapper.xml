@@ -21,11 +21,11 @@
     </select>
 
     <!--  resultType 返回值类型 指定泛型类型  -->
-<!--    <select id="queryAll" resultType="User">-->
-<!--        select-->
-<!--        <include refid="Base_Column_List"/>-->
-<!--        from users-->
-<!--    </select>-->
+    <!--    <select id="queryAll" resultType="User">-->
+    <!--        select-->
+    <!--        <include refid="Base_Column_List"/>-->
+    <!--        from users-->
+    <!--    </select>-->
 
     <select id="queryAll" resultMap="BaseResultMap">
         select
@@ -38,5 +38,24 @@
         <include refid="Base_Column_List"/>
         from users where name like concat('%' #{name},'%')
     </select>
-    <select id="queryByPrimaryKey" resultType="neko.fastboot.pojo.User"></select>
+    <select id="queryByPrimaryKey" parameterType="neko.fastboot.pojo.User" resultType="neko.fastboot.pojo.User">
+        select *
+        from users
+        where uid = #{uID}
+    </select>
+
+    <insert id="addUser" parameterType="neko.fastboot.pojo.User">
+        insert into users(name, password, age, sex, email, date)
+        values (#{name}, #{password}, #{age}, #{sex}, #{email}, #{date})
+    </insert>
+
+    <update id="modifyUser" parameterType="neko.fastboot.pojo.User">
+        update users
+        set name=#{name},
+            password=#{password},
+            age=#{age},
+            sex=#{sex},
+            email=#{email}
+        where uid = #{uID}
+    </update>
 </mapper>
