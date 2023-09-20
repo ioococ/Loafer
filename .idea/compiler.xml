@@ -7,14 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Begin" />
-        <module name="FastBoot" />
-        <module name="OOP" />
-        <module name="Collection" />
-        <module name="Maven" />
-        <module name="CLASS" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Begin" target="17" />
+      <module name="CLASS" target="17" />
+      <module name="Collection" target="17" />
+      <module name="FastBoot" target="17" />
+      <module name="Maven" target="17" />
+      <module name="OOP" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

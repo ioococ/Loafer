@@ -12,6 +12,16 @@
         <option value="$PROJECT_DIR$/FastBoot/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Begin/pom.xml" />
+        <option value="$PROJECT_DIR$/CLASS/pom.xml" />
+        <option value="$PROJECT_DIR$/Collection/pom.xml" />
+        <option value="$PROJECT_DIR$/FastBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/pom.xml" />
+        <option value="$PROJECT_DIR$/OOP/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="zulu-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
