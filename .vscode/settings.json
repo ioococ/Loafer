@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Nonka/lib/junit-jupiter-5.5.2.jar",
+        "Nonka/lib/junit-jupiter-api-5.5.2.jar"
+    ]
+}

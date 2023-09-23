@@ -6,73 +6,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Main",
+            "name": "Coding",
             "request": "launch",
-            "mainClass": "Main",
-            "projectName": "Loafer_9c6f3817"
-        },
-        {
-            "type": "java",
-            "name": "Horse",
-            "request": "launch",
-            "mainClass": "Horse",
-            "projectName": "Loafer_9c6f3817"
-        },
-        {
-            "type": "java",
-            "name": "Plus",
-            "request": "launch",
-            "mainClass": "Plus",
-            "projectName": "Loafer_9c6f3817"
-        },
-        {
-            "type": "java",
-            "name": "Paper",
-            "request": "launch",
-            "mainClass": "Paper",
-            "projectName": "Loafer_9c6f3817"
-        },
-        {
-            "type": "java",
-            "name": "Cash",
-            "request": "launch",
-            "mainClass": "Cash",
-            "projectName": "Loafer_9c6f3817"
-        },
-        {
-            "type": "java",
-            "name": "Cycling",
-            "request": "launch",
-            "mainClass": "Cycling",
-            "projectName": "Loafer_9c6f3817"
-        },
-        {
-            "type": "java",
-            "name": "CyclingTest",
-            "request": "launch",
-            "mainClass": "CyclingTest",
-            "projectName": "Loafer_9c6f3817"
-        },
-        {
-            "type": "java",
-            "name": "SwitchTest",
-            "request": "launch",
-            "mainClass": "SwitchTest",
-            "projectName": "Loafer_9c6f3817"
-        },
-        {
-            "type": "java",
-            "name": "B",
-            "request": "launch",
-            "mainClass": "B",
-            "projectName": "Loafer_9c6f3817"
-        },
-        {
-            "type": "java",
-            "name": "Test",
-            "request": "launch",
-            "mainClass": "Test",
-            "projectName": "Loafer_9c6f3817"
+            "mainClass": "Coding",
+            "projectName": "Loafer_913029c3"
         },
         {
             "type": "java",

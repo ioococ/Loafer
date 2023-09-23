@@ -1,9 +1,14 @@
 import java.util.Scanner;
 
+import org.junit.Test;
+
+
 public class Coding {
+
     public static void main(String[] args) {
-       Coding c = new Coding();
-       c.cycling();
+    //    Coding c = new Coding();
+    //    c.cycling();
+    System.out.println(args);
     }
 
     public void judge() {
@@ -35,6 +40,7 @@ public class Coding {
         input.close();
     }
 
+    @Test
     public void cycling() {
         int sum = 0;
         for (int i = 1; i <= 100; i += 2) {
@@ -43,4 +49,10 @@ public class Coding {
         System.out.println(sum);
     }
 
+    // @Test
+    // public int m1(){
+    //     System.out.println("");
+    //     System.out.println(2);
+    //     return 1;
+    // }
 }

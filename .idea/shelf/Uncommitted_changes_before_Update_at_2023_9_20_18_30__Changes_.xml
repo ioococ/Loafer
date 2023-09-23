@@ -1,0 +1,9 @@
+<changelist name="Uncommitted_changes_before_Update_at_2023_9_20_18_30_[Changes]" date="1695205825581" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_9_20_18_30_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2023/9/20 18:30 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lib/junit-platform-console-standalone-1.10.0.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_9_20_18_30_[Changes]/junit-platform-console-standalone-1.10.0.jar" />
+  </binary>
+</changelist>
