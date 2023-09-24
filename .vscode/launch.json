@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Compare",
+            "request": "launch",
+            "mainClass": "four.Compare",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "four.Fibonacci",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "SplitPrint",
+            "request": "launch",
+            "mainClass": "four.SplitPrint",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "InputSum",
+            "request": "launch",
+            "mainClass": "four.InputSum",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "four.Sum",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Factorial",
+            "request": "launch",
+            "mainClass": "four.Factorial",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "PrimeNumber",
+            "request": "launch",
+            "mainClass": "four.PrimeNumber",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "Coding",
             "request": "launch",
             "mainClass": "Coding",
