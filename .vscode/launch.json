@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "five.Arrays",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "WordsSplit",
+            "request": "launch",
+            "mainClass": "five.WordsSplit",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Scores",
+            "request": "launch",
+            "mainClass": "five.Scores",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "MaxValue",
+            "request": "launch",
+            "mainClass": "five.MaxValue",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Reverse",
+            "request": "launch",
+            "mainClass": "five.Reverse",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "YangHui",
+            "request": "launch",
+            "mainClass": "five.YangHui",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Array_06",
+            "request": "launch",
+            "mainClass": "Array_06",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Launch with Arguments Prompt",
+            "request": "launch",
+            "mainClass": "",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "Arrays",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "Compare",
             "request": "launch",
             "mainClass": "four.Compare",
