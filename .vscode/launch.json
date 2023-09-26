@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Search",
+            "request": "launch",
+            "mainClass": "six.Search",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Sort",
+            "request": "launch",
+            "mainClass": "Sort",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "Arrays",
             "request": "launch",
             "mainClass": "five.Arrays",

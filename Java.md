@@ -156,6 +156,7 @@ Java 属于静态强类型解释性语言
   需要以`L`或`l`结尾
 - float 
   需要以`F`或`f`结尾
+  float采用科学计数法进行存储 float的32位存储量远大于long的64位 
 - double 
   需要以`D`或`d`结尾 或不写
 - boolean

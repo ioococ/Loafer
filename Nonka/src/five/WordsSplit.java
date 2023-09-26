@@ -1,4 +1,4 @@
-
+package five;
 
 public class WordsSplit {
     public static void main(String[] args) {
