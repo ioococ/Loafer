@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Single",
+            "request": "launch",
+            "mainClass": "design.Single",
+            "projectName": "Loafer_9c6f3817"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "com.tledu.Test",
+            "projectName": "Loafer_9c6f3817"
+        },
+        {
+            "type": "java",
             "name": "Customer",
             "request": "launch",
             "mainClass": "demo_04.Customer",

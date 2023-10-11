@@ -8,5 +8,7 @@
     "terminal.integrated.wordWrap": "off",
     "[Log]": {
         "editor.wordWrap": "off"
-    }
+    },
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.dependency.syncWithFolderExplorer": true
 }
