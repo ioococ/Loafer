@@ -261,6 +261,7 @@ class Sup {
      * 
      * Sup this = Sub;
      */
+    
     // System.out.println("父类m1");
     System.out.println(this);
     // 2 父类
@@ -297,10 +298,64 @@ class Sub extends Sup {
 
 `abstract`修饰的类是抽象类 并且抽象类不能创建对象 而且抽象类一般主要用于**被继承**
 
-abstract修饰的方法是抽象方法 该方法没有方法体 不实现功能 用于让不同的子类实现方法
+`abstract`修饰的方法是抽象方法 该方法没有方法体 不实现功能 用于让不同的子类实现方法
 
 抽象方法必须在抽象类中 而抽象类中可以存在普通方法
 
 抽象类中可看作特殊的类 只不过不能创建对象
 
-abstract和final不能同时出现
+**`abstract`和`final`不能同时出现**
+
+- 子类如果继承了抽象类 那么需要实现所有的抽象方法 否则该子类就需要使用abstract修饰
+- 抽象类继承抽象类,需要实现0~N个抽象方法
+- 普通类继承抽象类需要实现所有方法
+
+## interface
+
+接口关键字
+
+1.8之前 接口是完全抽象的 只允许出现抽象方法和常量(`psf`)
+
+在接口中 只有常量没有变量 并且`psf`可以省略 且权限控制默认是`public`
+
+抽象方法的`abstract`可以省略
+
+```java
+interface A{
+  int age = 1;
+
+  // 默认方法
+  default void dmethod(){
+    System.out.println("默认方法");
+  }
+}
+class B{
+  void m(){
+    System.out.println(A.age);
+  }
+}
+```
+
+## Object
+
+`Object`是Java提供的根类 所有类都直接或间接继承`Object`
+
+`java.lang.Object` 在`java.lang`包下 核心包下的所有类不需要导入
+
+### toString
+
+### equals
+
+`==` 基本类型比较值大小 引用类型比较地址
+
+默认的`equals`比较地址
+
+### finalize
+
+JVM 跨平台 多线程 面向对象 自动垃圾回收
+
+垃圾  没有任何引用指向该对象得时候 该对象成为垃圾对象
+
+垃圾被回收时 自动调用该对象的finalize()方法 是在对象生命结束时候被调用
+
+`System.gc()`程序员可以建议JVM进行垃圾回收

@@ -6,148 +6,23 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Search",
+            "name": "Customer",
             "request": "launch",
-            "mainClass": "six.Search",
-            "projectName": "Loafer_913029c3"
+            "mainClass": "demo_04.Customer",
+            "projectName": "Loafer_9c6f3817"
         },
         {
             "type": "java",
-            "name": "Sort",
+            "name": "Run",
             "request": "launch",
-            "mainClass": "Sort",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Arrays",
-            "request": "launch",
-            "mainClass": "five.Arrays",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "WordsSplit",
-            "request": "launch",
-            "mainClass": "five.WordsSplit",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Scores",
-            "request": "launch",
-            "mainClass": "five.Scores",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "MaxValue",
-            "request": "launch",
-            "mainClass": "five.MaxValue",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Reverse",
-            "request": "launch",
-            "mainClass": "five.Reverse",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "YangHui",
-            "request": "launch",
-            "mainClass": "five.YangHui",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Array_06",
-            "request": "launch",
-            "mainClass": "Array_06",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Launch with Arguments Prompt",
-            "request": "launch",
-            "mainClass": "",
-            "args": "${command:SpecifyProgramArgs}"
-        },
-        {
-            "type": "java",
-            "name": "Arrays",
-            "request": "launch",
-            "mainClass": "Arrays",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Compare",
-            "request": "launch",
-            "mainClass": "four.Compare",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Fibonacci",
-            "request": "launch",
-            "mainClass": "four.Fibonacci",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "SplitPrint",
-            "request": "launch",
-            "mainClass": "four.SplitPrint",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "InputSum",
-            "request": "launch",
-            "mainClass": "four.InputSum",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Sum",
-            "request": "launch",
-            "mainClass": "four.Sum",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Factorial",
-            "request": "launch",
-            "mainClass": "four.Factorial",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "PrimeNumber",
-            "request": "launch",
-            "mainClass": "four.PrimeNumber",
-            "projectName": "Loafer_913029c3"
+            "mainClass": "hotel.Run",
+            "projectName": "Loafer_9c6f3817"
         },
         {
             "type": "java",
             "name": "Coding",
             "request": "launch",
             "mainClass": "Coding",
-            "projectName": "Loafer_913029c3"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "a.App",
             "projectName": "Loafer_9c6f3817"
         }
     ]

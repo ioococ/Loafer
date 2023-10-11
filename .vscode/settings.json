@@ -3,5 +3,10 @@
         "lib/**/*.jar",
         "Nonka/lib/junit-jupiter-5.5.2.jar",
         "Nonka/lib/junit-jupiter-api-5.5.2.jar"
-    ]
+    ],
+    "debug.console.wordWrap":false,
+    "terminal.integrated.wordWrap": "off",
+    "[Log]": {
+        "editor.wordWrap": "off"
+    }
 }

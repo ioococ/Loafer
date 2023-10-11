@@ -3,12 +3,13 @@ import java.util.Scanner;
 import org.junit.Test;
 
 
-public class Coding {
+public class Coding  {
 
     public static void main(String[] args) {
     //    Coding c = new Coding();
     //    c.cycling();
     System.out.println(args);
+    System.gc();
     }
 
     public void judge() {
@@ -55,4 +56,10 @@ public class Coding {
     //     System.out.println(2);
     //     return 1;
     // }
+}
+interface A{
+
+}
+abstract class B{
+
 }
