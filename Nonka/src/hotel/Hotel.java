@@ -7,7 +7,7 @@ public class Hotel {
     // 	createHotal(floor, door);
     // }
 
-    public Room[][] createHotal(int floor, int door) {
+    public Room[][] createHotel(int floor, int door) {
         list = new Room[floor][door];
         for (int i = 0; i < list.length; i++) {
             int id = 1;

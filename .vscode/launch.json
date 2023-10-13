@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Verification",
+            "request": "launch",
+            "mainClass": "fifteen.Verification",
+            "projectName": "Loafer_9c6f3817"
+        },
+        {
+            "type": "java",
+            "name": "TenMinAgo",
+            "request": "launch",
+            "mainClass": "fifteen.TenMinAgo",
+            "projectName": "Loafer_9c6f3817"
+        },
+        {
+            "type": "java",
             "name": "Single",
             "request": "launch",
             "mainClass": "design.Single",

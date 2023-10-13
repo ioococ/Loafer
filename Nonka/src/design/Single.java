@@ -34,7 +34,7 @@ class Single_02 {
 		System.out.println("Single_02构造方法执行");
 	}
 
-	static Single_02 obj = null;
+	private static Single_02 obj = null;
 
 	static Single_02 getObj() {
 		if (obj == null) {

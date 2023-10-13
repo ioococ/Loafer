@@ -59,7 +59,6 @@ public class Room {
     public String toString() {
         String content = null;
         String level = null;
-        String occupied = null;
         if (type == 1) {
             level = "标准间";
         } else if (type == 2) {
@@ -68,15 +67,10 @@ public class Room {
             level = "豪华间";
         }
 
-        if (status)
-            occupied = "占用";
-        else
-            occupied = "空闲";
-
         if (id < 10)
-            content = " [" + floor + "0" + id + " " + level + " " + occupied + "] ";
+            content = " [" + floor + "0" + id + " " + level + " " + (status ? "占用" : "空闲") + "] ";
         else
-            content = " [" + floor + "" + id + " " + level + " " + occupied + "] ";
+            content = " [" + floor + "" + id + " " + level + " " + (status ? "占用" : "空闲") + "] ";
         return content;
     }
 
