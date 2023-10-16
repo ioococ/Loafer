@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FileInput",
+            "request": "launch",
+            "mainClass": "FileInput",
+            "projectName": "Loafer_9c6f3817"
+        },
+        {
+            "type": "java",
             "name": "Verification",
             "request": "launch",
             "mainClass": "fifteen.Verification",
