@@ -18,7 +18,6 @@ public class Run {
             String operate = new Scanner(System.in).nextLine();
             String[] s = operate.split(" ");
             if (s[0].equals("预订")) {
-                System.out.println(Integer.parseInt(s[1]));
                 m.booking(Integer.parseInt(s[1]));
             } else if ((s[0].equals("退订"))) {
                 m.cancel(Integer.parseInt(s[1]));

@@ -61,3 +61,52 @@ String 底层为char数组 所以String很多特性都是数组的特性 例如S
 
 # System
 
+# Collection
+
+- add()
+- addAll()
+- remove()
+- removeAll()
+- clear()
+- isEmpty()
+- contains()
+
+contains和remove都会调用equals方法
+
+**没有提供修改和查询的方法**
+
+# iterator
+
+迭代器
+
+主要做遍历操作 使用迭代器可以屏蔽数据结构之间的差异性
+
+- hasNext()
+- next()
+- remove()
+
+迭代器一旦生成 集合将不能被修改 否则需要重新生成迭代器
+
+## 增 强for循环
+
+迭代器的简写方式 同样不能删除
+
+# List
+
+有序 可重复
+
+## ArrayList
+
+底层为Object数组
+
+- add(index,items)
+- set(index,items)
+- size()
+
+## LinkedList
+
+底层为双向链表 随机添加和删除效率高
+
+- add(index,items)
+- set(index,items)
+- size()
