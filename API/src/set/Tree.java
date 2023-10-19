@@ -1,17 +1,14 @@
 package set;
 
-import java.util.HashSet;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class Tree {
 	public static void main(String[] args) {
-		HashSet<Object> tree = new HashSet<>();
-		tree.add('a');
-		tree.add(2);
-		tree.add(3);
-		tree.add('z');
-		tree.add(5);
+		TreeSet<Object> tree = new TreeSet<>();
+		tree.add(new User("张三",18));
+		tree.add(new User("李四",13));
+		tree.add(new User("王五",32));
+		tree.add(new User("赵六",11));
 		System.out.println(tree);
 	}
 }

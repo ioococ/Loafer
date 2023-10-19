@@ -169,8 +169,10 @@ class MyException extends Exception{
 }
 
 public class Test{
-  public static void main(String[] args){
-    // 创建异常并结合throws抛出
+//此处可选择thorws也可不throws 运行时异常
+//public static void main(String[] args){
+  public static void main(String[] args) throws MyException{
+    // 创建异常并结合throw抛出
     throw new MyException();
   }
 }
@@ -198,7 +200,7 @@ contains和remove都会调用equals方法
 
 迭代器
 
-主要做遍历操作 使用迭代器可以屏蔽数据结构之间的差异性
+主要做遍历操作 使用迭代器可以**屏蔽数据结构之间的差异性**
 
 - hasNext()
 - next()
@@ -226,10 +228,190 @@ contains和remove都会调用equals方法
 
 底层为双向链表 随机添加和删除效率高
 
-- add(index,items)
-- set(index,items)
-- size()
+链表由节点(`Node`)构成 节点存储了三个属性
+
+- 保存的数据 Object
+- 上一个节点对象 节点类型
+- 下一个节点对象 节点类型
+
+为了首尾添加效率更高,在LinkedList类中保存了首节点和尾结点
+
+### 特殊方法
+
+- addFirst()
+- offerFirst()
+- addLast()
+- offerLast()
+- removeFirst()
 
 # Set
 
 无序 不可重复 不能保证数据的添加和取出顺序一致
+
+重复后不添加
+
+## TreeSet
+
+底层为`TreeMap`
+
+`TreeMap`底层为红黑树 添加的元素会按照一定格式自动排序
+
+向`TreeMap`中添加的数据都有比较器
+
+因此我们如果要添加没有比较器的对象或者自定义的对象时会出错。另外因为排序需要比较，所以只能添加同类型数据
+
+- 数字  默认升序
+- 字符串 默认按照每一位ASCII码进行排序
+- Date 自然日期
+
+## HashSet
+
+底层为`HashMap`的`K`部分
+
+`HashMap`底层为散列表
+
+# Comparable
+
+比较器 被添加的`TreeSet`的元素需要实现Comparable接口并重写接口中的`compareTo()`方法
+`compareTo()`方法返回值代表排序规则
+添加元素时会调用元素对象的`compareTo()`方法把集合中的元素传入进行比较
+如果`==0` 说明重复，不添加
+如果`<0` 说明要添加的元素小，往前放
+如果`>0` 说明要添加的元素大，往后放
+
+```java
+import java.util.TreeSet;
+
+public class Tree {
+	public static void main(String[] args) {
+		TreeSet<Object> tree = new TreeSet<>();
+		tree.add(new User("张三",18));
+		tree.add(new User("李四",13));
+		tree.add(new User("王五",32));
+		tree.add(new User("赵六",11));
+		System.out.println(tree);
+	}
+}
+
+class User implements Comparable {
+	private String name;
+	private int age;
+
+	public User() {
+	}
+
+	public User(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "User [name=" + name + ", age=" + age + "]";
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		if (o instanceof User) {
+			User u = (User) o;
+			// this.getAge() - u.getAge()大于1 升序排序
+			return this.getAge() - u.getAge();
+		}
+		return 0;
+	}
+}
+
+```
+
+# Comparator
+
+比较器类 要添加的元素不需要实现这个接口
+比如`Integer`中默认有比较方法并且是升序，假如我们想要降序的时候没办法修改源码，所以可以通过`Comparator`来重新定义排序规则；或者想要把不能排序的`Object`对象 **(没有实现`Comparable`接口)**保存在`TreeSet`中，还是需要`Comparator`来进行比较
+当保存的元素不能排序(没有实现Comparable接口)或者排序规则不符合我们的需求时，均使用`Comparator`来解决
+当`Comparator`比较器和`Comparable`比较器 同时存在时，`Comparator`优先级高于`Comparable`
+
+**对修改关闭 对扩展开放**
+
+# 与匿名类同时使用
+
+```java
+import java.util.Comparator;
+import java.util.TreeSet;
+
+@SuppressWarnings("all")
+public class UnNamed {
+	public static void main(String[] args) {
+		// TreeSet<Object> tree = new TreeSet<>(new MyComparator());
+
+    // 匿名类 常用在比较器中
+		TreeSet<Object> tree = new TreeSet<>(new Comparator() {
+			@Override
+			public int compare(Object o1, Object o2) {
+				if (o1 instanceof Integer && o2 instanceof Integer) {
+					// o1 是要添加的元素
+					// System.out.println(o1);
+					// o2 是集合中的元素
+					// System.out.println(o2);
+
+					Integer i1 = (Integer) o1;
+					Integer i2 = (Integer) o2;
+					// 10-9 降序排列
+					return i2 - i1;
+				}
+				return 0;
+			}
+		});
+		tree.add(11);
+		tree.add(7611);
+		tree.add(1);
+		tree.add(100);
+		tree.add(660);
+		tree.add(98);
+		System.out.println(tree);
+	}
+}
+
+class MyComparator implements Comparator {
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		if (o1 instanceof Integer && o2 instanceof Integer) {
+			// o1 是要添加的元素
+			// System.out.println(o1);
+			// o2 是集合中的元素
+			// System.out.println(o2);
+
+			Integer i1 = (Integer) o1;
+			Integer i2 = (Integer) o2;
+			// 10-9 降序排列
+			return i2 - i1;
+		}
+		return 0;
+	}
+}
+
+
+```
+
+# List排序
+
+`Collections.sort(list)` 排序方法
+`void sort(Comparator<? super E> c)`也可传入`Comparator`对象使用`List`的排序方法
+
+# 散列表/哈希表

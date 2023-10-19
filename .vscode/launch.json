@@ -7,6 +7,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ListSort",
+            "request": "launch",
+            "mainClass": "list.ListSort",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "UnNamed",
+            "request": "launch",
+            "mainClass": "set.UnNamed",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Tree",
+            "request": "launch",
+            "mainClass": "set.Tree",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "MyArrayList",
             "request": "launch",
             "mainClass": "a.MyArrayList",
