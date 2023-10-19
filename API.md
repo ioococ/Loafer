@@ -123,8 +123,8 @@ String 底层为char数组 所以String很多特性都是数组的特性 例如S
 1.7 新特性 自动关闭资源
 
 ```java
-try(资源打开语句;可以写多个){
-  高风险语句
+try (资源打开语句;可以写多个) {
+  高风险语句;
 } catch(异常类型){
 
 }
@@ -173,7 +173,7 @@ public class Test{
 //public static void main(String[] args){
   public static void main(String[] args) throws MyException{
     // 创建异常并结合throw抛出
-    throw new MyException();
+    throw new MyException("自定义消息");
   }
 }
 ```
@@ -283,58 +283,58 @@ contains和remove都会调用equals方法
 import java.util.TreeSet;
 
 public class Tree {
-	public static void main(String[] args) {
-		TreeSet<Object> tree = new TreeSet<>();
-		tree.add(new User("张三",18));
-		tree.add(new User("李四",13));
-		tree.add(new User("王五",32));
-		tree.add(new User("赵六",11));
-		System.out.println(tree);
-	}
+  public static void main(String[] args) {
+    TreeSet<Object> tree = new TreeSet<>();
+    tree.add(new User("张三",18));
+    tree.add(new User("李四",13));
+    tree.add(new User("王五",32));
+    tree.add(new User("赵六",11));
+    System.out.println(tree);
+  }
 }
 
 class User implements Comparable {
-	private String name;
-	private int age;
+  private String name;
+  private int age;
 
-	public User() {
-	}
+  public User() {
+  }
 
-	public User(String name, int age) {
-		this.name = name;
-		this.age = age;
-	}
+  public User(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
 
-	public String getName() {
-		return name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	public int getAge() {
-		return age;
-	}
+  public int getAge() {
+    return age;
+  }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+  public void setAge(int age) {
+    this.age = age;
+  }
 
-	@Override
-	public String toString() {
-		return "User [name=" + name + ", age=" + age + "]";
-	}
+  @Override
+  public String toString() {
+    return "User [name=" + name + ", age=" + age + "]";
+  }
 
-	@Override
-	public int compareTo(Object o) {
-		if (o instanceof User) {
-			User u = (User) o;
-			// this.getAge() - u.getAge()大于1 升序排序
-			return this.getAge() - u.getAge();
-		}
-		return 0;
-	}
+  @Override
+  public int compareTo(Object o) {
+    if (o instanceof User) {
+      User u = (User) o;
+      // this.getAge() - u.getAge()大于1 升序排序
+      return this.getAge() - u.getAge();
+    }
+    return 0;
+  }
 }
 
 ```
@@ -346,7 +346,7 @@ class User implements Comparable {
 当保存的元素不能排序(没有实现Comparable接口)或者排序规则不符合我们的需求时，均使用`Comparator`来解决
 当`Comparator`比较器和`Comparable`比较器 同时存在时，`Comparator`优先级高于`Comparable`
 
-**对修改关闭 对扩展开放**
+体现了**对修改关闭 对扩展开放**
 
 # 与匿名类同时使用
 
@@ -356,57 +356,53 @@ import java.util.TreeSet;
 
 @SuppressWarnings("all")
 public class UnNamed {
-	public static void main(String[] args) {
-		// TreeSet<Object> tree = new TreeSet<>(new MyComparator());
-
+  public static void main(String[] args) {
+    // TreeSet<Object> tree = new TreeSet<>(new MyComparator());
     // 匿名类 常用在比较器中
-		TreeSet<Object> tree = new TreeSet<>(new Comparator() {
-			@Override
-			public int compare(Object o1, Object o2) {
-				if (o1 instanceof Integer && o2 instanceof Integer) {
-					// o1 是要添加的元素
-					// System.out.println(o1);
-					// o2 是集合中的元素
-					// System.out.println(o2);
+    TreeSet<Object> tree = new TreeSet<>(new Comparator() {
+      @Override
+      public int compare(Object o1, Object o2) {
+        if (o1 instanceof Integer && o2 instanceof Integer) {
+          // o1 是要添加的元素
+          // System.out.println(o1);
+          // o2 是集合中的元素
+          // System.out.println(o2);
 
-					Integer i1 = (Integer) o1;
-					Integer i2 = (Integer) o2;
-					// 10-9 降序排列
-					return i2 - i1;
-				}
-				return 0;
-			}
-		});
-		tree.add(11);
-		tree.add(7611);
-		tree.add(1);
-		tree.add(100);
-		tree.add(660);
-		tree.add(98);
-		System.out.println(tree);
-	}
+          Integer i1 = (Integer) o1;
+          Integer i2 = (Integer) o2;
+          // 10-9 降序排列
+          return i2 - i1;
+        }
+        return 0;
+      }
+    });
+    tree.add(11);
+    tree.add(7611);
+    tree.add(1);
+    tree.add(100);
+    tree.add(660);
+    tree.add(98);
+    System.out.println(tree);
+  }
 }
 
 class MyComparator implements Comparator {
+  @Override
+  public int compare(Object o1, Object o2) {
+    if (o1 instanceof Integer && o2 instanceof Integer) {
+      // o1 是要添加的元素
+      // System.out.println(o1);
+      // o2 是集合中的元素
+      // System.out.println(o2);
 
-	@Override
-	public int compare(Object o1, Object o2) {
-		if (o1 instanceof Integer && o2 instanceof Integer) {
-			// o1 是要添加的元素
-			// System.out.println(o1);
-			// o2 是集合中的元素
-			// System.out.println(o2);
-
-			Integer i1 = (Integer) o1;
-			Integer i2 = (Integer) o2;
-			// 10-9 降序排列
-			return i2 - i1;
-		}
-		return 0;
-	}
+      Integer i1 = (Integer) o1;
+      Integer i2 = (Integer) o2;
+      // 10-9 降序排列
+      return i2 - i1;
+    }
+    return 0;
+  }
 }
-
-
 ```
 
 # List排序
@@ -415,3 +411,18 @@ class MyComparator implements Comparator {
 `void sort(Comparator<? super E> c)`也可传入`Comparator`对象使用`List`的排序方法
 
 # 散列表/哈希表
+
+用于存储键值对映射关系 存储方式为数组中保存链表 用于解决哈希冲突问题
+
+链表节点中保存四个属性
+
+# 泛型
+
+类型检查
+
+没有使用泛型之前集合中可以存储任意类型的的数据且均会转型为Object类型
+缺点：由于什么都能放，导致获取数据时得到的是Obiect，想要使用对象特有属性时，需要强制类型转换(向下转型)缺点
+
+使用泛型之后，集合中只能保存单一类型的数据
+优点：由于保存数据的类型一致，所以使用的时候不需要向下转型
+缺点：只能保存单一数据类型

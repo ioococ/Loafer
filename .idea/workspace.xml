@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/API/src/list/Linked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/set/Hash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/set/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/API.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/list/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/list/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/set/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/set/Hash.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
     "aspect.path.notification.shown": "true",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "jdk.selected.JAVA_MODULE": "zulu-17",
-    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/lib",
+    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/API",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,7 +104,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.xxxtai.smartinput",
+    "settings.editor.selected.configurable": "http.proxy",
     "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
     "vue.rearranger.settings.migration": "true"
   },
@@ -275,6 +274,8 @@
       <workItem from="1695712964790" duration="477000" />
       <workItem from="1697621178268" duration="56000" />
       <workItem from="1697622466317" duration="1079000" />
+      <workItem from="1697683674371" duration="1069000" />
+      <workItem from="1697702868496" duration="568000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>

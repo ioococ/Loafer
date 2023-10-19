@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Hash",
+            "request": "launch",
+            "mainClass": "map.Hash",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "ListSort",
             "request": "launch",
             "mainClass": "list.ListSort",
