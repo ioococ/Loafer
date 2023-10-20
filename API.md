@@ -405,7 +405,7 @@ class MyComparator implements Comparator {
 }
 ```
 
-# List排序
+# List 排序
 
 `Collections.sort(list)` 排序方法
 `void sort(Comparator<? super E> c)`也可传入`Comparator`对象使用`List`的排序方法
@@ -426,3 +426,24 @@ class MyComparator implements Comparator {
 使用泛型之后，集合中只能保存单一类型的数据
 优点：由于保存数据的类型一致，所以使用的时候不需要向下转型
 缺点：只能保存单一数据类型
+而且传入的只能为只能写引用类型不能写基本类型
+
+```java
+public class Generic {
+	public static void main(String[] args) {
+		MyClass myClass = new MyClass();
+		myClass.method(1);
+		myClass.method("xx");
+		MyClass<String> mm = new MyClass<String>();
+		mm.m1("xxx");
+		// mm.m1(123);
+	}
+}
+
+// 如果设置泛型后不传入数据类型默认为Object类型
+class MyClass<T> {
+	public void method(T obj) {
+		System.out.println(obj);
+	}
+}
+```
