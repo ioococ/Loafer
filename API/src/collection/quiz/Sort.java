@@ -1,4 +1,4 @@
-package quiz;
+package collection.quiz;
 
 import java.util.ArrayList;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package generics;
+package collection.generics;
 
 import java.util.ArrayList;
 import java.util.Map;

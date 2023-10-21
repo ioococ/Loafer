@@ -7,6 +7,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FileOutput",
+            "request": "launch",
+            "mainClass": "io.FileOutput",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "FileInput",
+            "request": "launch",
+            "mainClass": "io.FileInput",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "Hash",
             "request": "launch",
             "mainClass": "map.Hash",

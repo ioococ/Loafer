@@ -1,4 +1,4 @@
-package list;
+package collection.list;
 
 /**
  * 封装数组,提供增删改查等方法,方便操作
@@ -6,8 +6,16 @@ package list;
  * @author 天亮教育-帅气多汁你泽哥
  * @Date 2023年10月17日
  */
-public class Array {
+public class ArrayPlus {
+	/**
+	 * 默认容量为0,第一次添加时初始化容量为10,默认扩容倍数为1.5倍
+	 */
 	private Object[] elements = new Object[0];
+
+	/**
+	 * 已添加元素个数
+	 */
+	private int size = 0;
 
 	/**
 	 * 添加方法
@@ -15,12 +23,30 @@ public class Array {
 	 * @param element
 	 */
 	public void add(Object element) {
-		Object[] newArr = new Object[elements.length + 1];
-		for (int i = 0; i < elements.length; i++) {
-			newArr[i] = elements[i];
+		// 判断是否初始化
+		if (elements.length == 0) {
+			elements = new Object[10];
 		}
-		newArr[newArr.length - 1] = element;
-		elements = newArr;
+		int length = elements.length;
+
+		// 判断是否放满了
+		if (size == length) {
+			// 扩容为1.5倍
+			int newLength = length + (length >> 1);
+			// 创建新数组
+			Object[] newArr = new Object[newLength];
+			// 把源数组内容复制进新数组中去
+			for (int i = 0; i < elements.length; i++) {
+				newArr[i] = elements[i];
+			}
+			// 把新数组复制给elements
+			elements = newArr;
+		}
+		// 添加新数组
+		// 1 2 3 4 5 0 0 0 0 size = 5
+		// 1 2 3 4 5 6 0 0 0
+		elements[size] = element;
+		size++;
 	}
 
 	/**
@@ -30,23 +56,18 @@ public class Array {
 	 */
 	public void remove(int index) {
 		// 判断是否越界
-		if (index < 0 || index >= elements.length) {
+		if (index < 0 || index >= size) {
 			throw new ArrayIndexOutOfBoundsException(index);
 		}
-		// 创建新数组,长度为原数组长度-1
-		Object[] newArr = new Object[elements.length - 1];
-		// 遍历原数组,把非element的值添加到新数组中
-		int newArrIndex = 0;
-		for (int i = 0; i < elements.length; i++) {
-			if (index == i) {
-				continue;
-			} else {
-				newArr[newArrIndex] = elements[i];
-				newArrIndex++;
-			}
+		// 1 2 4 5 null null null 0 0 0 size = 4 length = 10 index = 2
+		// 从 index+1 开始 到 size-1 都向前移动一位
+		for (int i = index; i < size - 1; i++) {
+			elements[i] = elements[i + 1];
 		}
-		elements = newArr;
-
+		// size-1 赋值为 null
+		elements[size - 1] = null;
+		// size--
+		size--;
 	}
 
 	/**
@@ -82,29 +103,25 @@ public class Array {
 	 * @param element
 	 */
 	public void removeAll(Object element) {
-		// 统计多少相同元素个数
+		// int index = indexOf(element);
+		// while (index != -1) {
+		// remove(index);
+		// index = indexOf(element);
+		// }
+		// 1 1 1 2 2 2 5 null 5 null size = 9 length = 10 e=3 c=7
 		int count = 0;
-		for (int i = 0; i < elements.length; i++) {
-			if (elements[i].equals(element)) {
+		for (int i = 0; i < size; i++) {
+			if (!elements[i].equals(element)) {
+				elements[count] = elements[i];
 				count++;
 			}
 		}
-		if (count == 0) {
-			return;
+		// 把删除的元素 赋值为null
+		for (int i = count; i < size; i++) {
+			elements[i] = null;
 		}
-		// 确定新数组长度
-		Object[] newArr = new Object[elements.length - count];
-		// 循环遍历复制新数组中
-		int newArrIndex = 0;
-		for (int i = 0; i < newArr.length; i++) {
-			if (elements[i].equals(element)) {
-				continue;
-			} else {
-				newArr[newArrIndex] = elements[i];
-				newArrIndex++;
-			}
-		}
-		elements = newArr;
+		// 重新设置size的值
+		size = count;
 	}
 
 	/**
@@ -115,7 +132,7 @@ public class Array {
 	 */
 	public int indexOf(Object element) {
 
-		for (int i = 0; i < elements.length; i++) {
+		for (int i = 0; i < size; i++) {
 			if (elements[i].equals(element)) {
 				return i;
 			}
@@ -130,12 +147,13 @@ public class Array {
 	 * @return
 	 */
 	public boolean contains(Object element) {
-		for (int i = 0; i < elements.length; i++) {
-			if (elements[i].equals(element)) {
-				return true;
-			}
-		}
-		return false;
+		// for (int i = 0; i < size; i++) {
+		// if (elements[i].equals(element)) {
+		// return true;
+		// }
+		// }
+		int index = indexOf(element);
+		return index != -1 ? true : false;
 	}
 
 	/**
@@ -144,6 +162,10 @@ public class Array {
 	 * @param index
 	 */
 	public void set(int index, Object element) {
+		// 1 2 3 4 5 0 0 0 0 0
+		if (index < 0 || index >= size) {
+			throw new ArrayIndexOutOfBoundsException(index);
+		}
 		elements[index] = element;
 	}
 
@@ -154,6 +176,9 @@ public class Array {
 	 * @return
 	 */
 	public Object get(int index) {
+		if (index < 0 || index >= size) {
+			throw new ArrayIndexOutOfBoundsException(index);
+		}
 		return elements[index];
 	}
 
@@ -161,17 +186,17 @@ public class Array {
 	 * 数组遍历
 	 */
 	public void forEach() {
-		for (int i = 0; i < elements.length; i++) {
+		for (int i = 0; i < size; i++) {
 			System.out.println(elements[i]);
 		}
 	}
 
 	/**
-	 * 获取数组长度
+	 * 获取数组元素个数
 	 * 
 	 * @return
 	 */
-	public int length() {
-		return elements.length;
+	public int size() {
+		return size;
 	}
 }
