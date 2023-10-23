@@ -5,12 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/API/src/generics/Generics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/io/file/FileCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/io/file/FileMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/ioquiz/JavaMerge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/ioquiz/Merge.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/API/src/quiz/Sort.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/API/src/quiz/StringSort.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/API/src/quiz/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/serialize/Serialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/serialize/UnSerialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/serialize/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/merge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/one.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/serialized" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/three.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/two.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/API.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/io/FileInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/io/FileInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/IO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/generics/Generics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/list/Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/list/ArrayPlus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/list/Linked.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/list/ListSort$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/list/ListSort$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/list/ListSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/list/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/map/ABC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/map/Hash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/set/Hash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/set/MyComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/set/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/set/UnNamed$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/set/UnNamed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/set/User.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +157,7 @@
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\API\src" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Nonka\src\a" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources\static\style" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources\static" />
@@ -136,13 +167,13 @@
       <recent name="moe.smartphone" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sort">
-    <configuration name="Generics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Generics" />
+  <component name="RunManager" selected="Application.JavaMerge">
+    <configuration name="JavaMerge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ioquiz.JavaMerge" />
       <module name="API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="ioquiz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,12 +181,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Search" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="six.Search" />
-      <module name="Nonka" />
+    <configuration name="Merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ioquiz.Merge" />
+      <module name="API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="six.*" />
+          <option name="PATTERN" value="ioquiz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JavaMerge" />
+        <item itemvalue="Application.Merge" />
         <item itemvalue="Application.Sort" />
         <item itemvalue="Application.Triangle" />
         <item itemvalue="Application.StringSort" />
-        <item itemvalue="Application.Generics" />
-        <item itemvalue="Application.Search" />
       </list>
     </recent_temporary>
   </component>
@@ -278,6 +309,7 @@
       <workItem from="1697712799886" duration="4475000" />
       <workItem from="1697717586185" duration="548000" />
       <workItem from="1697766211279" duration="1735000" />
+      <workItem from="1698059282527" duration="4326000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>

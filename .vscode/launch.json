@@ -7,6 +7,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UnSerialize",
+            "request": "launch",
+            "mainClass": "serialize.UnSerialize",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Serialize",
+            "request": "launch",
+            "mainClass": "serialize.Serialize",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "FileCopy",
+            "request": "launch",
+            "mainClass": "file.FileCopy",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "FileOutput",
             "request": "launch",
             "mainClass": "io.FileOutput",

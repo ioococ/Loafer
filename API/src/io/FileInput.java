@@ -1,5 +1,6 @@
 package io;
 
+import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -26,6 +27,7 @@ public class FileInput {
 
     public void fileInputStream() throws IOException {
         FileInputStream fileInputStream = new FileInputStream("./API/src/io/FileInput.java");
+        BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
         byte[] buffer = new byte[1024];
         int read = 0;
         while ((read = fileInputStream.read(buffer)) != -1) {
