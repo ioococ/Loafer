@@ -5,42 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/API/src/io/file/FileCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/io/file/FileMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/ioquiz/JavaMerge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/ioquiz/Merge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/quiz/Sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/quiz/StringSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/quiz/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/serialize/Serialize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/serialize/UnSerialize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/src/serialize/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/merge.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/one.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/serialized" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/three.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/two.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/io/FileInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/io/FileInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/IO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/generics/Generics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/list/Array.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/list/ArrayPlus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/list/Linked.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/list/ListSort$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/list/ListSort$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/list/ListSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/list/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/map/ABC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/map/Hash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/set/Hash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/set/MyComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/set/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/set/UnNamed$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/set/UnNamed.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/set/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/ioquiz/JavaMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/ioquiz/JavaMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/ioquiz/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/ioquiz/Merge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +276,7 @@
       <workItem from="1697712799886" duration="4475000" />
       <workItem from="1697717586185" duration="548000" />
       <workItem from="1697766211279" duration="1735000" />
-      <workItem from="1698059282527" duration="4326000" />
+      <workItem from="1698059282527" duration="4453000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -385,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697769296774</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="commit">
+      <option name="closed" value="true" />
+      <created>1698063709665</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698063709665</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -3,7 +3,7 @@ package ioquiz;
 import java.io.*;
 /**
  * @Author: nekotako
- * @Description: TODO
+ * @Description: 多文件内容合并读问题： 任意给定多个文本文件路径合并为一个大的文本文件，并保存名为merge.txt。
  * @Date: 2023/10/23 19:00 星期一
  */
 public class Merge {

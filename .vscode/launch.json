@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ThreadTest",
+            "request": "launch",
+            "mainClass": "thread.ThreadTest",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "UnSerialize",
             "request": "launch",
             "mainClass": "serialize.UnSerialize",
