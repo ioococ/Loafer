@@ -20,7 +20,7 @@ public class JavaMerge {
         System.out.println(javaFiles);
         for (File javaFile : javaFiles) {
             m.merge(javaFile,new File("./test.txt"));
-//            m.merge(javaFile,new File("./resources/JavaMerged.txt"));
+//          m.merge(javaFile,new File("./resources/JavaMerged.txt"));
         }
     }
     public static void getJavaFiles(File folder){

@@ -3,12 +3,11 @@ package thread;
 public class ThreadTest {
     public static void main(String[] args) {
         CreateThreadByExtends createThreadByExtends = new CreateThreadByExtends();
-        // Thread createThreadByImplements = new Thread(new createThreadByImplements());
-        // createThreadByExtends.getPriority();
+        Thread createThreadByImplements = new Thread(new CreateThreadByImplements());
+        createThreadByExtends.getPriority();
         createThreadByExtends.setPriority(1);
         createThreadByExtends.start();
-        Thread.currentThread().setPriority(10);
-        // createThreadByImplements.start();
+        createThreadByImplements.start();
         for (int i = 1; i < 6; i++) {
             System.out.println(Thread.currentThread().getName() +"    :"+ i);
         }
@@ -29,11 +28,9 @@ class CreateThreadByImplements implements Runnable {
     @Override
     public void run() {
         for (int i = 1; i < 11; i++) {
-            System.out.println("run" + i);
+            // System.out.println("run" + i);
             
         }
         // super.run();
     }
-
-
 }

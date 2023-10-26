@@ -7,6 +7,61 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "DeathLock",
+            "request": "launch",
+            "mainClass": "deathlock.DeathLock",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "DemonTest",
+            "request": "launch",
+            "mainClass": "demon.DemonTest",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.itranswarp.learnjava.Main",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "AddData",
+            "request": "launch",
+            "mainClass": "thread.AddData",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "MyTimerTest",
+            "request": "launch",
+            "mainClass": "timer.MyTimerTest",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "AddData",
+            "request": "launch",
+            "mainClass": "quiz.AddData",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "ThreadTest",
             "request": "launch",
             "mainClass": "thread.ThreadTest",
