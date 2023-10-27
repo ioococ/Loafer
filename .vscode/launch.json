@@ -7,6 +7,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ProducerAndConsumer",
+            "request": "launch",
+            "mainClass": "demo.ProducerAndConsumer",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "ProducerAndConstomer",
+            "request": "launch",
+            "mainClass": "demo.ProducerAndConstomer",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Deadlock",
+            "request": "launch",
+            "mainClass": "demo.Deadlock",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "DeathLock",
+            "request": "launch",
+            "mainClass": "demo.DeathLock",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "Thread_04_Producer",
+            "request": "launch",
+            "mainClass": "demo.Thread_04_Producer",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "CP",
+            "request": "launch",
+            "mainClass": "demo.CP",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "DemonThread",
+            "request": "launch",
+            "mainClass": "demo.DemonThread",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
+            "name": "DeathLock",
+            "request": "launch",
+            "mainClass": "test.DeathLock",
+            "projectName": "Loafer_913029c3"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

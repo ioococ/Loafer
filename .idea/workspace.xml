@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/Quiz/Quiz.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Socket/Socket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Socket/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Socket/src/tcp/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Socket/src/tcp/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Socket/src/tcp/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thread/Thread.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/ioquiz/JavaMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/ioquiz/JavaMerge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/thread/ThreadTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/IO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +57,11 @@
         <option name="url" value="https://github.com/aotusoft/Loafer.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -94,17 +105,18 @@
     "WebServerToolWindowFactoryState": "false",
     "aspect.path.notification.shown": "true",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "jdk.selected.JAVA_MODULE": "zulu-17",
-    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/API",
+    "git-widget-placeholder": "nonka",
+    "jdk.selected.JAVA_MODULE": "zulu-21",
+    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/Thread",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "actions.on.save",
+    "settings.editor.selected.configurable": "Console",
     "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
     "vue.rearranger.settings.migration": "true"
   },
@@ -137,13 +149,13 @@
       <recent name="moe.smartphone" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JavaMerge">
-    <configuration name="JavaMerge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ioquiz.JavaMerge" />
-      <module name="API" />
+  <component name="RunManager" selected="Application.Client (1)">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcp.Client" />
+      <module name="Socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ioquiz.*" />
+          <option name="PATTERN" value="tcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,12 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ioquiz.Merge" />
-      <module name="API" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcp.Client" />
+      <module name="Thread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ioquiz.*" />
+          <option name="PATTERN" value="tcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,12 +176,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="quiz.Sort" />
-      <module name="API" />
+    <configuration name="Server (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcp.Server" />
+      <module name="Socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="quiz.*" />
+          <option name="PATTERN" value="tcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,12 +189,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="quiz.StringSort" />
-      <module name="API" />
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tcp.Server" />
+      <module name="Thread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="quiz.*" />
+          <option name="PATTERN" value="tcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,12 +202,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Triangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="quiz.Triangle" />
-      <module name="API" />
+    <configuration name="SingletonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.SingletonTest" />
+      <module name="Quiz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="quiz.*" />
+          <option name="PATTERN" value="demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -212,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JavaMerge" />
-        <item itemvalue="Application.Merge" />
-        <item itemvalue="Application.Sort" />
-        <item itemvalue="Application.Triangle" />
-        <item itemvalue="Application.StringSort" />
+        <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.Server (1)" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.SingletonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -282,6 +294,13 @@
       <workItem from="1698059282527" duration="4453000" />
       <workItem from="1698285979096" duration="217000" />
       <workItem from="1698286215563" duration="807000" />
+      <workItem from="1698321981567" duration="321000" />
+      <workItem from="1698322328053" duration="882000" />
+      <workItem from="1698377634843" duration="2222000" />
+      <workItem from="1698386385619" duration="2680000" />
+      <workItem from="1698389490526" duration="154000" />
+      <workItem from="1698389659318" duration="1892000" />
+      <workItem from="1698393001932" duration="3457000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
