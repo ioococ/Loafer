@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/Quiz/Quiz.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/Socket.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/src/tcp/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/src/tcp/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/src/tcp/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thread/Thread.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="COMMIT">
+      <change afterPath="$PROJECT_DIR$/Quiz/src/thread/SellTickets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Socket/src/udp/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Socket/src/udp/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/IO.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,48 +79,48 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "aspect.path.notification.shown": "true",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "nonka",
-    "jdk.selected.JAVA_MODULE": "zulu-21",
-    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/Thread",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "Console",
-    "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nonka&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/荣耀/Documents/IdeaProjects/Loafer/Thread&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3a68b36694efa9eb09410273759ca0a7&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
-      "MySQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="a" />
@@ -149,7 +141,7 @@
       <recent name="moe.smartphone" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client (1)">
+  <component name="RunManager" selected="Application.udp.Client">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tcp.Client" />
       <module name="Socket" />
@@ -163,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tcp.Client" />
-      <module name="Thread" />
+    <configuration name="SellTickets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.SellTickets" />
+      <module name="Quiz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tcp.*" />
+          <option name="PATTERN" value="thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,12 +181,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tcp.Server" />
-      <module name="Thread" />
+    <configuration name="udp.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="udp.Client" />
+      <module name="Socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tcp.*" />
+          <option name="PATTERN" value="udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,12 +194,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingletonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.SingletonTest" />
-      <module name="Quiz" />
+    <configuration name="udp.Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="udp.Server" />
+      <module name="Socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.*" />
+          <option name="PATTERN" value="udp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.udp.Client" />
+        <item itemvalue="Application.udp.Server" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Server (1)" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="Application.SingletonTest" />
+        <item itemvalue="Application.SellTickets" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +292,10 @@
       <workItem from="1698386385619" duration="2680000" />
       <workItem from="1698389490526" duration="154000" />
       <workItem from="1698389659318" duration="1892000" />
-      <workItem from="1698393001932" duration="3457000" />
+      <workItem from="1698393001932" duration="3729000" />
+      <workItem from="1698458721416" duration="1718000" />
+      <workItem from="1698466585562" duration="161000" />
+      <workItem from="1698491355794" duration="1409000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -384,7 +379,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698063709665</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Multi-threaded chat room">
+      <option name="closed" value="true" />
+      <created>1698396778381</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698396778382</updated>
+    </task>
+    <task id="LOCAL-00013" summary="COMMIT">
+      <option name="closed" value="true" />
+      <created>1698396868125</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698396868125</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +405,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="modify" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Multi-threaded chat room" />
+    <MESSAGE value="COMMIT" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMMIT" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
