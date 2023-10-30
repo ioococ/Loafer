@@ -1,7 +1,7 @@
 # String
 
-String 为字符串类 在Java中是引用类型
-String 底层为char数组 所以String很多特性都是数组的特性 例如String由length()方法保存长度
+String 为字符串类 在 Java 中是引用类型
+底层为 char 数组，所以很多特性都是数组的特性 例如 String 由 length () 方法保存长度
 字符串一旦确定 不能修改
 
 ## 构造方法
@@ -16,9 +16,9 @@ String 底层为char数组 所以String很多特性都是数组的特性 例如S
 ## 常用方法
 
 - `indexOf()`
-  从头查找某字符的索引 找不到返回-1
+  从头查找某字符的索引 不存在返回 `-1`
 - `lastIndexOf()`
-  从尾查找某字符的索引 找不到返回-1
+  从尾查找某字符的索引 不存在返回 `-1`
 - `charAt()`
   获取字符串中索引处的字符
 - `trim()`
@@ -59,7 +59,7 @@ String 底层为char数组 所以String很多特性都是数组的特性 例如S
 
 # 包装类
 
-装箱 自动将基本数据类型转换为包装器类型 
+装箱 自动将基本数据类型转换为包装器类型
 拆箱 自动将包装器类型转换为基本数据类型
 
 | 基本类型 | 封装类型  |
@@ -82,25 +82,28 @@ String 底层为char数组 所以String很多特性都是数组的特性 例如S
 # System
 
 `public static long currentTimeMillis()`
-  用来返回当前时 间与1970年1月1日0时0分0秒之间以毫秒为单位的时间差 此方法适于计算时间差。
+  用来返回当前与 1970 年 1 月 1 日 0 时 0 分 0 秒之间的毫秒时间差
 
-`System`类代表系统，系统级的很多属性和控制方法都放置在该类的内部。 该类位于`java.lang`包。
-由于该类的构造器是`private`的，所以无法创建该类的对象，也就是无法实 例化该类。其内部的成员变量和成员方法都是`static`的，所以也可以很方便的进行调用。
+`java.lang`包下的`System`类代表系统，系统级的很多属性和控制方法都放置在该类的内部。
+该类的构造器被`private`修饰，所以无法实例化该类同时无法创建该类对象。且内部的成员变量和成员方法都被`static`修饰，所以也可以很方便的进行调用。
 
 ## 成员变量
-System类内部包含`in`、`out`和`err`三个成员变量，分别代表标准输入流(键盘输入)，标准输出流(显示器)和标准错误输出流(显示器)。
+
+System 类内部包含`in`、`out`和`err`三个成员变量，分别代表标准输入流（键盘输入），标准输出流（显示器）和标准错误输出流（显示器）。
 
 # Throwable
+
 ![Throwable](Throwable.png)
+
 # Error
 
 系统内部错误 这类错误由系统进行处理 程序本身无需处理
 
-- OOM(内存溢出错误)
-- VirtualMachineError(虚拟机错误)
-- StackOverflowError(堆栈溢出错误)
+- OOM（内存溢出错误）
+- VirtualMachineError（虚拟机错误）
+- StackOverflowError（堆栈溢出错误）
 
-一般发生这种情况，JVM会选择终止程序
+一般发生这种情况，JVM 会选择终止程序
 
 # Exception
 
@@ -112,9 +115,9 @@ String 底层为char数组 所以String很多特性都是数组的特性 例如S
 ## 分类
 
 - RuntimeException
-  指程序编译时需要捕获或处理的异常，如IOException、自定义异常等。属于checked异常
-- 非RuntimeException  
-  指程序编译时不需要捕获或处理的异常，如：NullPointerException等。属于unchecked异常。一般是由程序员粗心导致的。如空指针异常、数组越界、类型转换异常等
+  指程序编译时需要捕获或处理的异常。属于 checked 异常。如 IOException、自定义异常等
+- 非 RuntimeException
+  指程序编译时不需要捕获或处理的异常。属于 unchecked 异常。一般是由程序员粗心导致的。如空指针异常、数组越界、类型转换异常等
 
 # try catch
 
@@ -169,10 +172,10 @@ class MyException extends Exception{
 }
 
 public class Test{
-//此处可选择thorws也可不throws 运行时异常
+//此处可选择 thorws 也可不 throws 运行时异常
 //public static void main(String[] args){
   public static void main(String[] args) throws MyException{
-    // 创建异常并结合throw抛出
+    // 创建异常并结合 throw 抛出
     throw new MyException("自定义消息");
   }
 }
@@ -188,7 +191,7 @@ public class Test{
 - isEmpty()
 - contains()
 
-contains和remove都会调用equals方法
+contains() 和 remove() 都会调用 `equals()` 方法
 
 如果集合中存放基本数据类型 一定要将其装箱为基本类型包装类
 
@@ -208,7 +211,7 @@ contains和remove都会调用equals方法
 
 迭代器一旦生成 集合将不能被修改 否则需要重新生成迭代器
 
-## 增强for循环
+## 增强 for 循环
 
 迭代器的简写方式 同样不能删除
 
@@ -218,7 +221,7 @@ contains和remove都会调用equals方法
 
 ## ArrayList
 
-底层为Object数组 查询修改效率高
+底层为 **Object 数组** 查询修改效率高
 
 - add(index,items)
 - set(index,items)
@@ -228,13 +231,13 @@ contains和remove都会调用equals方法
 
 底层为双向链表 随机添加和删除效率高
 
-链表由节点(`Node`)构成 节点存储了三个属性
+链表由节点 (`Node`) 构成 节点存储了三个属性
 
 - 保存的数据 Object
 - 上一个节点对象 节点类型
 - 下一个节点对象 节点类型
 
-为了首尾添加效率更高,在LinkedList类中保存了首节点和尾结点
+为了首尾添加效率更高，在 LinkedList 类中保存了首节点和尾结点
 
 ### 特殊方法
 
@@ -246,9 +249,8 @@ contains和remove都会调用equals方法
 
 # Set
 
-无序 不可重复 不能保证数据的添加和取出顺序一致
-
-重复后不添加
+无序（不保证数据的添加和取出顺序一致）
+不可重复（重复后不会再添加）
 
 ## TreeSet
 
@@ -260,8 +262,8 @@ contains和remove都会调用equals方法
 
 因此我们如果要添加没有比较器的对象或者自定义的对象时会出错。另外因为排序需要比较，所以只能添加同类型数据
 
-- 数字  默认升序
-- 字符串 默认按照每一位ASCII码进行排序
+- 数字 大小升序
+- 字符串 每一位 ASCII 码
 - Date 自然日期
 
 ## HashSet
@@ -272,12 +274,12 @@ contains和remove都会调用equals方法
 
 # Comparable
 
-比较器 被添加的`TreeSet`的元素需要实现Comparable接口并重写接口中的`compareTo()`方法
+比较器 被添加的`TreeSet`元素需要实现 Comparable 接口并重写接口中的`compareTo()`方法
 `compareTo()`方法返回值代表排序规则
 添加元素时会调用元素对象的`compareTo()`方法把集合中的元素传入进行比较
 如果`==0` 说明重复，不添加
-如果`<0` 说明要添加的元素小，往前放
-如果`>0` 说明要添加的元素大，往后放
+如果`<0` 说明要添加的元素小，向前放
+如果`>0` 说明要添加的元素大，向后放
 
 ```java
 import java.util.TreeSet;
@@ -330,7 +332,7 @@ class User implements Comparable {
   public int compareTo(Object o) {
     if (o instanceof User) {
       User u = (User) o;
-      // this.getAge() - u.getAge()大于1 升序排序
+      // this.getAge() - u.getAge() 大于 1 升序排序
       return this.getAge() - u.getAge();
     }
     return 0;
@@ -342,13 +344,15 @@ class User implements Comparable {
 # Comparator
 
 比较器类 要添加的元素不需要实现这个接口
-比如`Integer`中默认有比较方法并且是升序，假如我们想要降序的时候没办法修改源码，所以可以通过`Comparator`来重新定义排序规则；或者想要把不能排序的`Object`对象 **(没有实现`Comparable`接口)**保存在`TreeSet`中，还是需要`Comparator`来进行比较
-当保存的元素不能排序(没有实现Comparable接口)或者排序规则不符合我们的需求时，均使用`Comparator`来解决
-当`Comparator`比较器和`Comparable`比较器 同时存在时，`Comparator`优先级高于`Comparable`
 
-体现了**对修改关闭 对扩展开放**
+`Integer`类中有默认升序的比较方法，假如想要降序的时候可以通过实现`Comparator`接口来重新定义排序规则；或者把不能排序的`Object`对象 **（没有实现`Comparable`接口）** 保存在`TreeSet`中时，还是需要`Comparator`来进行比较
+当保存的元素不能排序（没有实现`Comparable`接口）或者排序规则不符合我们的需求时均可实现`Comparator`接口并重写`compare()`方法进行排序
 
-# 与匿名类同时使用
+*当`Comparator`比较器和`Comparable`比较器同时存在时，`Comparator`优先级高于`Comparable`*
+
+此处体现了**对修改关闭 对扩展开放**
+
+## 与匿名类同时使用
 
 ```java
 import java.util.Comparator;
@@ -410,7 +414,7 @@ class MyComparator implements Comparator {
 `Collections.sort(list)` 排序方法
 `void sort(Comparator<? super E> c)`也可传入`Comparator`对象使用`List`的排序方法
 
-# 散列表/哈希表
+# 散列表 / 哈希表
 
 用于存储键值对映射关系 存储方式为数组中保存链表 用于解决哈希冲突问题
 
@@ -420,13 +424,13 @@ class MyComparator implements Comparator {
 
 类型检查
 
-没有使用泛型之前集合中可以存储任意类型的的数据且均会转型为Object类型
-缺点：由于什么都能放，导致获取数据时得到的是Obiect，想要使用对象特有属性时，需要强制类型转换(向下转型)缺点
+不使用泛型时集合中可以存储任意类型的数据，且数据均会转型为 Object 类型
+缺点：获取时会得到为 Object 类型的数据，使用对象特有属性时需要强制类型转换（向下转型）
 
-使用泛型之后，集合中只能保存单一类型的数据
+使用泛型之后集合中只能保存单一类型的数据
 优点：由于保存数据的类型一致，所以使用的时候不需要向下转型
 缺点：只能保存单一数据类型
-而且传入的只能为只能写引用类型不能写基本类型
+而且传入的泛型类型只能为引用类型不能写基本类型
 
 ```java
 public class Generic {
@@ -440,7 +444,7 @@ public class Generic {
 	}
 }
 
-// 如果设置泛型后不传入数据类型默认为Object类型
+// 如果设置泛型后不传入数据类型默认为 Object 类型
 class MyClass<T> {
 	public void method(T obj) {
 		System.out.println(obj);

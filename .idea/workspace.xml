@@ -4,11 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="COMMIT">
-      <change afterPath="$PROJECT_DIR$/Quiz/src/thread/SellTickets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/src/udp/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/src/udp/Server.java" afterDir="false" />
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="udp Server-Client">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/API.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/collection/set/Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/io/FileOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/io/FileOutput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/io/file/FileCopy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/io/file/FileCopy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/ioquiz/Merge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/ioquiz/Merge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/serialize/Serialize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/serialize/Serialize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/Coding.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/Coding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/FileInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/FileInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/com/tledu/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/com/tledu/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/design/Single_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/design/Single_02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen/TenMinAgo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/fifteen/TenMinAgo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen/Verification.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/fifteen/Verification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Scores.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/five/Scores.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Compare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/Compare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Factorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/Factorial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/InputSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/InputSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/PrimeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/PrimeNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/SplitPrint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/SplitPrint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Zuoye.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/Zuoye.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/hotel/Hotel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/hotel/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/hotel/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Cash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/three/Cash.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Horse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/three/Horse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Paper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/three/Paper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Plus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/three/Plus.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +133,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;3a68b36694efa9eb09410273759ca0a7&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -295,7 +320,9 @@
       <workItem from="1698393001932" duration="3729000" />
       <workItem from="1698458721416" duration="1718000" />
       <workItem from="1698466585562" duration="161000" />
-      <workItem from="1698491355794" duration="1409000" />
+      <workItem from="1698491355794" duration="1553000" />
+      <workItem from="1698628895837" duration="690000" />
+      <workItem from="1698640831322" duration="133000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -395,7 +422,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698396868125</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="udp Server-Client">
+      <option name="closed" value="true" />
+      <created>1698492897492</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698492897492</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +442,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="Multi-threaded chat room" />
     <MESSAGE value="COMMIT" />
-    <option name="LAST_COMMIT_MESSAGE" value="COMMIT" />
+    <MESSAGE value="udp Server-Client" />
+    <option name="LAST_COMMIT_MESSAGE" value="udp Server-Client" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

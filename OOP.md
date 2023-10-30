@@ -325,7 +325,7 @@ interface A{
   int age = 1;
 
   // 默认方法
-  default void dmethod(){
+  default void method(){
     System.out.println("默认方法");
   }
 }
@@ -340,7 +340,7 @@ class B{
 
 `Object`是Java提供的根类 所有类都直接或间接继承`Object`
 
-`java.lang.Object` 在`java.lang`包下 核心包下的所有类不需要导入
+`java.lang.Object` 核心包下的所有类不需要导入
 
 ### toString
 
@@ -354,7 +354,7 @@ class B{
 
 JVM 跨平台 多线程 面向对象 自动垃圾回收
 
-垃圾  没有任何引用指向该对象得时候 该对象成为垃圾对象
+垃圾 没有任何引用指向该对象得时候 该对象成为垃圾对象
 
 垃圾被回收时 自动调用该对象的finalize()方法 是在对象生命结束时候被调用
 

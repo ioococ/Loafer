@@ -1,0 +1,490 @@
+<!DOCTYPE html><html><head>
+      <title>Java</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="-java-入门">☕ Java 入门 </h1>
+<h2 id="️-java-技术栈">🏗️ Java 技术栈 </h2>
+<ul>
+<li>程序基础</li>
+<li>面向对象</li>
+<li>数组</li>
+<li>异常机制</li>
+<li>常用API</li>
+<li>集合+Map</li>
+<li>IO流</li>
+<li>多线程</li>
+<li>网络编程</li>
+<li>正则表达式</li>
+<li>lambda表达式 + 函数式接口</li>
+<li>反射机制</li>
+<li>GUI</li>
+</ul>
+<h2 id="-java-方向">📌 Java 方向 </h2>
+<ul>
+<li>JavaSE</li>
+<li>JavaME</li>
+<li>JavaWEB</li>
+<li>JavaEE</li>
+</ul>
+<h2 id="-java-特性">🔰 Java 特性 </h2>
+<ul>
+<li>多线程</li>
+<li>跨平台</li>
+<li>面向对象</li>
+<li>自动垃圾回收</li>
+</ul>
+<p>Java 属于静态强类型解释性语言</p>
+<p><strong>静态类型</strong> 创建变量时指定数据类型</p>
+<p><strong>动态类型</strong> 创建变量时无需指定数据类型 运行后赋值时确定数据类型</p>
+<p><strong>强类型</strong> 需通过强制转换类型 转换类型</p>
+<p><strong>弱类型</strong> 根据程序上下文环境自动修改数据类型</p>
+<p><strong>编译型</strong> 使用编译器来编译执行的编程语言</p>
+<p><strong>解释型</strong> 使用解释器来解释执行的编程语言</p>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: MiSans;
+    }
+    #javac {
+      margin-left: 60px;
+      margin-right: 80px;
+    }
+    p{
+      margin: 0;
+    }
+    #brand {
+      margin: 0;
+      margin-left: 180px;
+      width: fit-content;
+      border: 1px black solid;
+    }
+</style>
+<section>
+    <span id="javac">javac</span><span id="java">java</span>
+    <p>xxx.java -----&gt;xxx.class -----&gt;Hello World</p>
+    <p id="brand">Windows/Linux/MacOS</p>
+</section>
+<ul>
+<li>运行:运行时JVM开机，将所运行的类载入内存空间中的静态区
+<ul>
+<li>加载完成后，JVM会自动调用该类的main方法(只要是方法调用，就会在栈内存中开辟栈帧并压栈)</li>
+<li>如果main方法中，有别的方法调用
+<ul>
+<li>如果调用的是其他类中的方法，则先把对应类加载到静态区，然后再栈内存中开辟栈帧</li>
+<li>如果调用的是当前类中的方法，则直接在栈内存开辟栈帧</li>
+</ul>
+</li>
+<li>如果被调用的方法中，还有其他方法调用，则继续开辟栈压栈，一直到栈顶元素，执行完成<strong>弹栈</strong> 返回上一个栈继续执行</li>
+<li>直到<strong>main栈</strong>帧弹栈，则整个程序生命周期终止</li>
+</ul>
+</li>
+</ul>
+<h2 id="-结构">💾 结构 </h2>
+<h3 id="内存存储">内存存储 </h3>
+<p>电子位 bit 八位 一字节</p>
+<style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: MiSans;
+      box-sizing: border-box;
+    }
+      .bit{
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      border: 1px solid black;
+    }
+</style>
+<div class="bit"></div><div class="bit"></div><div class="bit"></div><div class="bit"></div><div class="bit"></div><div class="bit"></div><div class="bit"></div><div class="bit"></div>
+<p>最高位为符号位</p>
+<h3 id="内存划分">内存划分 </h3>
+<h3 id="静态区方法区">静态区/方法区 </h3>
+<p>保存静态资源文件 例如静态变量 方法 运行时的class文件等</p>
+<h3 id="vm-栈">VM 栈 </h3>
+<p>以栈数据结构为模型创建的一块空间</p>
+<p>主要用于<strong>执行方法</strong></p>
+<p>结构特征 <strong>先进后出</strong></p>
+<ul>
+<li>栈顶元素 最后放进去的元素</li>
+<li>栈底元素 第一个放进去的元素</li>
+<li>栈帧 栈数据结构中的元素</li>
+</ul>
+<p><strong>压栈</strong> 把栈帧放到栈空间的过程</p>
+<p><strong>弹栈</strong> 把栈帧在栈空间弹出去的过程</p>
+<p>每当调用一个方法的时候，该方法就会在栈内存中开辟一个栈，并压栈到栈空间。开始执行，方法执行完后 弹栈 栈销毁</p>
+<h3 id="堆内存">堆内存 </h3>
+<p>保存类对象和成员变量及成员方法</p>
+<h2 id="-数据类型">🧾 数据类型 </h2>
+<h3 id="基本数据类型">基本数据类型 </h3>
+<ul>
+<li>数值型
+<ul>
+<li>整数型
+<ul>
+<li>byte 8bit</li>
+<li>short 16bit</li>
+<li>int 32bit</li>
+<li>long 64bit</li>
+</ul>
+</li>
+<li>浮点型
+<ul>
+<li>float 32bit</li>
+<li>double 64bit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>布尔型 boolean</li>
+<li>字符型 char</li>
+</ul>
+<p><strong>注意</strong> ⚠️</p>
+<ul>
+<li>byte<br>
+取值 <code>127</code>~-<code>128</code></li>
+<li>short<br>
+取值 <code>32767</code>~-<code>32768</code></li>
+<li>int<br>
+取值 <code>2147483647</code>~-<code>2147483648</code></li>
+<li>long<br>
+需要以<code>L</code>或<code>l</code>结尾</li>
+<li>float<br>
+需要以<code>F</code>或<code>f</code>结尾<br>
+float采用科学计数法进行存储 float的32位存储量远大于long的64位</li>
+<li>double<br>
+需要以<code>D</code>或<code>d</code>结尾 或不写</li>
+<li>boolean<br>
+只有 <code>true</code> 和 <code>false</code></li>
+<li>char<br>
+使用单引号表示 并且有且只有一个字符<br>
+char 范围 <code>0</code>~<code>65535</code> 不需要负数<br>
+支持Unicode编码 4bit 十六进制整型值 0~f  <code>\u0000</code> ~ <code>\uffff</code></li>
+</ul>
+<h3 id="引用数据类型">引用数据类型 </h3>
+<ul>
+<li>类</li>
+<li>数组</li>
+<li>接口</li>
+</ul>
+<h3 id="字符串">字符串 </h3>
+<p><code>\</code> 转义符</p>
+<p><code>+</code> 字符串拼接符</p>
+<h2 id="-类型转换">💱 类型转换 </h2>
+<p>布尔型 不能参与转换</p>
+<ul>
+<li>低精度到高精度 可以自动类型转换</li>
+<li>高精度 到低精度 需要强制类型转换</li>
+</ul>
+<h3 id="自动类型转换">自动类型转换 </h3>
+<p>byte --&gt; short --&gt; int --&gt; long --&gt; float --&gt; double</p>
+<p>char --&gt; int --&gt; long --&gt; float --&gt; double</p>
+<h3 id="强制类型转换">强制类型转换 </h3>
+<p>多出的高位部分被截断 有可能损失精度</p>
+<p>整数转换为char时 当不考虑符号位时 对应的是 <code>65271</code></p>
+<p>整数转换为char时 忽略负数 将响应负数的二进制转换为对应的正数 然后再进行ASCII码对照</p>
+<h3 id="多类型混合运算">多类型混合运算 </h3>
+<p>当进行多类型混合运算时 结果为参与运算的最大类型</p>
+<p>当混合运算类型只出现了 byte short int char 四种类型时</p>
+<p>任意一种或多种进行运算 结果一定是int类型(可以理解为 混合运算 结果为参与运算的最大类型 但最低也是int类型)</p>
+<h2 id="-注释">💬 注释 </h2>
+<p>单行注释</p>
+<pre data-role="codeBlock" data-info="java" class="language-java java"><code><span class="token comment">// XXX</span>
+</code></pre><p>多行注释</p>
+<pre data-role="codeBlock" data-info="java" class="language-java java"><code><span class="token comment">/*
+ * XXX
+ * YYY
+ */</span>
+</code></pre><pre data-role="codeBlock" data-info="java" class="language-java java"><code><span class="token doc-comment comment">/**
+ * XXX
+ * YYY
+ */</span>
+</code></pre><p>可生成 Javadoc 文档</p>
+<h2 id="异常">异常 </h2>
+<ul>
+<li>编译时异常</li>
+<li>运行时异常</li>
+</ul>
+<h2 id="-命名">📛 命名 </h2>
+<p>强制规则 只允许使用大小写字母 <code>$</code> <code>_</code> 数字 且数字不能开头 不能使用关键字和保留字</p>
+<p>非强制规则 驼峰命名 见名之意</p>
+<h2 id="-变量">🏃 变量 </h2>
+<h3 id="全局变量">全局变量 </h3>
+<p>全局变量一般是指可以直接调用 不需要二次引用的变量</p>
+<p><strong>Java 中不存在全局变量</strong></p>
+<h3 id="变量声明">变量声明 </h3>
+<p>使用<strong>数据类型划分内存空间</strong> 给空间取名字 并赋值</p>
+<h3 id="变量分类">变量分类 </h3>
+<p>分为三类</p>
+<ul>
+<li>局部变量 在方法中写的变量<br>
+无初始值 需初始化</li>
+<li>静态变量 在类体中 使用 <code>static</code> 修饰的变量</li>
+<li>成员变量 在类体中 没有使用 <code>static</code> 修饰的变量 存放在堆内存中</li>
+</ul>
+<h3 id="默认值">默认值 </h3>
+<ul>
+<li>整数 <code>0</code></li>
+<li>小数 <code>0.0</code></li>
+<li>字符 <code>\u0000</code></li>
+<li>布尔 <code>false</code></li>
+<li>引用 <code>null</code></li>
+</ul>
+<h3 id="作用域">作用域 </h3>
+<p>静态变量调用 使用类名.静态变量名 需要考虑权限修饰符</p>
+<h3 id="区分">区分 </h3>
+<p>使用<strong>类名</strong>区分同名的局部变量和静态变量</p>
+<p>使用 <code>this</code> 区分同名的局部变量和成员变量</p>
+<h3 id="优先级">优先级 </h3>
+<p>局部变量可以和静态变量/成员变量 <strong>可同名</strong></p>
+<p>静态变量和成员变量 <strong>不可同名</strong></p>
+<h2 id="-运算符">📐 运算符 </h2>
+<h3 id="算术运算符">算术运算符 </h3>
+<h3 id="关系运算符">关系运算符 </h3>
+<p><code>&gt; &gt;= &lt; &lt;= == !=</code> 结果是布尔型</p>
+<p><code>==</code> 基本类型比较<strong>数值</strong> 引用类型比较<strong>内存地址</strong></p>
+<h3 id="逻辑运算符">逻辑运算符 </h3>
+<ul>
+<li><code>&amp;</code> <code>&amp;&amp;</code> 与<br>
+支持与运算 两边是数字 即可进行与运算<br>
+两个数转换为二进制进行每位比较 同1取1 反之取0 结果不大于两个数中的最小数</li>
+<li><code>|</code> <code>||</code> 或</li>
+<li><code>!</code> 非</li>
+<li><code>^</code> 异或 两边不一致为真<br>
+两边是数字进行异或运算 每二进制位进行比较 不同取1 相同取0</li>
+<li><code>&gt;&gt;</code> 右移运算<br>
+右移一次 就相当于该数除2(符号位不变)</li>
+<li><code>&gt;&gt;&gt;</code><br>
+不考虑符号位 并且不考虑正负数 只在最左边补 <code>0</code> 负数有可能变正数</li>
+<li><code>&lt;&lt;</code>  左移运算<br>
+向左移动一位  删除左边(非符号位) 右边补 <code>0</code> 相当于该数乘2</li>
+</ul>
+<h3 id="赋值运算符">赋值运算符 </h3>
+<p><code>+=</code> <code>-=</code> <code>*=</code> <code>/=</code> <code>%=</code></p>
+<p>计算过程中自动进行强制类型转换</p>
+<p>赋值运算 属于<strong>右结合</strong> 同优先级从右到左计算</p>
+<pre data-role="codeBlock" data-info="java" class="language-java java"><code><span class="token keyword keyword-int">int</span> result <span class="token operator">=</span> x <span class="token operator">=</span> y <span class="token operator">=</span> z <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> 
+</code></pre><p>由于 <code>=</code> 的右结合性，先执行 <code>z = 10</code>; 再执行 <code>y = z</code> 再执行 <code>x = y</code> 运算</p>
+<h3 id="三目运算符">三目运算符 </h3>
+<p><code>xxx?yyy:zzz</code></p>
+<ul>
+<li><code>xxx</code> 需要判断的语句 布尔型</li>
+<li><code>yyy</code> 判断为真时执行的语句</li>
+<li><code>zzz</code> 判断为假时执行的语句</li>
+</ul>
+<h2 id="流程控制">流程控制 </h2>
+<h3 id="顺序结构">顺序结构 </h3>
+<h3 id="分支结构">分支结构 </h3>
+<ul>
+<li>单分支</li>
+<li>双分支</li>
+<li>多分支</li>
+</ul>
+<h4 id="if-else">if-else </h4>
+<h4 id="switch-case">switch-case </h4>
+<pre data-role="codeBlock" data-info="java" class="language-java java"><code><span class="token keyword keyword-switch">switch</span> <span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-case">case</span> y<span class="token operator">:</span>
+    zzz<span class="token punctuation">;</span>
+    <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-case">case</span> a<span class="token operator">:</span>
+    bbb<span class="token punctuation">;</span>
+    <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-default">default</span><span class="token operator">:</span>
+    ccc<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p><code>x</code> 中可传入 <code>byte</code>、<code>short</code>、<code>int</code> 或 <code>char</code> 的数据类型</p>
+<p>从 Java SE 7 开始支持字符串 <code>String</code> 类型 同时 case 标签须为字符串常量或字面量</p>
+<p>不加 <code>break</code> 会发生case穿透</p>
+<h3 id="循环结构">循环结构 </h3>
+<p>三要素</p>
+<ul>
+<li>起始值</li>
+<li>终止条件</li>
+<li>步长</li>
+</ul>
+<h4 id="计数循环">计数循环 </h4>
+<pre data-role="codeBlock" data-info="java" class="language-java java"><code><span class="token keyword keyword-for">for</span><span class="token punctuation">(</span>起始值<span class="token punctuation">;</span>终止条件<span class="token punctuation">;</span>步长<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+</code></pre><p>先执行起始值(只执行一次)<br>
+然后执行终止条件 为 <code>false</code> 时终止循环</p>
+<h4 id="真假循环">真假循环 </h4>
+<pre data-role="codeBlock" data-info="java" class="language-java java"><code><span class="token keyword keyword-while">while</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+</code></pre><pre data-role="codeBlock" data-info="java" class="language-java java"><code><span class="token keyword keyword-do">do</span><span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span><span class="token keyword keyword-while">while</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p>至少保证循环一次</p>
+<p><strong>跳转语句</strong></p>
+<ul>
+<li>continue 跳出本次循环</li>
+<li>break 终止当前循环</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java java"><code>outfor<span class="token operator">:</span><span class="token keyword keyword-for">for</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">+</span> <span class="token operator">+</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-for">for</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">// continue outfor;</span>
+      <span class="token keyword keyword-break">break</span> outfor<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token number">0</span> <span class="token operator">+</span> <span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><h2 id="-方法">🍂 方法 </h2>
+<p>一堆代码的集合 创建空间存储 并设置名字 可以通过名字找到</p>
+<p>目的 代码复用 易维护 易扩展 更灵活(参数列表)</p>
+<p>多个 修饰符</p>
+<h3 id="修饰符列表">修饰符列表 </h3>
+<p>可有可无 可以有多个(有些是不能同时出现)</p>
+<p>多个修饰符没有先后顺序</p>
+<h3 id="static">static </h3>
+<p><code>static</code> 表示静态 不加则为成员</p>
+<h3 id="final">final </h3>
+<p><code>final</code> 和 <code>abstract</code> 不能同时出现</p>
+<h3 id="权限控制">权限控制 </h3>
+<ul>
+<li>public</li>
+<li>private</li>
+<li>protected</li>
+<li>不写(默认包权限)<br>
+四选一</li>
+</ul>
+<h3 id="权限访问范围">权限访问范围 </h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">范围</th>
+<th style="text-align:center">public</th>
+<th style="text-align:center">protected</th>
+<th style="text-align:center">default</th>
+<th style="text-align:center">private</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>同类</strong></td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>同包</strong></td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>子类</strong></td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>全局</strong></td>
+<td style="text-align:center">✔️</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+</tr>
+</tbody>
+</table>
+<h3 id="返回值">返回值 </h3>
+<h4 id="return">return </h4>
+<ol>
+<li>终止方法运行</li>
+<li>将数据返回到调用处</li>
+</ol>
+<p>如果无返回值 且存在return 那么此时只能终止方法运行 不会返回数据</p>
+<h3 id="类型">类型 </h3>
+<ul>
+<li>静态方法 使用 <code>static</code> 修饰</li>
+<li>成员方法 没有使用 <code>static</code> 修饰</li>
+<li>构造方法</li>
+</ul>
+<h3 id="调用">调用 </h3>
+<p>方法调用才会执行 并把结果返回给调用处</p>
+<p>前缀.方法名(参数)</p>
+<ul>
+<li>静态方法 <code>类名.方法名(参数)</code><br>
+如果调用当前类中的静态方法类名可以省略</li>
+<li>成员方法 <code>对象.方法名(参数)</code></li>
+</ul>
+<h3 id="重载">重载 </h3>
+<p>方法名相同 参数列表不同(个数不同或类型不同)</p>
+<h3 id="递归">递归 </h3>
+<p>递归和迭代(循环)等价</p>
+<p>以此类推，同时也是循环的基本思想<br>
+递归和迭代是等价的，迭代就是循环</p>
+<p>循环可以做的，递归也能做，但是递归能做的，循环不一定能做</p>
+<p>一般树状结构都可以遍历查询等操作<br>
+递归需要频繁压栈弹栈，比较消耗内存，并且效率较低，所以循环能完成的，就不要使用递归<br>
+能使用循环搞定的，就不要使用递归，除非循环搞不定<br>
+例如: 获取目录下所有的文件(包括子文件夹中的文件)</p>
+<p>比如 树状结构 目录遍历等都需要使用递归完成</p>
+<p>需要有初始值 终止条件 步长 否则会死循环(一直压栈 不会弹栈 导致栈内存溢出)</p>
+<ul>
+<li>直接递归</li>
+<li>间接递归</li>
+</ul>
+<h2 id="-数组">📚 数组 </h2>
+<p>放置在堆内存中 引用类型 内置对象</p>
+<p>内存地址查询 查询、修改速度快</p>
+<p>连续存储 数组长度不能修改</p>
+<h3 id="数据结构">数据结构 </h3>
+<p>计算机中存储、组织数据的方式。数据结构是一种具有一定逻辑关系，在计算机中应用某种存储结构，并且封装了相应操作的数据元素集合。它包含三方面的内容，逻辑关系、存储关系及操作。</p>
+<h3 id="声明">声明 </h3>
+<ul>
+<li>静态声明<br>
+<code>数据类型[] 变量名 = {值,值,值,值}</code><br>
+<code>数据类型 变量名[] = {值,值,值,值}</code></li>
+<li>动态声明<br>
+<code>数据类型 变量名[] = new 数据类型[长度]</code></li>
+</ul>
+<h3 id="数组使用">数组使用 </h3>
+<p>长度 数组.length</p>
+<p>查询 数组[下标]</p>
+<p>遍历 <code>fori</code></p>
+<h3 id="传值传址">传值传址 </h3>
+<p>传址</p>
+<h3 id="数组复制">数组复制 </h3>
+<p>替换合并</p>
+<p><code>System.arraycopy(源数组,源数组起始位置,目标数组,目标数组起始位置,复制个数)</code></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
