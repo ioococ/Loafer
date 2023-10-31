@@ -91,9 +91,9 @@
 
 在 `System` 类中提供了三个重定向标准输入/输出的方法
 
-static void setErr(PrintStream err) 重定向“标准”错误输出流
-static void setIn(PrintStream in) 重定向“标准”输入流
-static void setOut(PrintStream out) 重定向“标准”输出流
+public static void setErr(PrintStream err) 重定向“标准”错误输出流
+public static void setIn(PrintStream in) 重定向“标准”输入流
+public static void setOut(PrintStream out) 重定向“标准”输出流
 
 ```java
 FileOutputStream fos = new FileOutputStream("./src/test.txt");

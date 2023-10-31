@@ -4,36 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="udp Server-Client">
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/API/src/pattern/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quiz/src/pattern/RemoveDuplicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/笔记/Pattern.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/API.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/collection/set/Tree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/io/FileOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/io/FileOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/io/file/FileCopy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/io/file/FileCopy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/ioquiz/Merge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/ioquiz/Merge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/serialize/Serialize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/API/serialize/Serialize.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/Coding.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/Coding.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/FileInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/FileInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/com/tledu/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/com/tledu/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/design/Single_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/design/Single_02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen/TenMinAgo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/fifteen/TenMinAgo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen/Verification.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/fifteen/Verification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Scores.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/five/Scores.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Compare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/Compare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Factorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/Factorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/InputSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/InputSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/PrimeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/PrimeNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/SplitPrint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/SplitPrint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Zuoye.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/four/Zuoye.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/hotel/Hotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/hotel/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/hotel/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Cash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/three/Cash.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Horse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/three/Horse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Paper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/three/Paper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Plus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nonka/three/Plus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/API.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/ioquiz/JavaMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz/src/io/JavaMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/ioquiz/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz/src/io/Merge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/IO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/Java.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/OOP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Throwable.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/Throwable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bubbleSort.gif" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/bubbleSort.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-and-interface-hierarchy.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/class-and-interface-hierarchy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/ioquiz/JavaMerge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/ioquiz/Merge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/JavaMerge.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/JavaMerge.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss.gif" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/ss.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/什么是红黑树.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/什么是红黑树.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/依赖关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/依赖关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/关联关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/关联关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/实现关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/实现关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/组合关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/组合关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/继承关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/继承关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/聚合关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/聚合关系.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +128,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;3a68b36694efa9eb09410273759ca0a7&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -156,17 +151,17 @@
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Quiz\src" />
+      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\笔记" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\API\src" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Nonka\src\a" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources\static\style" />
-      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources\static" />
-      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="moe.smartphone" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.udp.Client">
+  <component name="RunManager" selected="Application.RemoveDuplicates">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tcp.Client" />
       <module name="Socket" />
@@ -180,12 +175,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SellTickets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.SellTickets" />
+    <configuration name="RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pattern.RemoveDuplicates" />
       <module name="Quiz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.*" />
+          <option name="PATTERN" value="pattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -241,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RemoveDuplicates" />
         <item itemvalue="Application.udp.Client" />
         <item itemvalue="Application.udp.Server" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Server (1)" />
-        <item itemvalue="Application.SellTickets" />
       </list>
     </recent_temporary>
   </component>
@@ -323,6 +318,10 @@
       <workItem from="1698491355794" duration="1553000" />
       <workItem from="1698628895837" duration="690000" />
       <workItem from="1698640831322" duration="133000" />
+      <workItem from="1698732483554" duration="1300000" />
+      <workItem from="1698733941655" duration="239000" />
+      <workItem from="1698734248417" duration="2695000" />
+      <workItem from="1698748482770" duration="2982000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>

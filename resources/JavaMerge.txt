@@ -867,7 +867,7 @@ public class FileOutput{
     }
 }
 
-package ioquiz;
+package io;
 
 import java.io.File;
 import java.io.IOException;
@@ -908,7 +908,7 @@ public class JavaMerge {
     }
 }
 
-package ioquiz;
+package io;
 
 import java.io.*;
 /**

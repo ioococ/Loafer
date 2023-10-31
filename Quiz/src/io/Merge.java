@@ -1,4 +1,4 @@
-package ioquiz;
+package io;
 
 import java.io.*;
 /**
