@@ -4,31 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/API/src/pattern/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quiz/src/pattern/RemoveDuplicates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/笔记/Pattern.md" afterDir="false" />
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/Quiz/src/stream/StreamTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/API.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/ioquiz/JavaMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz/src/io/JavaMerge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/ioquiz/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz/src/io/Merge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/IO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/Java.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/OOP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Throwable.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/Throwable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bubbleSort.gif" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/bubbleSort.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class-and-interface-hierarchy.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/class-and-interface-hierarchy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/ioquiz/JavaMerge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/ioquiz/Merge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/JavaMerge.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/JavaMerge.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss.gif" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/ss.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/什么是红黑树.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/什么是红黑树.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/依赖关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/依赖关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/关联关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/关联关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/实现关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/实现关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/组合关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/组合关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/继承关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/继承关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/聚合关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/聚合关系.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +139,7 @@
       <recent name="moe.smartphone" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RemoveDuplicates">
+  <component name="RunManager" selected="Application.StreamTest">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tcp.Client" />
       <module name="Socket" />
@@ -188,12 +166,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tcp.Server" />
-      <module name="Socket" />
+    <configuration name="StreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stream.StreamTest" />
+      <module name="Quiz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tcp.*" />
+          <option name="PATTERN" value="stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreamTest" />
         <item itemvalue="Application.RemoveDuplicates" />
         <item itemvalue="Application.udp.Client" />
         <item itemvalue="Application.udp.Server" />
         <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.Server (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +299,9 @@
       <workItem from="1698732483554" duration="1300000" />
       <workItem from="1698733941655" duration="239000" />
       <workItem from="1698734248417" duration="2695000" />
-      <workItem from="1698748482770" duration="2982000" />
+      <workItem from="1698748482770" duration="3202000" />
+      <workItem from="1698807023801" duration="5125000" />
+      <workItem from="1698836155222" duration="5276000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -429,20 +409,39 @@
       <option name="project" value="LOCAL" />
       <updated>1698492897492</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="commit">
+      <option name="closed" value="true" />
+      <created>1698755439455</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698755439455</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="modify" />
-    <MESSAGE value="commit" />
     <MESSAGE value="Multi-threaded chat room" />
     <MESSAGE value="COMMIT" />
     <MESSAGE value="udp Server-Client" />
-    <option name="LAST_COMMIT_MESSAGE" value="udp Server-Client" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
