@@ -4,17 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/Quiz/src/stream/StreamTest.java" afterDir="false" />
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="lambda stream quiz">
+      <change afterPath="$PROJECT_DIR$/CoooolThings/CoooolThings.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/resources/ip_location_relation.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/entity/IPInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/service/DataProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/IPUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/controller/SystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/manager/DataProcessManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/pojo/IPAndLocationPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/pojo/IPAndLocationPojo_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/util/FileOperatorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/util/IPUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/test/ipquery/IPTEST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,48 +89,49 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;nonka&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-21&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/荣耀/Documents/IdeaProjects/Loafer/Thread&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3a68b36694efa9eb09410273759ca0a7&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "aspect.path.notification.shown": "true",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "nonka",
+    "jdk.selected.JAVA_MODULE": "zulu-21",
+    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/Thread",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;MySQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="a" />
@@ -129,23 +142,23 @@
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\CoooolThings\resources" />
+      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\CoooolThings\src" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Quiz\src" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\笔记" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\API\src" />
-      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Nonka\src\a" />
-      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources\static\style" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="moe.smartphone" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StreamTest">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tcp.Client" />
-      <module name="Socket" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ipquery.Main" />
+      <module name="CoooolThings" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tcp.*" />
+          <option name="PATTERN" value="ipquery.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,28 +192,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="udp.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="udp.Client" />
-      <module name="Socket" />
+    <configuration name="IPTEST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoooolThings" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="udp.*" />
+          <option name="PATTERN" value="ipquery.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ipquery" />
+      <option name="MAIN_CLASS_NAME" value="ipquery.IPTEST" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="udp.Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="udp.Server" />
-      <module name="Socket" />
+    <configuration name="IPTEST.t" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoooolThings" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="udp.*" />
+          <option name="PATTERN" value="ipquery.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ipquery" />
+      <option name="MAIN_CLASS_NAME" value="ipquery.IPTEST" />
+      <option name="METHOD_NAME" value="t" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -214,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.IPTEST.t" />
+        <item itemvalue="JUnit.IPTEST" />
         <item itemvalue="Application.StreamTest" />
         <item itemvalue="Application.RemoveDuplicates" />
-        <item itemvalue="Application.udp.Client" />
-        <item itemvalue="Application.udp.Server" />
-        <item itemvalue="Application.Client (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +319,17 @@
       <workItem from="1698734248417" duration="2695000" />
       <workItem from="1698748482770" duration="3202000" />
       <workItem from="1698807023801" duration="5125000" />
-      <workItem from="1698836155222" duration="5276000" />
+      <workItem from="1698836155222" duration="5479000" />
+      <workItem from="1698891551479" duration="2205000" />
+      <workItem from="1698918193557" duration="825000" />
+      <workItem from="1698919517952" duration="169000" />
+      <workItem from="1698919701253" duration="51000" />
+      <workItem from="1698919773858" duration="143000" />
+      <workItem from="1698919938664" duration="84000" />
+      <workItem from="1698920040143" duration="132000" />
+      <workItem from="1698920190531" duration="155000" />
+      <workItem from="1698920362835" duration="229000" />
+      <workItem from="1698920643465" duration="7794000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -417,7 +445,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698755439455</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="lambda stream quiz">
+      <option name="closed" value="true" />
+      <created>1698841619280</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698841619280</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +477,8 @@
     <MESSAGE value="COMMIT" />
     <MESSAGE value="udp Server-Client" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="lambda stream quiz" />
+    <option name="LAST_COMMIT_MESSAGE" value="lambda stream quiz" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
