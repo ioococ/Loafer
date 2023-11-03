@@ -2,15 +2,21 @@ package ipquery.entity;
 
 import ipquery.util.IPUtils;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 /**
  * @Author: nekotako
  * @Description: IP信息实体类
  * @Date: 2023/11/2 18:26 星期四
  */
 
-public class IPInfo implements Comparable<IPInfo> {
-    private String startIP;
-    private String endIP;
+public class IPInfo implements Comparable<IPInfo>, Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
+    private transient String startIP;
+    private transient String endIP;
     private String location;
     private long startLong;
     private long endLong;

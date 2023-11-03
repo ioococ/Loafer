@@ -1,9 +1,15 @@
 package ipquery.service;
 
 import ipquery.entity.IPInfo;
+import ipquery.util.FileUtils;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import static ipquery.Common.CACHE_LENGTH;
+import static ipquery.Common.SERIALIZED_FILE;
 
 /**
  * @Author: nekotako
@@ -29,11 +35,18 @@ public class DataProcess {
             ipInfoList.add(ipInfo);
         }
         ipInfoList.toArray(ipInfos);
+        if (!new File(SERIALIZED_FILE).exists()) {
+            try {
+                FileUtils.serialize(ipInfos, SERIALIZED_FILE, CACHE_LENGTH);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
         return ipInfos;
     }
 
     /**
-     * @param array 被查找的数组
+     * @param array  被查找的数组
      * @param ipLong 要查找的数据
      * @return 返回IP信息对象
      */
@@ -46,13 +59,12 @@ public class DataProcess {
             if (ipLong < array[midIndex].getStartLong()) {
                 endIndex = midIndex - 1;
             } else
-            // 要找的值比中间值大，起始值向后移动
-            if (ipLong > array[midIndex].getEndLong()) {
-                startIndex = midIndex + 1;
-            } else
-            if (ipLong >= array[midIndex].getStartLong()&& ipLong <= array[midIndex].getEndLong()) {
-                return array[midIndex];
-            }
+                // 要找的值比中间值大，起始值向后移动
+                if (ipLong > array[midIndex].getEndLong()) {
+                    startIndex = midIndex + 1;
+                } else if (ipLong >= array[midIndex].getStartLong() && ipLong <= array[midIndex].getEndLong()) {
+                    return array[midIndex];
+                }
             midIndex = (endIndex + startIndex) / 2;
         }
         return null;

@@ -5,10 +5,14 @@ import ipquery.service.DataProcess;
 import ipquery.util.FileUtils;
 import ipquery.util.IPUtils;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import static ipquery.util.IPUtils.ipToLong;
+import static ipquery.Common.*;
 
 /**
  * @Author: nekotako
@@ -17,17 +21,42 @@ import static ipquery.util.IPUtils.ipToLong;
  */
 
 public class Main {
-    public static void main(String[] args) {
-        List list = null;
-        try {
-            list = FileUtils.toStringList("./CoooolThings/resources/ip_location_relation.txt", "utf-8");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+    static List<String> list = null;
+    static IPInfo[] ipInfoArray = null;
+
+    static {
+        long l = System.currentTimeMillis();
+        if (!new File(SERIALIZED_FILE).exists()) {
+            try {
+                list = FileUtils.toStringList(IP_INFO_FILE, ENCODING);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            ipInfoArray = DataProcess.toIPInfoArray(list);
+        } else {
+            try {
+                ipInfoArray = (IPInfo[]) FileUtils.deserialize(SERIALIZED_FILE, CACHE_LENGTH);
+            } catch (ClassNotFoundException | IOException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.println("程序初始化完成");
         }
-        IPInfo[] ipInfoArray = DataProcess.toIPInfoArray(list);
+    }
+
+    public static void main(String[] args) {
         DataProcess dataProcess = new DataProcess();
-        long l = IPUtils.ipToLong("1.0.32.128");
-        IPInfo ipInfo = dataProcess.dichotomousQuery(ipInfoArray, l);
-        System.out.println(ipInfo.getLocation());
+        Scanner input = new Scanner(System.in);
+        System.out.print("请输入IP地址：");
+        String ip = input.nextLine();
+        String regex = "^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)\\.?\\b){4}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(ip);
+        if (matcher.matches()) {
+            long l = IPUtils.ipToLong(ip);
+            IPInfo ipInfo = dataProcess.dichotomousQuery(ipInfoArray, l);
+            System.out.println(ipInfo.getLocation());
+        } else {
+            System.err.println("IP输入错误");
+        }
     }
 }

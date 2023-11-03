@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CoooolThings:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="lambda stream quiz">
-      <change afterPath="$PROJECT_DIR$/CoooolThings/CoooolThings.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/resources/ip_location_relation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/entity/IPInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/service/DataProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/IPUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/controller/SystemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/manager/DataProcessManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/pojo/IPAndLocationPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/pojo/IPAndLocationPojo_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/util/FileOperatorUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/zrz/util/IPUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/test/ipquery/IPTEST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="ip query">
+      <change afterPath="$PROJECT_DIR$/CoooolThings/resources/IPdata.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/resources/ip_location_relation2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/entity/IPInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/entity/IPInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/service/DataProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/service/DataProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/FileUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,17 +106,17 @@
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "nonka",
     "jdk.selected.JAVA_MODULE": "zulu-21",
-    "last_opened_file_path": "D:/荣耀/Documents/IdeaProjects/Loafer/Thread",
+    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "settings.editor.selected.configurable": "Errors",
     "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
     "vue.rearranger.settings.migration": "true"
   },
@@ -329,7 +326,10 @@
       <workItem from="1698920040143" duration="132000" />
       <workItem from="1698920190531" duration="155000" />
       <workItem from="1698920362835" duration="229000" />
-      <workItem from="1698920643465" duration="7794000" />
+      <workItem from="1698920643465" duration="8695000" />
+      <workItem from="1698974049408" duration="2140000" />
+      <workItem from="1698977788058" duration="6764000" />
+      <workItem from="1698997574762" duration="7571000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -453,7 +453,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698841619280</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ip query">
+      <option name="closed" value="true" />
+      <created>1698928483908</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698928483908</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +486,8 @@
     <MESSAGE value="udp Server-Client" />
     <MESSAGE value="commit" />
     <MESSAGE value="lambda stream quiz" />
-    <option name="LAST_COMMIT_MESSAGE" value="lambda stream quiz" />
+    <MESSAGE value="ip query" />
+    <option name="LAST_COMMIT_MESSAGE" value="ip query" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
