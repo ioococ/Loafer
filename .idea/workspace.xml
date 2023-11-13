@@ -9,16 +9,172 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="ip query">
-      <change afterPath="$PROJECT_DIR$/CoooolThings/resources/IPdata.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/resources/ip_location_relation2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/Common.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="ip query II">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_dbcp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mchange_c3p0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/MySQL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/src/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/src/user/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/src/user/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/src/user/exception/UserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/src/user/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/src/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/src/user/utils/DBUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/src/user/utils/PropertyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/test/user/ControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/test/user/DaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/test/user/ServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/test/user/UtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-4.10-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.28-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.28.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/protobuf-java-3.11.4-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/protobuf-java-3.11.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/笔记/MySQL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/entity/IPInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/entity/IPInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/service/DataProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/service/DataProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/CoooolThings.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/resources/IPdata.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/resources/ip_location_relation.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/resources/ip_location_relation2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/Common.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/entity/IPInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/service/DataProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/IPUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/controller/SystemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/manager/DataProcessManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/pojo/IPAndLocationPojo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/pojo/IPAndLocationPojo_01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/util/FileOperatorUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/util/IPUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoooolThings/test/ipquery/IPTEST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loafer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Loafer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nonka/Nonka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Nonka/Nonka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/generics/Generics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/generics/map/ABC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/generics/map/Hash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/Array.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/ArrayPlus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/Linked.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/ListSort$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/ListSort$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/ListSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/quiz/Sort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/quiz/StringSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/quiz/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/Hash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/MyComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/UnNamed$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/UnNamed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/io/Copy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/io/FileInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/io/FileOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/io/file/FileCopy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/io/file/FileMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/io/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/quiz/Sort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/quiz/StringSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/quiz/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/serialize/Serialize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/serialize/UnSerialize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/API/serialize/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/Array_06.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/Arrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/Coding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/FileInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/ReturnTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/STR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/a/MyArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/com/tledu/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/com/tledu/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single_01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single_02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen/TenMinAgo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen/Verification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Array_06.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Arrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Reverse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Scores.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/WordsSplit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/YangHui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Compare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Factorial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/InputSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/PrimeNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/SplitPrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Zuoye.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Hotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Run.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/innerclass/OuterClass$1InnerClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/innerclass/OuterClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/leetcode/MergeArrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/leetcode/NoRepeatArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/leetcode/OnlyOnce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/leetcode/Plus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/oop/PersonInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/oop/Poly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/oop/Sub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/oop/Sup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/six/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/six/Sort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Cash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Horse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Paper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Plus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/DeathLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/DemonThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/MyDemonThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/MySingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/SingletonTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/SingletonThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/Thread1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/Thread2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/thread/AddData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/thread/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/thread/SellTickets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz/thread/Tickets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Socket/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/ReceiveThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/SendThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Socket/udp/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Socket/udp/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/com/itranswarp/learnjava/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/deathlock/DeathLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/deathlock/Thread1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/deathlock/Thread2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/demon/DemonTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/demon/MyDemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/demon/MyInnerDemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/thread/CreateThreadByExtends.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/thread/CreateThreadByImplements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/thread/ThreadTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/timer/MyTimer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Thread/timer/MyTimerTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +184,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="MybatisMapper" />
         <option value="Thymeleaf HTML File" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -90,7 +246,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
+    "Downloaded.Files.Path.Enabled": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -104,15 +260,16 @@
     "WebServerToolWindowFactoryState": "false",
     "aspect.path.notification.shown": "true",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "extract.method.default.visibility": "private",
     "git-widget-placeholder": "nonka",
     "jdk.selected.JAVA_MODULE": "zulu-21",
-    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer",
+    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/MySQL/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.build.tools.auto.reload": "SELECTIVE",
@@ -122,6 +279,7 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
+      "derby",
       "mysql"
     ],
     "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
@@ -134,28 +292,33 @@
       <recent name="a" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\MySQL\test" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources\templates" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\lib" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\CoooolThings\resources" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\CoooolThings\src" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Quiz\src" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\笔记" />
-      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\API\src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="user" />
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="moe.smartphone" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ipquery.Main" />
-      <module name="CoooolThings" />
+  <component name="RunManager" selected="JUnit.ServiceTest.registerTest">
+    <configuration name="DaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="user.DaoTest" />
+      <module name="MySQL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ipquery.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,58 +326,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pattern.RemoveDuplicates" />
-      <module name="Quiz" />
+    <configuration name="DaoTest.queryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySQL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pattern.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.DaoTest" />
+      <option name="METHOD_NAME" value="queryTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stream.StreamTest" />
-      <module name="Quiz" />
+    <configuration name="ServiceTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySQL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stream.*" />
+          <option name="PATTERN" value="user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.ServiceTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPTEST" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoooolThings" />
+    <configuration name="ServiceTest.registerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySQL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ipquery.*" />
+          <option name="PATTERN" value="user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ipquery" />
-      <option name="MAIN_CLASS_NAME" value="ipquery.IPTEST" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.ServiceTest" />
+      <option name="METHOD_NAME" value="registerTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPTEST.t" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoooolThings" />
+    <configuration name="UtilsTest.propertyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySQL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ipquery.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ipquery" />
-      <option name="MAIN_CLASS_NAME" value="ipquery.IPTEST" />
-      <option name="METHOD_NAME" value="t" />
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.UtilsTest" />
+      <option name="METHOD_NAME" value="propertyTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -229,11 +399,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.IPTEST.t" />
-        <item itemvalue="JUnit.IPTEST" />
-        <item itemvalue="Application.StreamTest" />
-        <item itemvalue="Application.RemoveDuplicates" />
+        <item itemvalue="JUnit.ServiceTest.registerTest" />
+        <item itemvalue="JUnit.ServiceTest.loginTest" />
+        <item itemvalue="Application.DaoTest" />
+        <item itemvalue="JUnit.DaoTest.queryTest" />
+        <item itemvalue="JUnit.UtilsTest.propertyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -330,6 +500,15 @@
       <workItem from="1698974049408" duration="2140000" />
       <workItem from="1698977788058" duration="6764000" />
       <workItem from="1698997574762" duration="7571000" />
+      <workItem from="1699014976942" duration="46000" />
+      <workItem from="1699064440339" duration="19000" />
+      <workItem from="1699497047504" duration="3934000" />
+      <workItem from="1699511346772" duration="595000" />
+      <workItem from="1699578213529" duration="118000" />
+      <workItem from="1699587007236" duration="2932000" />
+      <workItem from="1699598261215" duration="7688000" />
+      <workItem from="1699606754848" duration="1604000" />
+      <workItem from="1699612947398" duration="4782000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -461,7 +640,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698928483908</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ip query II">
+      <option name="closed" value="true" />
+      <created>1699015005348</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699015005348</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +674,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="lambda stream quiz" />
     <MESSAGE value="ip query" />
-    <option name="LAST_COMMIT_MESSAGE" value="ip query" />
+    <MESSAGE value="ip query II" />
+    <option name="LAST_COMMIT_MESSAGE" value="ip query II" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
