@@ -43,7 +43,7 @@ Data Definition Language 数据库定义语言
 
 **MySQL 8.0中不需要`identified by '密码'`**
 
-刷新权限：`FLUSH PRIVILEGES`;
+刷新权限：`FLUSH PRIVILEGES`
 
 ## alter
 

@@ -9,173 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="ip query II">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_dbcp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mchange_c3p0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/MySQL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/src/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/src/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/src/user/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/src/user/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/src/user/exception/UserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/src/user/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/src/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/src/user/utils/DBUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/src/user/utils/PropertyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/test/user/ControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/test/user/DaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/test/user/ServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/test/user/UtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-4.10-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.28-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.28.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/protobuf-java-3.11.4-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/protobuf-java-3.11.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/笔记/MySQL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/CoooolThings.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/resources/IPdata.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/resources/ip_location_relation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/resources/ip_location_relation2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/Common.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/entity/IPInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/service/DataProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/FileUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/ipquery/util/IPUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/controller/SystemController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/manager/DataProcessManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/pojo/IPAndLocationPojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/pojo/IPAndLocationPojo_01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/util/FileOperatorUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/src/zrz/util/IPUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoooolThings/test/ipquery/IPTEST.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loafer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Loafer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nonka/Nonka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Nonka/Nonka.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/generics/Generics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/generics/map/ABC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/generics/map/Hash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/Array.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/ArrayPlus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/Linked.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/ListSort$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/ListSort$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/ListSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/list/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/quiz/Sort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/quiz/StringSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/quiz/Triangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/Hash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/MyComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/UnNamed$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/UnNamed.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/collection/set/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/io/Copy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/io/FileInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/io/FileOutput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/io/file/FileCopy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/io/file/FileMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/io/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/quiz/Sort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/quiz/StringSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/quiz/Triangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/serialize/Serialize.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/serialize/UnSerialize.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/API/serialize/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/Array_06.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/Arrays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/Coding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/FileInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/ReturnTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/STR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/a/MyArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/com/tledu/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/com/tledu/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single_01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/design/Single_02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen/TenMinAgo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/fifteen/Verification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Array_06.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Arrays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Reverse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/Scores.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/WordsSplit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/five/YangHui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Compare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Factorial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/InputSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/PrimeNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/SplitPrint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Sum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/four/Zuoye.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Hotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Room.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/hotel/Run.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/innerclass/OuterClass$1InnerClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/innerclass/OuterClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/leetcode/MergeArrays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/leetcode/NoRepeatArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/leetcode/OnlyOnce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/leetcode/Plus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/oop/PersonInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/oop/Poly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/oop/Sub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/oop/Sup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/six/Search.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/six/Sort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Cash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Horse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Paper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nonka/three/Plus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/DeathLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/DemonThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/MyDemonThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/MySingleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/SingletonTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/SingletonThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/Thread1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/demo/Thread2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/thread/AddData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/thread/MyThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/thread/SellTickets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Quiz/thread/Tickets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Socket/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/ReceiveThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/SendThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Socket/tcp/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Socket/udp/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Socket/udp/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/com/itranswarp/learnjava/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/deathlock/DeathLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/deathlock/Thread1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/deathlock/Thread2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/demon/DemonTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/demon/MyDemon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/demon/MyInnerDemon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/thread/CreateThreadByExtends.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/thread/CreateThreadByImplements.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/thread/ThreadTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/timer/MyTimer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Thread/timer/MyTimerTest.class" beforeDir="false" />
-    </list>
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="JDBC native query" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,51 +76,51 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "aspect.path.notification.shown": "true",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "nonka",
-    "jdk.selected.JAVA_MODULE": "zulu-21",
-    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/MySQL/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "Errors",
-    "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nonka&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/荣耀/IdeaProjects/Loafer/MySQL/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3a68b36694efa9eb09410273759ca0a7&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "derby",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;derby&quot;,
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
-      "MySQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="a" />
@@ -509,6 +343,7 @@
       <workItem from="1699598261215" duration="7688000" />
       <workItem from="1699606754848" duration="1604000" />
       <workItem from="1699612947398" duration="4782000" />
+      <workItem from="1699837906723" duration="135000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -648,7 +483,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699015005348</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="JDBC native query">
+      <option name="closed" value="true" />
+      <created>1699838001868</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1699838001868</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +518,8 @@
     <MESSAGE value="lambda stream quiz" />
     <MESSAGE value="ip query" />
     <MESSAGE value="ip query II" />
-    <option name="LAST_COMMIT_MESSAGE" value="ip query II" />
+    <MESSAGE value="JDBC native query" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDBC native query" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
