@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/API/API.iml" filepath="$PROJECT_DIR$/API/API.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoooolThings/CoooolThings.iml" filepath="$PROJECT_DIR$/CoooolThings/CoooolThings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Loafer.iml" filepath="$PROJECT_DIR$/Loafer.iml" />
       <module fileurl="file://$PROJECT_DIR$/MySQL/MySQL.iml" filepath="$PROJECT_DIR$/MySQL/MySQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/Nonka/Nonka.iml" filepath="$PROJECT_DIR$/Nonka/Nonka.iml" />
