@@ -191,10 +191,9 @@ public class Test{
 - isEmpty()
 - contains()
 
-contains() 和 remove() 都会调用 `equals()` 方法
+`contains()` 和 `remove()` 都会调用 `equals()` 方法
 
 如果集合中存放基本数据类型 一定要将其装箱为基本类型包装类
-
 **没有提供修改和查询的方法**
 
 ![class-and-interface-hierarchy](class-and-interface-hierarchy.png)
@@ -269,12 +268,11 @@ contains() 和 remove() 都会调用 `equals()` 方法
 ## HashSet
 
 底层为`HashMap`的`K`部分
-
 `HashMap`底层为散列表
 
 # Comparable
 
-比较器 被添加的`TreeSet`元素需要实现 Comparable 接口并重写接口中的`compareTo()`方法
+**比较器** 被添加的`TreeSet`元素需要实现 Comparable 接口并重写接口中的`compareTo()`方法
 `compareTo()`方法返回值代表排序规则
 添加元素时会调用元素对象的`compareTo()`方法把集合中的元素传入进行比较
 如果`==0` 说明重复，不添加
