@@ -10,27 +10,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="review and more beautiful">
-      <change afterPath="$PROJECT_DIR$/LeetCode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/ConvertToTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/FindContentChildren.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/MaxProfit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/TwoSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quiz/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quiz/src/db/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quiz/src/dept/SysDept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quiz/src/dept/Test_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loafer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Loafer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nonka/Nonka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Nonka/Nonka.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quiz/Quiz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz/Quiz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/API.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/IO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/Java.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/Java.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/MySQL.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/MySQL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/OOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/OOP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/API.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/generics/Generics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/generics/map/ABC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/generics/map/Hash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/list/Array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/list/ArrayPlus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/list/Linked.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/list/ListSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/list/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/quiz/Sort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/quiz/StringSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/quiz/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/set/Hash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/set/Tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/set/UnNamed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/collection/set/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/io/Copy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/io/FileInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/io/FileOutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/io/file/FileCopy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/io/file/FileMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/io/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/pattern/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/quiz/Sort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/quiz/StringSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/quiz/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/serialize/Serialize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/serialize/UnSerialize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/src/serialize/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/MySQL.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/src/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/src/user/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/src/user/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/src/user/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/src/user/exception/UserException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/src/user/service/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/src/user/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/src/user/utils/DBUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/src/user/utils/PropertyUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/test/user/ControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/test/user/DaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/test/user/ServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/test/user/UtilsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socket/Socket.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socket/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socket/src/tcp/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socket/src/tcp/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socket/src/tcp/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socket/src/udp/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socket/src/udp/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread/Thread.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread/src/com/itranswarp/learnjava/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread/src/deathlock/DeathLock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread/src/demon/DemonTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread/src/thread/ThreadTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thread/src/timer/MyTimerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/JavaMerge.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/merge.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/one.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/serialized" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/three.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/two.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +94,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="bobo" />
+        <entry key="$PROJECT_DIR$" value="nonka" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -219,11 +262,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test_01" />
-        <item itemvalue="Application.ConvertToTitle" />
-        <item itemvalue="Application.MaxProfit" />
         <item itemvalue="Application.TwoSum" />
+        <item itemvalue="Application.Test_01" />
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.MaxProfit" />
+        <item itemvalue="Application.ConvertToTitle" />
       </list>
     </recent_temporary>
   </component>
