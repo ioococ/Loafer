@@ -10,26 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="review and more beautiful">
-      <change afterPath="$PROJECT_DIR$/LeetCode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/ConvertToTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/FindContentChildren.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/MaxProfit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/src/TwoSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quiz/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quiz/src/db/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quiz/src/dept/SysDept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quiz/src/dept/Test_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loafer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Loafer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nonka/Nonka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Nonka/Nonka.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quiz/Quiz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz/Quiz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/API.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/IO.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记/Java.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/Java.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/MySQL.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/MySQL.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记/OOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/OOP.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -346,7 +328,8 @@
       <workItem from="1701047003480" duration="19077000" />
       <workItem from="1701069141928" duration="25000" />
       <workItem from="1701069189798" duration="2200000" />
-      <workItem from="1701082516106" duration="666000" />
+      <workItem from="1701082516106" duration="4600000" />
+      <workItem from="1701088495058" duration="130000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -502,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699867478429</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="review and more beautiful">
+      <option name="closed" value="true" />
+      <created>1701083882371</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1701083882371</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
