@@ -9,7 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="init" />
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/API.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/IO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/OOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/OOP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/Throwable.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/Throwable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/bubbleSort.gif" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/bubbleSort.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/class-and-interface-hierarchy.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/class-and-interface-hierarchy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/ss.gif" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/ss.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/依赖关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/依赖关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/关联关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/关联关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/实现关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/实现关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/组合关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/组合关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/继承关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/继承关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/聚合关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/聚合关系.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,51 +93,51 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "aspect.path.notification.shown": "true",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "nonka",
-    "jdk.selected.JAVA_MODULE": "zulu-21",
-    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/LeetCode",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
-    "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nonka&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/荣耀/IdeaProjects/Loafer/LeetCode&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3a68b36694efa9eb09410273759ca0a7&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "derby",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;derby&quot;,
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
-      "MySQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="a" />
@@ -132,11 +149,11 @@
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\笔记\images" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Quiz\src\dept" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Quiz" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Quiz\src" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\lib" />
-      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\CoooolThings\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="user" />
@@ -145,65 +162,6 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="moe.smartphone" />
     </key>
-  </component>
-  <component name="RunManager" selected="Application.Test_01">
-    <configuration name="ConvertToTitle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConvertToTitle" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MaxProfit" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Solution" />
-      <module name="Quiz" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dept.Test_01" />
-      <module name="Quiz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dept.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TwoSum" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FastBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="FastBoot" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="neko.fastboot.FastBootApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.TwoSum" />
-        <item itemvalue="Application.Test_01" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.MaxProfit" />
-        <item itemvalue="Application.ConvertToTitle" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -325,6 +283,7 @@
       <workItem from="1701069141928" duration="25000" />
       <workItem from="1701069189798" duration="2200000" />
       <workItem from="1701082516106" duration="666000" />
+      <workItem from="1701138246472" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -488,7 +447,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701135097990</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="init">
+      <option name="closed" value="true" />
+      <created>1701135164837</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701135164837</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

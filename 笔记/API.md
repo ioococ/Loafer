@@ -93,7 +93,7 @@ System 类内部包含`in`、`out`和`err`三个成员变量，分别代表标�
 
 # Throwable
 
-![Throwable](Throwable.png)
+![Throwable](./images/Throwable.png)
 
 # Error
 
@@ -196,7 +196,7 @@ public class Test{
 如果集合中存放基本数据类型 一定要将其装箱为基本类型包装类
 **没有提供修改和查询的方法**
 
-![class-and-interface-hierarchy](class-and-interface-hierarchy.png)
+![class-and-interface-hierarchy](./images/class-and-interface-hierarchy.png)
 
 # iterator
 
