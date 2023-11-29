@@ -9,21 +9,127 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="clear folders and init">
-      <change afterPath="$PROJECT_DIR$/Demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/webapp/demo/FirstServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/webapp/demo/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/ABC.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_dbcp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mchange_c3p0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="tomcat let's go">
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/exception/UserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/servlet/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/utils/DBUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/utils/PropertyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/manager/utils/XBasicDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLDD4Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLDD4Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLFj_Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLFj_Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk (1).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/fonts/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/scripts/notyf.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/signup.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/styles/google-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/styles/notyf.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/demo/FirstServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/demo/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/exception/UserException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/service/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/servlet/LoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/servlet/RegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/utils/DBUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/utils/PropertyUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/classes/manager/utils/XBasicDataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.5.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/commons-dbcp2-2.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/jakarta.transaction-api-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/junit-4.13.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/mchange-commons-java-0.2.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.28.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.11.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLDD4Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLDD4Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLFj_Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLFj_Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk (1).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/fonts/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/scripts/notyf.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/signup.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/styles/google-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/styles/notyf.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/Demo-1.0-SNAPSHOT/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/demo/FirstServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/demo/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/exception/UserException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/service/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/servlet/LoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/servlet/RegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/utils/DBUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/utils/PropertyUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/target/classes/manager/utils/XBasicDataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JavaSceneConfigState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JavaSceneConfigState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loafer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Loafer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/OOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/OOP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/src/main/java/webapp/demo/FirstServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/src/main/java/demo/FirstServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/src/main/java/webapp/demo/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/src/main/java/demo/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/src/main/webapp/ABC.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +141,10 @@
       <list>
         <option value="MybatisMapper" />
         <option value="Thymeleaf HTML File" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Jsp File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -122,7 +229,8 @@
     "extract.method.default.visibility": "private",
     "git-widget-placeholder": "nonka",
     "jdk.selected.JAVA_MODULE": "zulu-21",
-    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/Demo",
+    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/Demo/src/main/webapp",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -132,7 +240,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.build.tools.auto.reload": "SELECTIVE",
-    "settings.editor.selected.configurable": "background.image.plus",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
     "vue.rearranger.settings.migration": "true"
   },
@@ -151,17 +259,18 @@
       <recent name="a" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Demo\src\main\webapp" />
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Demo\src\main\webapp\css" />
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Demo\src\main\webapp\js" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\MySQL\test" />
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources\templates" />
-      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\FastBoot\src\main\resources" />
-      <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Demo\src\main\java\webapp" />
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Demo\src\main\resources" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Demo\src\main\webapp" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\笔记\images" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Quiz\src\dept" />
-      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Quiz" />
-      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Quiz\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="user" />
@@ -258,18 +367,6 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="Demo:war exploded" />
         </option>
-      </method>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -396,7 +493,10 @@
       <workItem from="1701138246472" duration="4028000" />
       <workItem from="1701143277598" duration="2262000" />
       <workItem from="1701221107200" duration="858000" />
-      <workItem from="1701221984397" duration="10748000" />
+      <workItem from="1701221984397" duration="12264000" />
+      <workItem from="1701240719607" duration="233000" />
+      <workItem from="1701240979705" duration="89000" />
+      <workItem from="1701241089934" duration="19371000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -576,7 +676,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701138728409</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="tomcat let's go">
+      <option name="closed" value="true" />
+      <created>1701238778055</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1701238778056</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +718,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="clear folders init" />
     <MESSAGE value="clear folders and init" />
-    <option name="LAST_COMMIT_MESSAGE" value="clear folders and init" />
+    <MESSAGE value="tomcat let's go" />
+    <option name="LAST_COMMIT_MESSAGE" value="tomcat let's go" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

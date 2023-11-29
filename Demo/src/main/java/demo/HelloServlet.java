@@ -1,4 +1,4 @@
-package webapp.demo;
+package demo;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,7 +32,7 @@ public class HelloServlet extends HttpServlet {
         out.println("<p>你好，世界</p>");
         out.println("</body></html>");
         request.getSession().setAttribute("msg", "success");
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("signup.jsp");
     }
 
     public void destroy() {
