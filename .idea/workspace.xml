@@ -2,30 +2,28 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="CoooolThings:jar" />
+      <artifact name="Demo:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="init">
+    <list default="true" id="db48cc21-b5bf-4595-a587-59104542b2b4" name="Changes" comment="clear folders and init">
+      <change afterPath="$PROJECT_DIR$/Demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/webapp/demo/FirstServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/java/webapp/demo/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/ABC.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_dbcp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mchange_c3p0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/API.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/IO.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/IO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loafer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Loafer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/笔记/OOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/OOP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/Throwable.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/Throwable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/bubbleSort.gif" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/bubbleSort.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/class-and-interface-hierarchy.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/class-and-interface-hierarchy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/ss.gif" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/ss.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/依赖关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/依赖关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/关联关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/关联关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/实现关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/实现关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/组合关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/组合关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/继承关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/继承关系.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/聚合关系.png" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/images/聚合关系.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +37,7 @@
         <option value="Thymeleaf HTML File" />
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -69,13 +68,22 @@
       <scroll-view-position x="0" y="0" />
     </layout>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Program Files/Maven" />
+        <option name="mavenHome" value="D:/Program Files/Maven" />
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="D:\Program Files\Maven\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -93,51 +101,51 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;nonka&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-21&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/荣耀/IdeaProjects/Loafer/LeetCode&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3a68b36694efa9eb09410273759ca0a7&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "aspect.path.notification.shown": "true",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "nonka",
+    "jdk.selected.JAVA_MODULE": "zulu-21",
+    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/Demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "background.image.plus",
+    "spring.configuration.checksum": "3a68b36694efa9eb09410273759ca0a7",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;derby&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "derby",
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;MySQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="a" />
@@ -149,11 +157,11 @@
       <recent name="D:\荣耀\Documents\IdeaProjects\Loafer\Maven\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Demo\src\main\webapp" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\笔记\images" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Quiz\src\dept" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Quiz" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Quiz\src" />
-      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\lib" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="user" />
@@ -162,6 +170,108 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="moe.smartphone" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.96" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.96" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Demo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="7ca95bc5-0d1a-4890-ae93-4a2d2e49dfdc" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="6749" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Demo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -283,7 +393,10 @@
       <workItem from="1701069141928" duration="25000" />
       <workItem from="1701069189798" duration="2200000" />
       <workItem from="1701082516106" duration="666000" />
-      <workItem from="1701138246472" duration="305000" />
+      <workItem from="1701138246472" duration="4028000" />
+      <workItem from="1701143277598" duration="2262000" />
+      <workItem from="1701221107200" duration="858000" />
+      <workItem from="1701221984397" duration="10748000" />
     </task>
     <task id="LOCAL-00001" summary="modify">
       <created>1693384999700</created>
@@ -455,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701135164837</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="clear folders and init">
+      <option name="closed" value="true" />
+      <created>1701138728409</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1701138728409</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +608,9 @@
     <MESSAGE value="review" />
     <MESSAGE value="review and more beautiful" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="clear folders init" />
+    <MESSAGE value="clear folders and init" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear folders and init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

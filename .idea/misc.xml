@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/Maven/pom.xml" />
         <option value="$PROJECT_DIR$/FastBoot/pom.xml" />
         <option value="$PROJECT_DIR$/LeetCode/pom.xml" />
+        <option value="$PROJECT_DIR$/Demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
