@@ -5,7 +5,7 @@ import java.util.Properties;
 
 /**
  * @Author: nekotako
- * @Description: TODO
+ * @Description: 配置文件读取工具类
  * @Date: 2023/11/10 14:52 星期五
  */
 

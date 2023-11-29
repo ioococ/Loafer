@@ -12,7 +12,7 @@ import java.sql.Statement;
 
 /**
  * @Author: nekotako
- * @Description: TODO
+ * @Description: 数据库操作工具类
  * @Date: 2023/11/10 14:51 星期五
  */
 
