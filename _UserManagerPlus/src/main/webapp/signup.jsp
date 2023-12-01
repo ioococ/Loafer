@@ -45,7 +45,7 @@
             }
         }
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send("username=" + username + "&email=" + email + "&password=" + password)
+        xhr.send("username=" + username +"&email=" + email+ "&password=" + password)
         if (rawData.status == -1) {
             notyf.alert(rawData.msg)
         } else {
