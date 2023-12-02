@@ -36,8 +36,8 @@ public class LoginServlet extends HttpServlet {
         req.setCharacterEncoding("utf-8");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        String captcha = req.getParameter("captcha");
-        String sessionCaptcha = (String) req.getSession().getAttribute("captcha");
+        String captcha = req.getParameter("patchca");
+        String sessionCaptcha = (String) req.getSession().getAttribute("patchca");
         if (!captcha.equalsIgnoreCase(sessionCaptcha)) {
             req.setAttribute("msg", "验证码错误");
             req.getRequestDispatcher("login.jsp").forward(req, resp);

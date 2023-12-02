@@ -19,8 +19,8 @@
         <input type="text" id="username" name="username" placeholder="用户名" required>
         <input type="password" id="password" name="password" placeholder="密码" required>
         <div class="captcha">
-            <input type="text" id="captcha" name="captcha" placeholder="验证码" required>
-            <img onclick="refresh()" id="captchaImg" src="getCaptcha" alt="" width="150px" height="50px"></div>
+            <input type="text" id="captcha" name="patchca" placeholder="验证码" required>
+            <img onclick="refresh()" id="captchaImg" src="getPatchca" alt="" width="150px" height="50px"></div>
         <div><a href="#">忘记密码</a> <span style="color: red;">${requestScope.msg}</span></div>
         <button class="btn">登录</button>
     </form>
@@ -31,7 +31,7 @@
 
     function refresh() {
         let timestamp = new Date().getTime();
-        img.setAttribute("src", "getCaptcha?time=" + timestamp);
+        img.setAttribute("src", "getPatchca?time=" + timestamp);
     }
 </script>
 <%request.removeAttribute("msg");%>
