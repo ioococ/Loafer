@@ -31,20 +31,29 @@ public class LoginServlet extends HttpServlet {
      * 否则进行添加 并返回info页面
      */
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         resp.setContentType("text/html;charset=utf-8");
         req.setCharacterEncoding("utf-8");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-
+        String captcha = req.getParameter("captcha");
+        String sessionCaptcha = (String) req.getSession().getAttribute("captcha");
+        if (!captcha.equalsIgnoreCase(sessionCaptcha)) {
+            req.setAttribute("msg", "验证码错误");
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
+            return;
+        }
         if (userService.getUserByName(username) == null) {
             req.setAttribute("msg", "用户不存在");
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
             return;
         }
         try {
             userService.login(username, password);
         } catch (UserException e) {
             req.setAttribute("msg", e.getMessage());
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
+            return;
         }
         req.getSession().setAttribute("user", username);
         resp.sendRedirect("info");

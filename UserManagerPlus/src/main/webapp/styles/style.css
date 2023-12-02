@@ -56,7 +56,7 @@ body {
 }
 
 .wrapper.active .form.login {
-    bottom: -15%;
+    bottom: -8%;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 35%;
 }
@@ -109,6 +109,17 @@ body {
 
 .form.login input:focus {
     box-shadow: 0 1px 0 #ddd;
+}
+
+.captcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#captcha {
+    width: 260px;
+    display: inline-block;
 }
 
 .form .checkbox {
