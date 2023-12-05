@@ -25,7 +25,7 @@
 ## 语法
 
 `${expr}`
-JSP 默认支持EL表达式,如需关闭可在page中指明 `isELIgnore=true`
+JSP 默认支持EL表达式，如需关闭可在page中指明 `isELIgnored=true`
 `\${expr}` 忽略当前这个el表达式
 
 `${域名称.键名}`：从指定域中获取指定键的值
@@ -61,7 +61,7 @@ JSP 默认支持EL表达式,如需关闭可在page中指明 `isELIgnore=true`
 
 ## 概念
 
-JSTL : JSP Standard Tag Library (JSP标准标签库)
+JSTL：JSP Standard Tag Library (JSP标准标签库)
 
 # 会话管理
 
@@ -76,7 +76,6 @@ Http连接本身是无状态的，即前一次发起的连接跟后一次没有�
 
 **一次会话中包含多次请求和响应。**
 一次会话：浏览器第一次给服务器资源发送请求，会话建立，直到有一方断开为止
-
 
 # Cookie
 
@@ -156,6 +155,10 @@ Http连接本身是无状态的，即前一次发起的连接跟后一次没有�
 1. session存储数据在服务器端，Cookie在客户端
 2. session没有数据大小限制，Cookie有4kb
 3. session数据安全，Cookie相对于不安全
+
+# 过滤器
+
+Filter
 
 
 
