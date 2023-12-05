@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="hb.rj.pojo.CustomerEntity" table="customer" schema="task">
+        <id name="id" column="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="name" column="name"/>
+        <property name="address" column="address"/>
+        <set name="orders">
+            <key column="customer"/>
+            <one-to-many class="hb.rj.pojo.OrdersEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

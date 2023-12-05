@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- pom文件的顶级节点 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--所有的Maven项目都必须配置这四个配置项  -->
+    <!-- object model版本，对Maven2和Maven3来说，只能是4.0.0 -->
+    <modelVersion>4.0.0</modelVersion>
+    <!--groupId指的是项目名的项目组，默认就是包名-->
+    <!-- 项目创建组织的标识符，一般是域名的倒写 -->
+    <groupId>cn.gacl.maven.person</groupId>
+    <!--artifactId指的是项目中的某一个模块，默认命名方式是"项目名-模块名"-->
+    <!-- 定义了项目在所属组织的标识符下的唯一标识，一个组织下可以有多个项目 -->
+    <artifactId>person</artifactId>
+    <!--version指的是版本，这里使用的是Maven的快照版本-->
+    <!-- 当前项目的版本，SNAPSHOT，表示是快照版本，在开发中 -->
+    <version>SNAPSHOT-0.0.1</version>
+    <properties>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
+    </properties>
+
+    <!-- 其中由groupId、artifactId和version唯一的确定了一个项目坐标 -->
+
+
+    <!-- 打包的方式，有jar、war、ear等 -->
+    <!-- <packaging></packaging> -->
+
+    <!-- 项目的名称 -->
+    <!-- <name>Maven</name> -->
+
+    <!-- 项目的地址 -->
+    <!-- <url></url> -->
+
+    <!-- 属性配置，比如： -->
+    <!-- <properties> -->
+        <!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
+        <!-- <maven.compiler.source>14</maven.compiler.source> -->
+        <!-- <maven.compiler.target>14</maven.compiler.target> -->
+    <!-- </properties> -->
+
+    <!-- 构建项目依赖的jar -->
+    <dependencies>
+        <!--项目要使用到junit的jar包，所以在这里添加junit的jar包的依赖-->
+        <dependency>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                    <version>4.9</version>
+                    <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>hello</groupId>
+            <artifactId>hello</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+
+
+
+</project>

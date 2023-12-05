@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.my.pojo.Customer" table="customer" schema="manager">
+        <id name="id" column="ID">
+            <!--自动选择自增-->
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name"/>
+        <property name="address" column="address"/>
+        <set name="orders">
+            <!--customer为one-->
+            <!--orders为many-->
+            <key column="customer"/><!--建立关系-->
+            <one-to-many class="com.my.pojo.Orders"/>
+        </set>
+    </class>
+</hibernate-mapping>

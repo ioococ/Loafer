@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66015a45-e849-4154-a281-45f1adfbeb51" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="26gUEUIcjDGmhX148GmRYVhNBtM" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/归档/Springlib" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\SpProject\src\com\my\annAuto" />
+      <recent name="C:\Users\荣耀\IdeaProjects\SpProject\src" />
+      <recent name="C:\Users\荣耀\IdeaProjects\SpProject\out\production\SpProject" />
+      <recent name="C:\Users\荣耀\IdeaProjects\SpProject\src\com\my\auto" />
+      <recent name="C:\Users\荣耀\IdeaProjects\SpProject\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\SpProject\lib" />
+      <recent name="C:\Users\荣耀\IdeaProjects\SpProject\src\com\my" />
+      <recent name="C:\Users\荣耀\IdeaProjects\SpProject" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.my.auto" />
+      <recent name="com.my.IoC" />
+      <recent name="com.my.reg" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UDImp.save">
+    <configuration name="DaoAspect.before" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.my.xml.DaoAspect" />
+      <option name="METHOD_NAME" value="before" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoAspect.throwing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.my.xml.DaoAspect" />
+      <option name="METHOD_NAME" value="throwing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.bookTestx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="bookTestx" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.testw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="testw" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UDImp.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.my.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.my.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.my.dao.UDImp" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UDImp.save" />
+        <item itemvalue="JUnit.DaoAspect.before" />
+        <item itemvalue="JUnit.DaoAspect.throwing" />
+        <item itemvalue="JUnit.Tests.bookTestx" />
+        <item itemvalue="JUnit.Tests.testw" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66015a45-e849-4154-a281-45f1adfbeb51" name="Changes" comment="" />
+      <created>1647844610608</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647844610608</updated>
+      <workItem from="1647844611807" duration="524000" />
+      <workItem from="1647845258758" duration="467000" />
+      <workItem from="1647845855147" duration="9492000" />
+      <workItem from="1647929332777" duration="12116000" />
+      <workItem from="1647952076069" duration="345000" />
+      <workItem from="1647995199639" duration="9626000" />
+      <workItem from="1648080991148" duration="4372000" />
+      <workItem from="1648087440326" duration="662000" />
+      <workItem from="1648089381230" duration="330000" />
+      <workItem from="1648089730777" duration="11000" />
+      <workItem from="1651735905781" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

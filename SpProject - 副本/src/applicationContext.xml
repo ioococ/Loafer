@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--将指定的对象交给Spring框架 让Spring创建实例-->
+    <!--bean : 创建一个id为userDao的Bean实例 (由com.my.IoC.UDImp实例化)-->
+
+        <bean id="userDao" class="com.my.IoC.UDImp"/>
+    <!--    <bean id="userService" class="com.my.IoC.USImp">-->
+    <!--        <property name="userDao" ref="userDao"/>-->
+    <!--    </bean>-->
+        <bean id="userService" class="com.my.IoC.USImpJK">
+            <constructor-arg ref="userDao"/>
+        </bean>
+
+
+    <bean id="Reg" class="com.my.reg.Register"/>
+    <bean id="Dia" class="com.my.reg.Diagnosis"/>
+    <bean id="Pay" class="com.my.reg.Pay"/>
+    <bean id="Med" class="com.my.reg.Medicine"/>
+    <bean id="Hos" class="com.my.reg.Hospitalized"/>
+    <bean id="CT" class="com.my.reg.CT"/>
+    <bean id="Ope" class="com.my.reg.Operation"/>
+
+    <bean id="cure" class="com.my.reg.H">
+        <property name="reg" ref="Reg"/>
+        <property name="dia" ref="Dia"/>
+        <property name="pay" ref="Pay"/>
+        <property name="med" ref="Med"/>
+        <property name="hos" ref="Hos"/>
+        <property name="ct" ref="CT"/>
+        <property name="ope" ref="Ope"/>
+    </bean>
+</beans>

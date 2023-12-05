@@ -1,0 +1,58 @@
+<component name="libraryTable">
+  <library name="Hibernate" type="hibernate">
+    <CLASSES>
+      <root url="jar://D:/归档/Hilib/agroal-api-1.9.jar!/" />
+      <root url="jar://D:/归档/Hilib/agroal-pool-1.9.jar!/" />
+      <root url="jar://D:/归档/Hilib/antlr-2.7.7.jar!/" />
+      <root url="jar://D:/归档/Hilib/byte-buddy-1.12.7.jar!/" />
+      <root url="jar://D:/归档/Hilib/c3p0-0.9.5.5.jar!/" />
+      <root url="jar://D:/归档/Hilib/cache-api-1.0.0.jar!/" />
+      <root url="jar://D:/归档/Hilib/checker-qual-3.5.0.jar!/" />
+      <root url="jar://D:/归档/Hilib/classmate-1.5.1.jar!/" />
+      <root url="jar://D:/归档/Hilib/commons-dbutils-1.7.jar!/" />
+      <root url="jar://D:/归档/Hilib/dom4j-2.1.3.jar!/" />
+      <root url="jar://D:/归档/Hilib/ehcache-2.10.6.jar!/" />
+      <root url="jar://D:/归档/Hilib/FastInfoset-1.2.15.jar!/" />
+      <root url="jar://D:/归档/Hilib/geolatte-geom-1.8.2.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-agroal-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-c3p0-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-commons-annotations-5.1.2.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-core-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-ehcache-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-envers-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-hikaricp-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-jcache-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-jpamodelgen-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-osgi-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-proxool-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-spatial-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/hibernate-vibur-5.6.5.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/HikariCP-3.2.0.jar!/" />
+      <root url="jar://D:/归档/Hilib/istack-commons-runtime-3.0.7.jar!/" />
+      <root url="jar://D:/归档/Hilib/jandex-2.4.2.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/javax.activation-api-1.2.0.jar!/" />
+      <root url="jar://D:/归档/Hilib/javax.interceptor-api-1.2.jar!/" />
+      <root url="jar://D:/归档/Hilib/javax.persistence-api-2.2.jar!/" />
+      <root url="jar://D:/归档/Hilib/jaxb-api-2.3.1.jar!/" />
+      <root url="jar://D:/归档/Hilib/jaxb-runtime-2.3.1.jar!/" />
+      <root url="jar://D:/归档/Hilib/jboss-logging-3.4.3.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar!/" />
+      <root url="jar://D:/归档/Hilib/jts-core-1.18.2.jar!/" />
+      <root url="jar://D:/归档/Hilib/mchange-commons-java-0.2.19.jar!/" />
+      <root url="jar://D:/归档/Hilib/mysql-connector-java-8.0.11.jar!/" />
+      <root url="jar://D:/归档/Hilib/org.osgi.compendium-5.0.0.jar!/" />
+      <root url="jar://D:/归档/Hilib/org.osgi.core-6.0.0.jar!/" />
+      <root url="jar://D:/归档/Hilib/postgresql-42.2.16.jar!/" />
+      <root url="jar://D:/归档/Hilib/proxool-0.8.3.jar!/" />
+      <root url="jar://D:/归档/Hilib/slf4j-api-1.6.1.jar!/" />
+      <root url="jar://D:/归档/Hilib/slf4j-api-1.7.13.jar!/" />
+      <root url="jar://D:/归档/Hilib/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://D:/归档/Hilib/stax-ex-1.8.jar!/" />
+      <root url="jar://D:/归档/Hilib/txw2-2.3.1.jar!/" />
+      <root url="jar://D:/归档/Hilib/vibur-dbcp-25.0.jar!/" />
+      <root url="jar://D:/归档/Hilib/vibur-object-pool-25.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

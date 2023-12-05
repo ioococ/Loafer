@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>AllData</servlet-name>
+        <servlet-class>servlet.AllData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllData</servlet-name>
+        <url-pattern>/json</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddUser</servlet-name>
+        <servlet-class>servlet.AddUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUser</servlet-name>
+        <url-pattern>/adduser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DelUser</servlet-name>
+        <servlet-class>servlet.DelUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelUser</servlet-name>
+        <url-pattern>/deluser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ModUser</servlet-name>
+        <servlet-class>servlet.ModUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModUser</servlet-name>
+        <url-pattern>/xguser</url-pattern>
+    </servlet-mapping>
+</web-app>

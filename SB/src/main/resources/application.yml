@@ -1,0 +1,4 @@
+server:
+  servlet:
+    context-path: /zzz #配置项目的访问路径
+  port: 80 #配置端口号

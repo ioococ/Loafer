@@ -1,0 +1,51 @@
+<component name="libraryTable">
+  <library name="Spring" type="spring">
+    <CLASSES>
+      <root url="jar://D:/归档/Springlib/commons-logging-1.2.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-aop-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-aop-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-aspects-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-aspects-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-beans-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-beans-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-context-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-context-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-context-indexer-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-context-indexer-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-context-support-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-context-support-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-core-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-core-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-expression-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-expression-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-instrument-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-instrument-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-jcl-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-jcl-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-jdbc-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-jdbc-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-jms-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-jms-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-messaging-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-messaging-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-orm-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-orm-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-oxm-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-oxm-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-test-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-test-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-tx-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-tx-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-web-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-web-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-webflux-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-webflux-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-webmvc-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-webmvc-5.1.8.RELEASE.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-websocket-5.1.8.RELEASE-sources.jar!/" />
+      <root url="jar://D:/归档/Springlib/spring-websocket-5.1.8.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

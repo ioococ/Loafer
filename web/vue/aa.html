@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+</head>
+
+<style>
+    .div1 {
+        margin: 5px;
+        width: 100px;
+        height: 100px;
+        background-color: ghostwhite;
+        border: blanchedalmond 3px solid;
+    }
+
+    /*区块开始进入时显示的初始样式*/
+    .v-enter {
+        opacity: 0;
+    }
+
+    /*区块从无到有的过渡状态*/
+    .v-enter-active {
+        transition: .5s;
+        /*从无到有所用的时间*/
+    }
+
+    /*区块完全显示后最终的样式*/
+    .v-enter-to {
+        opacity: 1;
+    }
+
+    .v-leave {
+        height: 350px;
+        width: 350px;
+        opacity: 1;
+        /*从有到无时初始的样式*/
+    }
+
+    .v-leave-active {
+        transition: .5s;
+        /*过渡所用的时间，过渡状态*/
+    }
+
+    .v-leave-to {
+        height: 0px;
+        width: 0px;
+        opacity: 0;
+        /*结束时的样式*/
+    }
+</style>
+
+<body>
+    <h2 class="animate__animated animate__pulse">六个CSS类的演示</h2>
+    <div id="van">
+        <button @click="show=!show" class="animate__animated animate__pulse">动画</button>
+        <transition-group name="v" tag="div" class="animate__animated animate__pulse">
+            <div v-for="(item,index) in divList" :key="index" v-show="show" class="div1"></div>
+            <p :key="1" class="div2" v-show="show"></p>
+            <span :key="2" class="div3" v-show="show"></span>
+        </transition-group>
+    </div>
+    <script>
+        let app = new Vue({
+            el: '#van',
+            data: {
+                show: false,
+                divList: ['div1', 'div2', 'div3']
+            }
+        })
+    </script>
+</body>
+
+</html>

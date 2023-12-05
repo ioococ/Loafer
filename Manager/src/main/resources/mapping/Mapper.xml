@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.manager.service.Mapper">
+    <select id="existTables" resultType="Integer">
+        select count(*) from information_schema.TABLES where LCASE(TABLE_NAME) ='course';
+    </select>
+    <update id="dropTables">
+        drop table if exists course;
+        drop table if exists sc;
+        drop table if exists student;
+        drop table if exists teacher;
+    </update>
+    <update id="createTables">
+        create table course(`C#` int not null primary key, Cname varchar(25) null,`T#` int null, constraint `course_teacher_T#_fk` foreign key (`T#`) references teacher (`T#`));
+        create table sc(`S#` int null,`C#` int null,score int null,constraint `SC_course_C#_fk` foreign key (`C#`) references course (`C#`),constraint `SC_student_S#_fk` foreign key (`S#`) references student (`S#`));
+        create table student(`S#` int not null primary key,Sname varchar(25) null,Sage int null,Ssex varchar(25) null);
+        create table teacher(`T#` int not null primary key,Tname int null);
+    </update>
+
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--  单例模式  默认模式  scope="singleton  -->
+    <!--  原型模式  scope="prototype"  -->
+    <!--    <bean id="cBean" class="com.my.constructor.CBean" scope="singleton"/>-->
+    <bean id="cBean" class="com.my.constructor.CBean" scope="prototype"/>
+    <!--    <bean id="fBean" class="com.my.factory.StaticBean" factory-method="createBean"/>-->
+
+    <!--    &lt;!&ndash;配置工厂类&ndash;&gt;-->
+    <!--    <bean id="efBean" class="com.my.example.EFBean"/>-->
+    <!--    &lt;!&ndash;由实例工厂创建Bean&ndash;&gt;-->
+    <!--    <bean id="eBean" factory-bean="efBean" factory-method="createBean"/>-->
+
+    <!--  constructor  -->
+    <bean id="cuser" class="com.my.user.User">
+        <constructor-arg index="0" value="ZhangSan"/>
+        <constructor-arg index="1" value="888"/>
+    </bean>
+    <!--  setter  -->
+    <bean id="suser" class="com.my.user.User">
+        <property name="username" value="LiSi"/>
+        <property name="password" value="666"/>
+    </bean>
+</beans>

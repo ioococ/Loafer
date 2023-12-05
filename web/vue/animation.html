@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>六个CSS类的演示</h2>
+    <style>
+        /* 定义色块的默认样式*/
+        .content {
+            width: 50px;
+            height: 50px;
+            background-color: #b0ebff;
+        }
+
+        /*区块开始进入时显示的初始样式*/
+        .v-enter {
+            height: 50px;
+            width: 50px;
+            opacity: 0;
+        }
+
+        /*区块从无到有的过渡状态*/
+        .v-enter-active {
+            transition: .5s;
+            /*从无到有所用的时间*/
+        }
+
+        /*区块完全显示后最终的样式*/
+        .v-enter-to {
+            height: 350px;
+            width: 350px;
+            opacity: 1;
+        }
+
+        .v-leave {
+            height: 350px;
+            width: 350px;
+            opacity: 1;
+            /*从有到无时初始的样式*/
+        }
+
+        .v-leave-active {
+            transition: .5s;
+            /*过渡所用的时间，过渡状态*/
+        }
+
+        .v-leave-to {
+            height: 0px;
+            width: 0px;
+            opacity: 0;
+            /*结束时的样式*/
+        }
+    </style>
+    <div id="van">
+        <button @click="show=!show">动画</button>
+        <transition name="v">
+            <div class="content" v-show="show"></div>
+        </transition>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <style>
+        .div1{
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color:ghostwhite;
+            border: blanchedalmond 3px solid;
+        }
+                /*区块开始进入时显示的初始样式*/
+                .v-enter {
+            height: 50px;
+            width: 50px;
+            opacity: 0;
+        }
+
+        /*区块从无到有的过渡状态*/
+        .v-enter-active {
+            transition: .5s;
+            /*从无到有所用的时间*/
+        }
+
+        /*区块完全显示后最终的样式*/
+        .v-enter-to {
+            height: 350px;
+            width: 350px;
+            opacity: 1;
+        }
+
+        .v-leave {
+            height: 350px;
+            width: 350px;
+            opacity: 1;
+            /*从有到无时初始的样式*/
+        }
+
+        .v-leave-active {
+            transition: .5s;
+            /*过渡所用的时间，过渡状态*/
+        }
+
+        .v-leave-to {
+            height: 0px;
+            width: 0px;
+            opacity: 0;
+            /*结束时的样式*/
+        }
+    </style>
+    <div id="vao">
+        <div class="div1"></div>
+    </div>
+    <script>
+        new Vue({
+            el: '#van',
+            data: {
+                show: false
+            }
+        })
+    </script>
+
+</body>
+
+</html>
