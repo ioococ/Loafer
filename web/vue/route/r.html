@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="vrc">
+        <router-link to="/home">主页</router-link>
+        <router-link to="/news">新闻</router-link>
+        <router-link to="/cars">汽车</router-link>
+        <router-view></router-view>
+    </div>
+    <template id="home">
+        <div>
+            <p>这是主页板块</p>
+        </div>
+    </template>
+    <template id="news">
+        <div>
+            <p>这是新闻板块</p>
+        </div>
+    </template>
+    <template id="cars">
+        <div>
+            <p>这是汽车板块</p>
+            <router-link to="/cars/cars_mpv">MPV</router-link>
+            <router-link to="/cars/cars_suv">SUV</router-link>
+            <router-link to="/cars/cars_car">CAR</router-link>
+            <router-view></router-view>
+        </div>
+    </template>
+    <template id="cars_mpv">
+        <div>
+            <p>这是MPV板块</p>
+        </div>
+    </template>
+    <template id="cars_suv">
+        <div>
+            <p>这是SUV板块</p>
+        </div>
+    </template>
+    <template id="cars_car">
+        <div>
+            <p>这是轿车板块</p>
+            <router-link to="/cars/cars_car_bmw">BMW</router-link>
+            <router-link to="/cars/cars_car_lexus">LEXUS</router-link>
+            <router-view></router-view>
+        </div>
+    </template>
+    <template id="cars_car_bmw">
+        <div>
+            <p>BMW</p>
+        </div>
+    </template>
+    <template id="cars_car_lexus">
+        <div>
+            <p>LEXUS</p>
+        </div>
+    </template>
+
+    <h2>动态路由</h2>
+    <div id="vrr">
+        <router-link to="/index">首页</router-link>
+        <router-link to="/newss/2022-01-10">新闻</router-link>
+        <router-view></router-view>
+    </div>
+    <template id="index">
+        <h4>首页</h4>
+    </template>
+    <template>
+        <h4>新闻</h4>
+        <p>日期：{{this.$route.params.date}}</p>
+        <p>天津发现Omicron</p>
+    </template>
+    <script src="./v.js"></script>
+</body>
+
+</html>

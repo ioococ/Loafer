@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <title>编程式</title>
+</head>
+
+<body>
+    <div id="vrp">
+        <router-link to="/news/2022-01-09">昨日新闻</router-link>
+        <router-link to="/news/2022-01-10">今日新闻</router-link>
+        <router-view></router-view>
+        <button @click="yesterday">昨日新闻</button>
+        <button @click="today">今日新闻</button>
+    </div>
+    <template id="index">
+        <div>首页</div>
+    </template>
+    <template id="news">
+        <div>
+            <h2>速递</h2>
+            <p>日期：{{this.$route.params.date}}</p>
+        </div>
+    </template>
+    <script>
+        let index = {
+            template: '#index'
+        }
+        let news = {
+            template: '#news'
+        }
+        let route = new VueRouter({
+            routes: [{
+                path: '/index',
+                component: index
+            }, {
+                path: '/news/:date/nr/:nr',
+                component: news
+            }
+            ]
+        })
+        new Vue({
+            el: '#vrp',
+            router: route,
+            methods: {
+                yesterday() {
+                    this.$router.push({path:'news/2022-01-09/nr/天津发现Omicron病例'})
+                },
+                today() {
+                    this.$router.push({path:'news/2022-01-10/nr/天津完成全员检测'})
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

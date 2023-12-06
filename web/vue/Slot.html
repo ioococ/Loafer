@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <link rel="stylesheet" href="../css/mellifluous.css">
+    <title>Vue</title>
+</head>
+<style>
+    ::selection {
+        background: #dbdbffaa;
+        color: #eeeeff;
+        transition: 3s;
+
+    }
+
+    body {
+        background-color: ghostwhite;
+    }
+
+    p,
+    label,
+    h2,
+    li {
+        color: #d3d3ff;
+        transition: 3s;
+    }
+</style>
+
+<body>
+    <h1>Slot 插槽</h1>
+    <h2>Slot DEMO</h2>
+    <div id="vst">
+        <f-st></f-st>
+    </div>
+    <template id="fcm">
+        <p style="color: greenyellow">Father</p>
+        <s-st>
+            <p>Spring</p>
+        </s-st>
+    </template>
+    <template id="scm">
+        <div>
+            <p>Son</p>
+            <slot></slot>
+        </div>
+    </template>
+    <script>
+        let sstt = {
+            template: '#scm'
+        }
+        let fstt = {
+            template: '#fcm',
+            components: {
+                's-st': sstt
+            }
+        }
+        new Vue({
+            el: '#vst',
+            components: {
+                'f-st': fstt
+            }
+        })
+    </script>
+    <h2>默认插槽</h2>
+    <div id="vct">
+        <dft-com></dft-com>
+        <dft-com>Hello</dft-com>
+    </div>
+    <template id="dftt">
+        <button>
+            <slot>OK</slot>
+        </button>
+    </template>
+    <script>
+        let dtf = {
+            template: '#dftt'
+        }
+        new Vue({
+            el: '#vct',
+            components: {
+                'dft-com': dtf
+            }
+        })
+    </script>
+    <h2>具名插槽</h2>
+    <div id="vsn">
+        <f-sn>
+            <div slot="a" style="border: wheat 3px solid;">A区域</div>
+            <p slot="b" style="border: wheat 3px solid;">B区域</p>
+            <span slot="c" style="border: wheat 3px solid;">C区域</span>
+            <p slot="default">D区域</p>
+            <p slot="default">E区域</p>
+        </f-sn>
+    </div>
+    <template id="tsn">
+        <div>
+            <slot name="a"></slot>
+            <slot name="b"></slot>
+            <slot name="c"></slot>
+            <slot></slot>
+            <slot></slot>
+        </div>
+    </template>
+    <script>
+        let tsn = {
+            template: '#tsn'
+        }
+        new Vue({
+            el: '#vsn',
+            components: {
+                'f-sn': tsn
+            }
+        })
+    </script>
+    <h1>动态组件</h1>
+    <h2></h2>
+    <div id="vdc">
+        <keep-alive>
+            <component v-bind:is="currentName">
+
+            </component>
+        </keep-alive>
+        <div>
+            <button @click="a">One</button>
+            <button @click="b">Two</button>
+            <button @click="c">Three</button>
+        </div>
+    </div>
+    <template id="com1">
+        <div>One</div>
+    </template>
+    <template id="com2">
+        <div>Two</div>
+    </template>
+    <template id="com3">
+        <div>Three</div>
+    </template>
+    <script>
+        let com1 = {
+            template: '#com1'
+        }
+        let com2 = {
+            template: '#com2'
+        }
+        let com3 = {
+            template: '#com3'
+        }
+        new Vue({
+            el: '#vdc',
+            data: {
+                currentName: ''
+            },
+            components: {
+                com1, com2, com3
+            },
+            methods: {
+                a: function () {
+                    this.currentName = 'com1'
+                },
+                b: function () {
+                    this.currentName = 'com2'
+                },
+                c: function () {
+                    this.currentName = 'com3'
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

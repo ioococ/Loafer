@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: MiSans;
+}
+
+@font-face {
+    font-family: MiSans;
+    src: url(../fonts/MiSans-Regular.ttf)
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --white: white;
+    --black: black;
+    --w-pink: #F8C3CD;
+    --w-alpha-pink: rgba(248, 196, 205, 0.3);
+    --b-pink: #C29DA4;
+    --b-alpha-pink: rgba(156, 126, 131, 0.3);
+    --day: 1;
+    --night: 0.7;
+
+    --w-alpha-5: rgba(255, 255, 255, .05);
+    --w-alpha-10: rgba(255, 255, 255, .1);
+    --w-alpha-15: rgba(255, 255, 255, .15);
+    --w-alpha-20: rgba(255, 255, 255, .2);
+    --w-alpha-30: rgba(255, 255, 255, .3);
+    --w-alpha-35: rgba(255, 255, 255, .35);
+    --w-alpha-40: rgba(255, 255, 255, .4);
+    --w-alpha-50: rgba(255, 255, 255, .5);
+    --w-alpha-60: rgba(255, 255, 255, .6);
+    --w-alpha-70: rgba(255, 255, 255, .7);
+    --w-alpha-80: rgba(255, 255, 255, .8);
+    --w-alpha-90: rgba(255, 255, 255, .9);
+    --bg-w-235: rgb(235, 235, 235);
+    --bg-w-s: rgb(245, 245, 245);
+    --bg-w-p: white;
+    --bg-w-pure: white;
+    --bg-w-hover: rgb(205, 205, 205);
+    --bg-w-active: rgb(175, 175, 175);
+    --txt-w-pure: white;
+    --txt-b-pure: black;
+    --txt-b-tip: rgba(0, 0, 0, .8);
+    --b-alpha-5: rgba(0, 0, 0, .05);
+    --b-alpha-10: rgba(0, 0, 0, .1);
+    --b-alpha-15: rgba(0, 0, 0, .15);
+    --b-alpha-20: rgba(0, 0, 0, .2);
+    --b-alpha-30: rgba(0, 0, 0, .3);
+    --b-alpha-35: rgba(0, 0, 0, .35);
+    --b-alpha-40: rgba(0, 0, 0, .4);
+    --b-alpha-50: rgba(0, 0, 0, .5);
+    --b-alpha-60: rgba(0, 0, 0, .6);
+    --b-alpha-70: rgba(0, 0, 0, .7);
+    --b-alpha-80: rgba(0, 0, 0, .8);
+    --b-alpha-90: rgba(0, 0, 0, .9);
+    --cubic-bezier: cubic-bezier(0.65, 0.05, 0.1, 1)
+}
+
+@media (prefers-color-scheme: light) {
+    ::selection {
+        background: var(--w-alpha-pink);
+    }
+
+    #Pic {
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        transition: 0.5s all;
+        filter: brightness(var(--brightness));
+        opacity: 0;
+    }
+
+    #titleTime {
+        margin: 0 auto;
+        margin-top: 10vh;
+        width: 300px;
+        height: fit-content;
+        transition: 0.5s all;
+    }
+
+    #Time {
+        color: var(--w-alpha-90);
+        font-size: 60px;
+        font-weight: 900;
+        transition: 0.5s all;
+    }
+
+    #weekTime,
+    #secondTime {
+        color: var(--w-alpha-90);
+        font-size: 17px;
+        margin: 0 15px;
+    }
+
+    .seEng {
+        margin: 0 auto;
+        margin-top: 5vh;
+        display: block;
+        height: 40px;
+        width: 200px;
+        border: none;
+        border-radius: 40px;
+        background: var(--w-alpha-20);
+        backdrop-filter: blur(10px);
+        outline: none;
+        color: var(--b-alpha-90);
+        font-size: 12px;
+        /* line-height: 30px; */
+        /* text-indent: 10px; */
+        text-align: center;
+        box-shadow: rgb(0 0 0 / 30%) 0 0 10px;
+        transition: all 0.2s;
+    }
+
+    .seEng::placeholder {
+        color: var(--b-alpha-70);
+    }
+
+    .seEng:hover {
+        width: 600px;
+        background: var(--w-alpha-70);
+    }
+
+    .seEng:hover::placeholder {
+        color: var(--b-alpha-70);
+    }
+
+    .seEng.open {
+        width: 600px;
+        background-color: var(--w-alpha-80);
+    }
+
+    #hitokoto {
+        margin-top: 20vh;
+        text-align: center;
+        opacity: 0;
+        transition: 0.5s all;
+    }
+
+    .quoteBg {
+        background-color: var(--w-alpha-30);
+        backdrop-filter: blur(10px);
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s all;
+    }
+
+    .quoteDecorate {
+        color: var(--w-pink);
+        font-size: 14px
+    }
+
+    .quoteStyle {
+        color: var(--w-alpha-90);
+    }
+
+    #Swit {
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: fit-content;
+        height: fit-content;
+        display: inline-block;
+        text-align: center;
+        transition: 0.5s all;
+        opacity: 0;
+    }
+
+    #Swit>button {
+        display: inline-block;
+        margin: 0 20px;
+        border: none;
+        border-radius: 30px;
+        width: 80px;
+        height: 30px;
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        outline: none;
+        transition: 0.5s all;
+        color: var(--w-alpha-80)
+    }
+
+    .quoteRefresh {
+        margin-top: 10px;
+        border: none;
+        border-radius: 30px;
+        background-color: var(--w-alpha-30);
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        outline: none;
+        width: 80px;
+        height: 30px;
+        box-shadow: rgb(0 0 0 / 30%) 0 5px 15px;
+        transition: 0.3s all;
+        z-index: 2;
+        color: var(--w-alpha-80)
+    }
+
+    #id-hitokoto {
+        transition: 0.5s all;
+    }
+
+    .dialog {
+        width: 300px;
+        height: 120px;
+        border: none;
+        border-radius: 30px;
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        padding-top: 20px;
+        text-align: center;
+        display: none;
+        background-color: var(--w-alpha-30);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+    }
+
+    .dialog p {
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .dialog p:nth-child(2) {
+        color: darkgrey;
+        font-size: 10px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    ::selection {
+        background: var(--b-alpha-pink);
+    }
+
+    #Pic {
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        transition: 0.5s all;
+        opacity: 0;
+        filter: brightness(var(--brightness));
+    }
+
+    #titleTime {
+        margin: 0 auto;
+        margin-top: 10vh;
+        width: 300px;
+        height: fit-content;
+        transition: 0.5s all;
+    }
+
+    #Time {
+        color: var(--b-alpha-90);
+        font-size: 60px;
+        font-weight: 900;
+        transition: 0.5s all;
+    }
+
+    #weekTime,
+    #secondTime {
+        color: var(--b-alpha-90);
+        font-size: 17px;
+        margin: 0 15px;
+    }
+
+    .seEng {
+        margin: 0 auto;
+        margin-top: 5vh;
+        display: block;
+        height: 40px;
+        width: 200px;
+        border: none;
+        border-radius: 40px;
+        background: var(--b-alpha-20);
+        backdrop-filter: blur(10px);
+        outline: none;
+        color: var(--w-alpha-90);
+        font-size: 12px;
+        /* line-height: 30px; */
+        /* text-indent: 10px; */
+        text-align: center;
+        box-shadow: rgb(0 0 0 / 30%) 0 0 10px;
+        transition: all 0.2s;
+    }
+
+    .seEng::placeholder {
+        color: var(--w-alpha-70);
+    }
+
+    .seEng:hover {
+        width: 600px;
+        background: var(--b-alpha-70);
+    }
+
+    .seEng:hover::placeholder {
+        color: var(--w-alpha-70);
+    }
+
+    .seEng.open {
+        width: 600px;
+        background-color: var(--b-alpha-80);
+    }
+
+    #hitokoto {
+        margin-top: 20vh;
+        text-align: center;
+        opacity: 0;
+        transition: 0.5s all;
+    }
+
+    .quoteBg {
+        background-color: var(--b-alpha-30);
+        backdrop-filter: blur(10px);
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s all;
+    }
+
+    .quoteDecorate {
+        color: var(--b-pink);
+        font-size: 14px
+    }
+
+    .quoteStyle {
+        color: var(--b-alpha-90);
+    }
+
+    #Swit {
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: fit-content;
+        height: fit-content;
+        display: inline-block;
+        text-align: center;
+        transition: 0.5s all;
+        opacity: 0;
+    }
+
+    #Swit>button {
+        display: inline-block;
+        margin: 0 20px;
+        border: none;
+        border-radius: 30px;
+        width: 80px;
+        height: 30px;
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        outline: none;
+        transition: 0.5s all;
+        color: var(--b-alpha-80)
+    }
+
+    .quoteRefresh {
+        margin-top: 10px;
+        border: none;
+        border-radius: 30px;
+        background-color: var(--b-alpha-30);
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        outline: none;
+        width: 80px;
+        height: 30px;
+        box-shadow: rgb(0 0 0 / 30%) 0 5px 15px;
+        transition: 0.3s all;
+        z-index: 2;
+        color: var(--b-alpha-80)
+    }
+
+    #id-hitokoto {
+        transition: 0.5s all;
+    }
+
+    .dialog {
+        width: 300px;
+        height: 120px;
+        border: none;
+        border-radius: 30px;
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        padding-top: 20px;
+        text-align: center;
+        display: none;
+        background-color: var(--w-alpha-30);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+    }
+
+    .dialog p {
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .dialog p:nth-child(2) {
+        color: darkgrey;
+        font-size: 10px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+}

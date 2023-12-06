@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.13/vue.min.js"></script>
+    <title>Index</title>
+</head>
+<style>
+    #body {
+        margin: 0 auto;
+        padding: 50px;
+        border: #ffee8e solid;
+        border-radius: 3px;
+        height: fit-content;
+        width: fit-content;
+    }
+    
+    .ctn {
+        margin: 0 auto;
+        padding: 10px;
+        height: fit-content;
+        width: fit-content;
+    }
+    
+    button {
+        cursor: pointer;
+        padding: 10px;
+        border: #15aee6 2px solid;
+        border-radius: 3px;
+        background: transparent;
+        color: #757575;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s
+    }
+    
+    button:hover {
+        background-color: #15aee6;
+        color: #fff;
+        transition: all 0.3s
+    }
+    
+    button:active {
+        border-radius: #108cb9;
+        background-color: #108cb9;
+        transition: all 0.15s
+    }
+    
+    img:hover {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div id="body">
+        <div id="vdc" class="ctn">
+            <keep-alive>
+                <component v-bind:is="currentName" v-bind:style="styleObject">
+                </component>
+            </keep-alive>
+            <div class="ctn">
+                <button @click="a">CHANGE</button>
+            </div>
+        </div>
+        <template id="img0">
+            <div><img src="./img/0.jpg"></div>
+        </template>
+        <template id="img1">
+            <div><img src="./img/1.jpg"></div>
+        </template>
+        <template id="img2">
+            <div><img src="./img/2.jpg"></div>
+        </template>
+        <template id="img3">
+            <div><img src="./img/3.jpg"></div>
+        </template>
+        <template id="img4">
+            <div><img src="./img/4.jpg"></div>
+        </template>
+        <template id="img5">
+            <div><img src="./img/5.jpg"></div>
+        </template>
+    </div>
+    <script src="./v.js"></script>
+</body>
+
+</html>

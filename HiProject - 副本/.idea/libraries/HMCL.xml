@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="HMCL">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/HMCL.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <package name="struts2d1" namespace="/" extends="struts-default">
+<!--        <action name="login" class="cn.itcast.action.LoginAction">-->
+        <action name="login" class="cn.itcast.action.NewLoginAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="Aware" class="cn.itcast.action.AwareAction">
+            <result name="success">/massage.jsp</result>
+        </action>
+        <action name="Message" class="cn.itcast.action.MessageAction">
+            <result name="success">massage.jsp</result>
+        </action>
+    </package>
+
+    <package name="book" namespace="/" extends="struts-default">
+        <action name="login" class="cn.itcast.action.BookLoginAction">
+            <result>/index.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+        <action name="book_*" class="cn.itcast.action.BookAction" method="{1}">
+            <result name="success">/success.jsp</result>
+            <result name="login">/login.jsp</result>
+            <interceptor-ref name="myStack"></interceptor-ref>
+            <allowed-methods>add,del,update,find</allowed-methods>
+        </action>
+        <action name="Aware" class="cn.itcast.action.AwareAction">
+            <result name="success">/massage.jsp</result>
+        </action>
+        <action name="Message" class="cn.itcast.action.MessageAction">
+            <result name="success">massage.jsp</result>
+        </action>
+    </package>
+</struts>

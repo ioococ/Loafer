@@ -1,0 +1,106 @@
+body {
+    margin: 5px auto;
+    padding: 0;
+    background: #F6F6F6;
+    width: 100%;
+    height: 100%;
+}
+
+::selection {
+    background: ghostwhite;
+}
+
+h2,
+#cal {
+    /*字体颜色*/
+    color: #C3C3FF;
+    margin: 10px auto;
+    /*border-collapse: collapse;!*border-collapse:collapse合并内外边距(去除表格单元格默认的2个像素内外边距*!*/
+}
+
+.form-control {
+    margin: 15px 3px 15px 3px;
+    display: inline;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #F8F8FF;
+    border: 1px solid #C3C3FF;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .5s, box-shadow ease-in-out .5s;
+}
+
+.form-control:focus {
+    border-color: #C3C3FF;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(195, 195, 255, 0.6);
+}
+.form-control:hover{
+    border: 1px solid #cacaff;
+    transition: 0.75s;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #ededff;
+    color: #C3C3FF;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+}
+
+.btn.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+    border: rgba(195, 195, 255, 0.1) 2px solid;
+    color: #b2b2de;
+    text-decoration: none;
+}
+
+.btn:active,
+.btn.active {
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+div {
+    width: fit-content;
+    height: fit-content;
+}
+
+#ipt {
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #f8f8f8;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 1px rgba(129, 129, 129, 0.6);
+    box-shadow: 5 5 10px grey;
+    transition: 0.35s;
+}
+#ipt:hover{
+    border: 1px solid #B2B2B2;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 3px rgba(129, 129, 129, 0.6);
+    transition: 0.35s;
+}
+
+textarea{
+    font-family: "微软雅黑";
+}

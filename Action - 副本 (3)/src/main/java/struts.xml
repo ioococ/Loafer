@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.devModel" value="true"/>
+    <package name="Hello" namespace="/" extends="struts-default">
+        <action name="hello" class="cn.itcast.action.NewAction" method="execute">
+            <result name="success">/welcome.jsp</result>
+        </action>
+        <action name="msg" class="cn.itcast.action.MsgAction" method="execute">
+            <result name="success">/msg.jsp</result>
+        </action>
+        <action name="login" class="cn.itcast.action.LoginAction" method="execute">
+            <result name="success">/msg.jsp</result>
+        </action>
+    </package>
+</struts>

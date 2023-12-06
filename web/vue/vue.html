@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <title>Vue</title>
+</head>
+<style>
+    ::selection {
+        background: #a1ffd3;
+        color: #d8ffed;
+    }
+
+    body {
+        background-color: #ebfff5;
+    }
+
+    p {
+        color: #2C3E50;
+    }
+</style>
+<style>
+    .test {
+        background: ghostwhite;
+        color: rgb(191, 191, 221);
+        transition: 1s;
+    }
+</style>
+
+<body>
+    <div id="app" class="demo">
+        <p v-html="message">{{message}}</p>
+    </div>
+
+    <div id="sty">
+        <label></label>
+        <input type="checkbox" name="" id="" v-model="use">
+        <span v-bind:class="{test:use}">
+            多选框
+        </span>
+    </div>
+    <p>Finish</p>
+</body>
+<!-- 命令式渲染 -->
+<!-- <script>
+    var arr = [1, 2, 3, 4, 5]
+    var newArr = []
+    for (let index = 0; index < arr.length; index++) {
+        newArr.push(arr[index] * 2)
+    }
+    console.log(newArr)
+</script> -->
+<!-- 声明式渲染 -->
+<!-- <script>
+    var arr = [1, 2, 3, 4, 5]
+    var newArr = arr.map(
+        function (item) {
+            return item * 2
+        }
+    )
+    console.log(newArr)
+</script> -->
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello World'
+        }
+    })
+</script>
+<script>
+    new Vue({
+        el: '#sty',
+        data: {
+            use: false
+        }
+    })
+</script>
+
+</html>

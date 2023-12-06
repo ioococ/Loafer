@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <script src="./vue.js"></script>
+    <title>Vue</title>
+</head>
+<html>
+<h2>组件中Data()方法的使用</h2>
+<div id="app-zj-data">
+    <global></global>
+    <local v-bind:one="one" v-bind:two="two" v-bind:three="three"></local>
+</div>
+
+<h2>组件代码与模版代码解耦</h2>
+<h2>vue 实例解析的部分</h2>
+<div id="vdp">
+    <my-com></my-com>
+</div>
+方法1 用 template标签
+<template id="com">
+    <div>
+        <h3>组件的内容{{num}}</h3>
+        <button @click="num++">点击修改值{{num}}</button>
+    </div>
+</template>
+方法1 用 script标签
+<script id="com" type="text/html">
+            <div>
+                <h3>组件的内容</h3>
+                <button @click="num++">点击修改值{{num}}</button>
+            </div>
+        </script>
+
+
+父组件与子组件
+<div id="app-fz">
+    <fzj-com></fzj-com>
+</div>
+<template id="fzj">
+    <div>
+        <h1>这里是父组件</h1>
+        <zzj-com></zzj-com>
+    </div>
+</template>
+<template id="zzj">
+    <div>
+        <h1>这里是子组件</h1>
+    </div>
+</template>
+
+<h1>数据父传子</h1>
+<div id="app-fzdata">
+    <fzj-com :str="str"></fzj-com>
+</div>
+<template id="fzjdata">
+    <div>
+        <h3>这里是父组件fzjCom{{str}}</h3>
+        <zzj-com :str1="str1" :str2="str2"></zzj-com>
+    </div>
+</template>
+<template id="zzjdata"><!--子组件模板--> 
+    <div>
+        <h2>这里是子组件的内容和传入的{{str1}},{{str2}}</h2>
+    </div>
+</template>
+
+<h1>数据子传父</h1>
+<div id="app-fz">
+    <fzj-com></fzj-com>
+</div>
+<template id="fzj">
+    <div>
+        <h2>这里是父组件{{reStr}}</h2>
+        <zzj-com @sendstr="jieshou"></zzj-com>
+    </div>
+</template>
+<template id="zzj">
+    <div>
+        <input v-model="str" />
+        <button @click="send">Send</button>
+    </div>
+</template>
+</body>
+
+</html>

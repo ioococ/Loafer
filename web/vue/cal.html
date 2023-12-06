@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <link rel="stylesheet" href="../css/total.css">
+    <script src="../js/notyf.min.js"></script>
+    <link rel="stylesheet" href="../css/notyf.min.css">
+    <script>
+    </script>
+    <title>Calculator</title>
+</head>
+<style>
+    h1 {
+        margin: 0 auto;
+        padding: 0;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #cal {
+        margin: 0 auto;
+        padding: 50px;
+        height: fit-content;
+        width: fit-content;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 1px 1px 15px #dddddd;
+    }
+
+    #btngrp {
+        margin: 0 auto;
+        padding: 0;
+        height: fit-content;
+        width: fit-content;
+    }
+</style>
+
+<body>
+    <div id="cal">
+        <h1>傻瓜计算器</h1>
+        <input type="text" class="form-control" v-model="a" placeholder="0">
+        <input type="text" class="form-control" v-model="b" placeholder="0">
+        <div id="btngrp">
+            <button class="btn" v-on:click="add()">加</button>
+            <button class="btn" v-on:click="subtract()">减</button>
+            <button class="btn" v-on:click="multiply()">乘</button>
+            <button class="btn" v-on:click="divide()">除</button>
+        </div>
+    </div>
+    <script>
+        var notyf = new Notyf({ delay: 30000 });
+        new Vue({
+            el: "#cal",
+            data: {
+                a: 0,
+                b: 0,
+                c: 0
+            },
+            methods: {
+                add: function () {
+                    if (this.a == '' || this.b == '') {
+                        this.c = '错误';
+                        notyf.alert(this.c);
+                    } else {
+                        this.c = parseInt(this.a) + parseInt(this.b)
+                        notyf.confirm(this.a + ' + ' + this.b + ' = ' + this.c);
+                    }
+                },
+                subtract: function () {
+                    if (this.a == '' || this.b == '') {
+                        this.c = '错误';
+                        notyf.alert(this.c);
+                    } else {
+                        this.c = parseInt(this.a) - parseInt(this.b)
+                        notyf.confirm(this.a + ' - ' + this.b + ' = ' + this.c);
+                    }
+                },
+                multiply: function () {
+                    if (this.a == '' || this.b == '') {
+                        this.c = '错误';
+                        notyf.alert(this.c);
+                    } else {
+                        this.c = parseInt(this.a) * parseInt(this.b)
+                        notyf.confirm(this.a + ' × ' + this.b + ' = ' + this.c);
+                    }
+                },
+                divide: function () {
+                    if (parseInt(this.b) == 0) {
+                        notyf.confirm(this.a + ' / ' + this.b + ' = ∞');
+                    } else if (this.a == '' || this.b == '') {
+                        this.c = '错误';
+                        notyf.alert(this.c);
+                    } else {
+                        this.c = parseInt(this.a) / parseInt(this.b)
+                        notyf.confirm(this.a + ' / ' + this.b + ' = ' + this.c);
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

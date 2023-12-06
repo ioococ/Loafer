@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>路由</h1>
+    <h2>默认路由</h2>
+    <div id="vre">
+        <router-link to="/home">Home</router-link>
+        <router-link to="/news">News</router-link>
+        <router-link to="/cars">Cars</router-link>
+        <router-view></router-view>
+    </div>
+    <template id="home">
+        <div>
+            <p>Home</p>
+        </div>
+    </template>
+    <template id="news">
+        <div>
+            <p>News</p>
+        </div>
+    </template>
+    <template id="cars">
+        <div>
+            <p>Cars</p>
+        </div>
+    </template>
+    <h2>嵌套</h2>
+    <div id="vrc">
+        <router-link to="/home">Home</router-link>
+        <router-link to="/news">News</router-link>
+        <router-link to="/cars">Cars</router-link>
+        <router-view></router-view>
+    </div>
+    <template id="home">
+        <div>
+            <p>Home</p>
+        </div>
+    </template>
+    <template id="news">
+        <div>
+            <p>News</p>
+        </div>
+    </template>
+    <template id="cars">
+        <div>
+            <p>Cars</p>
+            <router-link to="/cars/cars_mpv">MPV</router-link>
+            <router-link to="/cars/cars_suv">SUV</router-link>
+            <router-link to="/cars/cars_car">CAR</router-link>
+            <router-view></router-view>
+        </div>
+    </template>
+    <template id="cars_mpv">
+        <div>
+            <p>cars_mpv</p>
+        </div>
+    </template>
+    <template id="cars_suv">
+        <div>
+            <p>cars_suv</p>
+        </div>
+    </template>
+    <template id="cars_car">
+        <div>
+            <p>cars_car</p>
+        </div>
+    </template>
+</body>
+<script>
+    let home = {
+        template: '#home',
+    }
+    let news = {
+        template: '#news',
+    }
+    let cars = {
+        template: '#cars',
+    }
+    let route = new VueRouter({
+        routes: [
+            {
+                path: '/home',
+                component: home
+            }, {
+                path: '/news',
+                component: news
+            }, {
+                path: '/cars',
+                component: cars
+            }
+        ]
+    })
+    new Vue({
+        el: '#vre',
+        components: {
+            home, news, cars
+        },
+        router: route
+
+    })
+</script>
+
+<script>
+    let home = {
+        template: '#home',
+    }
+    let news = {
+        template: '#news',
+    }
+    let cars = {
+        template: '#cars',
+        children: [{
+            path: '/cars/cars_mpv',
+            component: cars_mpv
+        }, {
+            path: '/cars/cars_suv',
+            component: cars_suv
+        }, {
+            path: '/cars/cars_car',
+            component: cars_car
+        },]
+    }
+    let cars_mpv = {
+        template: '#cars_mpv',
+    }
+    let cars_suv = {
+        template: '#cars_suv',
+    }
+    let cars_car = {
+        template: '#cars_car',
+    }
+    let route = new VueRouter({
+        routes: [
+            {
+                path: '/home',
+                component: home
+            }, {
+                path: '/news',
+                component: news
+            }, {
+                path: '/cars',
+                component: cars
+            }
+        ]
+    })
+    new Vue({
+        el: '#vrc',
+        components: {
+            home, news, cars
+        },
+        router: route
+
+    })
+</script>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mellifluous.css">
+    <script src="../js/notyf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.js"></script>
+    <title>Exp</title>
+</head>
+<style>
+    ::selection {
+        background: #dbdbffaa;
+        color: #eeeeff;
+        transition: 3s;
+
+    }
+
+    body {
+        background-color: ghostwhite;
+    }
+
+    p,
+    label,
+    h2,
+    li {
+        color: #d3d3ff;
+        transition: 3s;
+    }
+</style>
+
+<body>
+    <h2>表达式</h2>
+    <div id="exp">
+        <label v-pre>表达式{{1+2}}的值为</label>{{1+2}}<br />
+        <label v-pre>{{ok ? 'YES':'NO'}}的值为</label>{{ok? 'YES':'NO'}}<br>
+        <label v-pre>{{message.split(' ').reverse().join(' ')}}的结果是</label>
+        {{message.split(' ').reverse().join(' ')}}<br>
+        <div v-bind:id="'list-'+id"><label>div的id为list{{id}}</label></div>
+    </div>
+    <br><br><br>
+    <h2>v-once</h2>
+    <div id="voc">
+        <label>包含v-once:</label>
+        <label v-once>{{msg}}</label><br>
+        <label>不包含v-once:</label>
+        <label>{{msg}}</label><br>
+        <input type="text" v-model="msg">
+    </div>
+    <h2>v-bind</h2>
+    <div id="vbd">
+        <a v-bind:href="url">百度</a>
+    </div>
+    <h2>v-if</h2>
+    <div id='vif'>
+        <p v-if="ok">准备好了</p>
+        <template v-if="jump">
+            <p>机长说：</p>
+            <p>跳吧</p>
+        </template>
+    </div>
+    <h2>v-else</h2>
+    <div id='ves'>
+        <p v-if="ok">准备好了</p>
+        <template v-if="jump">
+            <p>机长说：</p>
+            <p>跳吧</p>
+        </template>
+        <template v-else>
+            <p>机长说：</p>
+            <p>下次跳吧</p>
+        </template>
+    </div>
+    <h2>v-else-if</h2>
+    <div id='vef'>
+        <p>今天天气：</p>
+        <p v-if="type==='无风'">无风可跳伞</p>
+        <p v-else-if="type==='微风'">微风可跳伞，但注意着陆点</p>
+        <p v-else-if="type==='大风'">大风不可跳伞</p>
+        <p v-else>查看当前风速</p>
+    </div>
+    <h2>v-for</h2>
+    <div id='vfr'>
+        <ul>
+            <li v-for="site in sites">{{site}}</li>
+        </ul>
+    </div>
+    <h2>键值对v-for</h2>
+    <div id='vfs'>
+        <ul>
+            <li v-for="n in names">{{n}}</li>
+        </ul>
+    </div>
+    <h2>JSON v-for</h2>
+    <div id='vfn'>
+        <ul>
+            <li v-for="v in obj">{{v}}</li>
+        </ul>
+    </div>
+    <h2>迭代输出JSON键值对</h2>
+    <div id='vkv'>
+        <ul>
+            <li v-for="(value,key) in obj">{{key}}=={{value}}</li>
+        </ul>
+    </div>
+    <h2>在数组中输出 第二参数做索引</h2>
+    <div id="v">
+        <ul>
+            <li v-for="(site,a) in sites">
+                {{site}}:{{a}}
+            </li>
+        </ul>
+    </div>
+    <h2>JSON索引 键值对</h2>
+    <div id="vt">
+        <ul>
+            <li v-for="(value,key,index) in sites">
+                {{index}}:{{key}}:{{value}}
+            </li>
+        </ul>
+    </div>
+    <h2>JSON索引 键值对</h2>
+    <div id="vfi">
+        <ul>
+            <li v-for="n in 10">
+                {{n}}
+            </li>
+        </ul>
+    </div>
+    <h2>Watch监听</h2>
+    <div id="vwh">
+        价格：<input type="text" v-model="price">
+        数量：<input type="text" v-model="num">
+        合计：{{total}}
+    </div>
+    <h2>Watch监听</h2>
+    <div id="vwa">
+        价格：<input type="text" v-model="price">
+        数量：<input type="text" v-model="num">
+        合计：{{total}}
+    </div>
+    <h2>Event事件</h2>
+    <div id="vwe">
+        <label v-on:click="counter+=1">+1</label>
+        <p>被点击了{{counter}}次</p>
+    </div>
+    <h2>Event事件简写</h2>
+    <div id="vws">
+        <label @click="counter+=1">+1</label>
+        <p>被点击了{{counter}}次</p>
+    </div>
+    <h2>Event事件方法</h2>
+    <div id="vwm">
+        <label @click="alertW">Click</label>
+    </div>
+    <h2>Compute计算</h2>
+    <div id="vce">
+        <p>{{OldStr}}-->{{NewStr}}</p>
+    </div>
+    <h2>Compute Method</h2>
+    <div id="vcm">
+        <p>{{OldStr}}</p>
+        <p>计算：{{CNewStr}}</p>
+        <p>方法：{{MNewStr()}}</p>
+    </div>
+    <h2>样式绑定 通过样式名进行绑定</h2>
+    <style>
+        .active {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+        .base {
+            width: 100px;
+            height: 100px;
+        }
+
+        .active {
+            width: 100px;
+            height: 100px;
+            background: aqua;
+        }
+
+        .text-danger {
+            background: yellow;
+        }
+
+        .text-warning {
+            background: red;
+            border: orange;
+        }
+    </style>
+    <div id="vty">
+        <div v-bind:class="{'active':isActive,'text-danger':hasError}"></div>
+    </div>
+    <h2>样式绑定 data属性与computed计算属性，JSON对象配合使用</h2>
+    <div id="vtj">
+        <div v-bind:class="classObject"></div>
+    </div>
+    <h2>样式绑定 data属性与computed计算属性，JSON对象配合使用</h2>
+    <div id="vtg">
+        <div v-bind:class="[activeClass,errorClass,warningClass]"></div>
+    </div>
+    <h2>样式绑定 三元表达式</h2>
+    <div id="vtt">
+        <div v-bind:class="[errorClass,warningClass,isActive ? activeClass:'']"></div>
+    </div>
+    <h2>样式绑定 内联样式</h2>
+    <div id="vti">
+        <div v-bind:style="{color:activeColor,fontSize:fontSize+'px'}">内联样式</div>
+        <!-- <div v-bind:style="{border-style:solid, border-color:#ff0000 #0000ff}">内联样式</div> -->
+    </div>
+    <h2>样式绑定 内联样式 JSON对象</h2>
+    <div id="vto">
+        <div v-bind:style="styleObject">内联样式</div>
+    </div>
+    <h2>样式绑定 内联样式 数组 多数组元素</h2>
+    <div id="vsg">
+        <div v-bind:style="[baseStyles,overridingStyles]">内联样式</div>
+    </div>
+    <h2>表单操作</h2>
+    <div id="vfc">
+        <input type="text" v-model="vft" placeholder="">
+        <p>输入的值为：{{vft}}</p>
+        <p>textarea的值为：</p>
+        <textarea name="" id="" cols="30" rows="10" v-model="vfa"></textarea>
+        <p>虎字成语接力赛</p>
+        <p>{{vfa}}</p>
+    </div>
+    <h2>单选框绑定</h2>
+    <div id="vro">
+        <p style="font-size: 30px;">过年喜欢吃什么</p>
+        <input type="radio" name="" id="r1" value="饺子" v-model="picked">
+        <label for="r1">饺子</label>
+        <br>
+        <input type="radio" name="" id="r2" value="汤圆" v-model="picked">
+        <label for="r2">汤圆</label>
+        <br>
+        <p>选中：{{picked}}</p>
+    </div>
+    <h2>列表框绑定</h2>
+    <div id="vso">
+        <select v-model="selected" id="game">
+            <option value="">选择一项娱乐项目</option>
+            <option value="麻将">麻将</option>
+            <option value="扑克">扑克</option>
+        </select>
+        <div id="output">
+            选择的项目：{{selected}}
+        </div>
+    </div>
+    <h1>组件</h1>
+    <h2>全局组件</h2>
+    <div id="vgc">
+        <gc-com></gc-com>
+    </div>
+    <h2>局部组件</h2>
+    <div id="vlc" style="border:5px solid #d3d3ff; border-radius: 2px;">
+        <lc-com></lc-com>
+    </div>
+    <p></p>
+    <div id="vlt" style="border:5px solid #d3d3ff; border-radius: 2px;">
+        <lc-com></lc-com>
+    </div>
+    <h2>Data()方法的使用</h2>
+    <div id="vgl">
+        <global></global>
+        <local v-bind:one="one" v-bind:two="two" v-bind:three="three"></local>
+    </div>
+    <h2>组件代码的解耦</h2>
+    <div id="vdp">
+        <decoupling></decoupling>
+        <my-com></my-com>
+    </div>
+    <template id="com">
+        <div>
+            <h4>组件的内容{{num}}</h4>
+            <button @click="num++">{{num}}</button>
+        </div>
+    </template>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+<script src="../js/vue.js"></script>
+
+</html>

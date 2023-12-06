@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.5.2/vue.js"></script>
+    <link rel="stylesheet" href="../css/total.css">
+    <title>Input</title>
+</head>
+<style>
+</style>
+<body>
+    <div id="ipt">
+        <div>
+            <textarea class="form-control" cols="34" rows="10" v-model="vta"></textarea>
+        </div>
+        <div>
+            <input type="text" class="form-control" v-model="vit" placeholder="虎斑霞绮" />
+            <button class="btn" @click="add()">添加</button>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#ipt',
+            data: {
+                vit: '虎斑霞绮',
+                vta: '虎头蛇尾 虎踞龙盘 虎口拔牙',
+                // vta = vta + vit,
+            },
+            methods: {
+                add() {
+                    this.vta = this.vta +'\u00A0' + this.vit
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开始</title>
+    <meta name="keywords" content="搜索主页,空无,主页">
+    <meta name="description" content="个人主页，欢迎使用">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body id="body">
+    <div id="Pic" style="background-image: url(); opacity: 1;">
+    </div>
+    <div id="titleTime">
+        <span id="weekTime" style="display: inline-block;"></span>
+        <p id="Time" style="display: inline-block;"></p>
+        <span id="secondTime" style="display: inline-block;"></span>
+    </div>
+    <form>
+        <input type="text" class="seEng" id="seEng" placeholder="Search">
+        <input type="text" style="display:none">
+    </form>
+    <div id="Swit" style="opacity: 0; display: none;">
+        <button id="Swit-baidu" class="btn" style="background-color: var();">百度</button>
+        <button id="Swit-bing" class="btn" style="background-color: var();">必应</button>
+        <button id="Swit-google" class="btn" style="background-color: var();">Google</button>
+    </div>
+    <div id="hitokoto" style="opacity: 0; display: none;">
+        <div class="quoteBg"></div>
+        <p class="quoteDecorate" id="quoteDecorate">
+            「
+            <span id="quoteContent" class="quoteStyle"></span>
+            」
+        </p>
+        <p class="quoteDecorate">
+            出处：
+            <span id="quoteOrigin" class="quoteStyle"></span>
+        </p>
+        <p class="quoteDecorate" id="quoteAuthor" style="opacity: 0;">
+            作者:
+            <span id="quoteSource" class="quoteStyle"></span>
+        </p>
+        <button class="quoteRefresh">刷新</button>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+    <script type="text/javascript" src="./src/js/style.js"></script>
+    <script src="./src/js/leaker.js"></script>
+
+</body>
+
+</html>

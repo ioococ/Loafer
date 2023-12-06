@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <package name="book" namespace="/" extends="struts-default">
+        <interceptors>
+            <interceptor name="privilege" class="cn.itcast.interceptor.Privilege"/>
+            <interceptor-stack name="myStack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="privilege"/>
+            </interceptor-stack>
+        </interceptors>
+        <action name="login" class="cn.itcast.action.LoginAction">
+            <result>/index.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+        <action name="book_*" class="cn.itcast.action.BookAction" method="{1}">
+            <result name="success">/success.jsp</result>
+            <result name="login">/login.jsp</result>
+            <!--在action中使用自定义拦截器-->
+            <interceptor-ref name="myStack"/>
+            <allowed-methods>find,add,del,update</allowed-methods>
+        </action>
+    </package>
+</struts>

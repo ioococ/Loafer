@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>库存管理</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <style>
+        #MainTable{
+            height: 800px;
+            width: 100%;
+        }
+        #leftTD{
+            width: 12%;
+            border: 5px solid #C3C3FF;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 10px;
+        }
+        #rightTD{
+            width: 88%;
+            border: 5px solid #C3C3FF;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 10px;
+        }
+        #leftTable{
+            left: 0;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #C3C3FF;
+        }
+        .leftTd1{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 15%;
+            border: 1px solid #C3C3FF;
+        }
+        #rightTable{
+            left: 0px;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 800px;
+            border: 1px solid #C3C3FF;
+        }
+        #tdS{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 90%;
+            border: 1px solid #C3C3FF;
+        }
+        #tdX{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 10%;
+            border: 1px solid #C3C3FF;
+        }
+        #frame{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #C3C3FF;
+        }
+    </style>
+</head>
+<body>
+<table id="MainTable">
+    <tr>
+        <td id="leftTD"><!--左侧单元格-->
+            <table id="leftTable">
+                <tr>
+                    <td id="td1" class="leftTd1"> <!--左侧单元格-->
+                        <div id="user">用户管理</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="td2" class="leftTd1"> <!--左侧单元格-->
+                        <div id="kccx">库存查询</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="td3" class="leftTd1"> <!--左侧单元格-->
+                        <div id="rk">入库管理</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="td4" class="leftTd1"> <!--左侧单元格-->
+                        <div id="ck">出库管理</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="td5" class="leftTd1"> <!--左侧单元格-->
+                        <div id="xl">退出</div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td id="rightTD"><!--右侧单元格-->
+            <table id="rightTable">
+                <tr>
+                    <td id="tdS"> <!--右侧上单元格-->
+                        <iframe id="frame" src="JSP/userQuery.jsp"> <!--框架里调用网页区域--></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="tdX"> <!--右侧下单元格-->
+                        <div>
+                            <button id="Syy">上一页</button>
+                            <button id="Xyy">下一页</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    $("#user").click(
+        function () {
+            $("#frame").attr("src","JSP/userQuery.jsp");//更改frame的地址
+        }
+    );
+    $("#xl").click(
+        function () {
+            $("#frame").attr("src","./JSP/outlogin.jsp");//更改frame地址
+        }
+    );
+    let currentPage;
+    function a() {
+        currentPage = window.frames[0].document.getElementById("spanPage2").innerText;
+    }
+    $("#Syy").click(
+        function () {
+            a();
+            $("#frame").attr("src","JSP/userQuery.jsp?Fx=p&Page="+currentPage);
+        }
+    )
+    $("#Xyy").click(
+        function () {
+            a();
+            $("#frame").attr("src","JSP/userQuery.jsp?Fx=n&Page="+currentPage);
+        }
+    )
+</script>
