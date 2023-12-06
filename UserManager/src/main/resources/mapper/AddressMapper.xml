@@ -3,11 +3,18 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="ink.onei.dao.IAddressDao">
-    <insert id="add" parameterType="Address">
+    <insert id="insert" parameterType="Address">
         insert into address(address, postcode, userid)
         values (#{address},
                 #{postcode},
                 #{userid})
+    </insert>
+
+    <insert id="insertBatch" parameterType="Address">
+        insert into address(address, postcode, userid) values
+        <foreach collection="list" item="address" separator=",">
+            (#{address.address},#{address.postcode},#{address.userid})
+        </foreach>
     </insert>
 
     <update id="updateAddressById" parameterType="Address">
@@ -17,12 +24,42 @@
             userid   = #{userid}
         where id = #{id}
     </update>
-    <delete id="deleteAddressById" parameterType="java.lang.Integer">
+
+    <update id="updateAddressDynamic">
+        update address
+        <set>
+            <if test="address != null and address != ''">address = #{address},</if>
+            <if test="postcode != null and postcode != ''">postcode = #{postcode},</if>
+            <if test="userid != null and userid != ''">userid = #{userid},</if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteAddressById" parameterType="Integer">
+        delete from address where id in ${id}
     </delete>
+
+    <delete id="deleteBatch" parameterType="List">
+        delete from address where id in
+        <foreach collection="list" item="id" open="(" separator="," close=")">
+            ${id}
+        </foreach>
+    </delete>
+
     <select id="getAddressById" parameterType="int" resultType="Address">
         select *
         from address
         where id = #{id}
+    </select>
+
+    <select id="getAddressDynamic" resultType="Address">
+        select * from address
+        <where>
+            <if test="id != null and id != ''">and id = #{id}</if>
+            <if test="address != null and address != ''">and address = #{address}</if>
+            <if test="postcode != null and postcode != ''">and postcode = #{postcode}</if>
+            <if test="userid != null and userid != ''">and userid = #{userid}</if>
+        </where>
     </select>
 
     <select id="getAllAddress" resultType="Address">

@@ -35,13 +35,27 @@ public class DBUserTest {
     @Test
     public void add() {
         User user = new User("root", "root", "男", "11111", "1@1.com", new Date(997718400), "root");
-        Integer add = userDao.add(user);
+        Integer add = userDao.insert(user);
     }
 
     @Test
     public void update() {
         User user = new User("root", "P@$$vvr0d", "男", "11111", "1@1.com", new Date(997718400), "root");
-        Integer add = userDao.add(user);
+        Integer add = userDao.updateUserById(user);
+    }
+
+    @Test
+    public void updateDynamic() {
+        User user = new User();
+        user.setId(51);
+//        user.setUsername("root");
+//        user.setPassword("P@$$vvr0d");
+//        user.setSex("男");
+        user.setPhone("111112");
+        user.setEmail("1@1.com");
+//        user.setNickname("root");
+        user.setBirthday(new Date(1080771840000L));
+        Integer i = userDao.updateUserDynamic(user);
     }
 
     @Test

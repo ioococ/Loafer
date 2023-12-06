@@ -11,11 +11,16 @@ import java.util.List;
  */
 
 public interface IUserDao {
-    Integer add(User user);
+    Integer insert(User user);
+    Integer insertBatch(List<User> userList);
 
     Integer updateUserById(User user);
 
+    Integer updateUserDynamic(User user);
+
     Integer deleteUserById(Integer id);
+
+    User getUserDynamic(User user);
 
     User getUserById(Integer id);
 

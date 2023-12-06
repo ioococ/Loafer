@@ -8,9 +8,9 @@
     <!--        <setting name="logImpl" value="LOG4J"/>-->
     <!--    </settings>-->
     <typeAliases>
-        <typeAlias type="ink.onei.entity.User" alias="User"/>
-        <typeAlias type="ink.onei.entity.Address" alias="Address"/>
-        <!--        <package name="ink.onei.entity"/>-->
+        <!--        <typeAlias type="ink.onei.entity.User" alias="User"/>-->
+        <!--        <typeAlias type="ink.onei.entity.Address" alias="Address"/>-->
+        <package name="ink.onei.entity"/>
     </typeAliases>
     <environments default="development">
         <environment id="development">
@@ -26,5 +26,6 @@
     <mappers>
         <mapper resource="mapper/UserMapper.xml"/>
         <mapper resource="mapper/AddressMapper.xml"/>
+        <mapper resource="mapper/ScoreMapper.xml"/>
     </mappers>
 </configuration>

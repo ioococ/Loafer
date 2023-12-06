@@ -11,13 +11,21 @@ import java.util.List;
  */
 
 public interface IAddressDao {
-    Integer add(Address address);
+    Integer insert(Address address);
+
+    Integer insertBatch(List<Address> addressList);
 
     Integer updateAddressById(Address address);
 
+    Integer updateAddressDynamic(Address address);
+
     Integer deleteAddressById(Integer id);
 
+    Integer deleteBatch(List<Integer> idList);
+
     Address getAddressById(Integer id);
+
+    Address getAddressDynamic(Address address);
 
     List<Address> getAllAddress();
 }

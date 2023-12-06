@@ -9,6 +9,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,7 +34,16 @@ public class DBAddressTest {
     @Test
     public void insert() {
         Address address = new Address("ShijiaZhuang", "050001", 21);
-        Integer insert = addressDao.add(address);
+        Integer insert = addressDao.insert(address);
+    }
+
+    @Test
+    public void insertBatch() {
+        ArrayList<Address> addresses = new ArrayList<>();
+        addresses.add(new Address("ShijiaZhuang", "050001", 21));
+        addresses.add(new Address("1", "2", 3));
+        addresses.add(new Address("4", "5", 6));
+        Integer insert = addressDao.insertBatch(addresses);
     }
 
     @Test
@@ -43,14 +53,41 @@ public class DBAddressTest {
     }
 
     @Test
+    public void updateDynamic() {
+        Address address = new Address();
+        address.setId(51);
+        address.setAddress("ShiJiaZhuang");
+        addressDao.updateAddressDynamic(address);
+    }
+
+
+    @Test
     public void delete() {
         addressDao.deleteAddressById(51);
+    }
+
+    @Test
+    public void deleteDynamic() {
+        List<Integer> list = new ArrayList<>();
+        list.add(56);
+        list.add(57);
+        list.add(58);
+        addressDao.deleteBatch(list);
     }
 
     @Test
     public void select() {
         Address address = addressDao.getAddressById(1);
         System.out.println(address);
+    }
+
+    @Test
+    public void selectDynamic() {
+        Address address = new Address();
+        address.setAddress("1");
+        address.setPostcode("2");
+        Address addressInfo = addressDao.getAddressDynamic(address);
+        System.out.println(addressInfo);
     }
 
     @Test
