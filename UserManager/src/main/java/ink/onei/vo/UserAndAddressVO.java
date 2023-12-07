@@ -1,22 +1,25 @@
-package ink.onei.entity;
+package ink.onei.vo;
 
+import ink.onei.entity.Address;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
-import java.sql.Date;
 import java.sql.Timestamp;
+import java.util.List;
 
+/**
+ * @Author: nekotako
+ * @Description: 用户地址视图
+ * @Date: 07/12/2023 11:24 Thursday
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "user", schema = "test")
-public class User {
+public class UserAndAddressVO {
+
     @Id
     @Column(name = "id", nullable = false)
     private Integer id;
@@ -45,18 +48,6 @@ public class User {
     @Column(name = "createdate")
     private java.sql.Timestamp createdate = new Timestamp(System.currentTimeMillis());
 
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
+    List<Address> addressList;
 
-    public User(String username, String password, String sex, String phone, String email, Date birthday, String nickname) {
-        this.username = username;
-        this.password = password;
-        this.sex = sex;
-        this.phone = phone;
-        this.email = email;
-        this.birthday = birthday;
-        this.nickname = nickname;
-    }
 }

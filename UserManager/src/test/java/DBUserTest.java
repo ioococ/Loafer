@@ -1,5 +1,10 @@
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import ink.onei.dao.IUserDao;
+import ink.onei.dto.PageInfos;
 import ink.onei.entity.User;
+import ink.onei.vo.PageInfoVO;
+import ink.onei.vo.UserAndAddressVO;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -73,6 +78,51 @@ public class DBUserTest {
     public void selectList() {
         List<User> allUser = userDao.getAllUser();
         System.out.println(allUser.size());
+    }
+
+    @Test
+    public void selectAddrByUser() {
+        UserAndAddressVO userAndAddressVO = userDao.userAndAddress(1);
+        System.out.println(userAndAddressVO);
+    }
+
+    @Test
+    public void selectAddrByUserWithJoin() {
+        UserAndAddressVO userAndAddressVO = userDao.userAndAddressTwo(1);
+        System.out.println(userAndAddressVO);
+    }
+
+    @Test
+    public void getUserPage() {
+        PageInfos pageInfos = new PageInfos();
+        pageInfos.setPageNum(3);
+        pageInfos.setPageSize(3);
+        pageInfos.getPageStart();
+        List<User> userList = userDao.getUserPage(pageInfos);
+        int userCount = userDao.getUserCount();
+        PageInfoVO result = new PageInfoVO(userList, userCount);
+        System.out.println(result);
+    }
+
+    @Test
+    public void getUserAutoPage() {
+        User user = new User();
+        user.setCreatedate(null);
+        PageHelper.startPage(3, 3);
+        List<User> usersDynamic = userDao.getUserDynamic(user);
+        System.out.println(usersDynamic);
+
+        PageInfo<User> of = PageInfo.of(usersDynamic);
+        System.out.println(of);
+    }
+
+    @Test
+    public void getAddressAndUserAutoPage() {
+        User user = new User();
+        user.setCreatedate(null);
+        PageHelper.startPage(1, 1);
+        UserAndAddressVO userAndAddressVO = userDao.userAndAddressTwo(1);
+        System.out.println(userAndAddressVO);
     }
 
     @After

@@ -1,6 +1,8 @@
 package ink.onei.dao;
 
+import ink.onei.dto.PageInfos;
 import ink.onei.entity.User;
+import ink.onei.vo.UserAndAddressVO;
 
 import java.util.List;
 
@@ -12,6 +14,7 @@ import java.util.List;
 
 public interface IUserDao {
     Integer insert(User user);
+
     Integer insertBatch(List<User> userList);
 
     Integer updateUserById(User user);
@@ -20,9 +23,22 @@ public interface IUserDao {
 
     Integer deleteUserById(Integer id);
 
-    User getUserDynamic(User user);
+    List<User> getUserDynamic(User user);
 
     User getUserById(Integer id);
 
     List<User> getAllUser();
+
+    /**
+     * @param id 用户id
+     * @return 用户-地址一对多对象
+     */
+    UserAndAddressVO userAndAddress(Integer id);
+
+    UserAndAddressVO userAndAddressTwo(Integer id);
+
+
+    List<User> getUserPage(PageInfos pageInfos);
+
+    int getUserCount();
 }

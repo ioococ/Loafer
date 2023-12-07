@@ -1,6 +1,7 @@
 package ink.onei.dao;
 
 import ink.onei.entity.Address;
+import ink.onei.vo.AddressAndUserVO;
 
 import java.util.List;
 
@@ -28,4 +29,14 @@ public interface IAddressDao {
     Address getAddressDynamic(Address address);
 
     List<Address> getAllAddress();
+
+    List<Address> getAddressByUserid(Integer id);
+
+    /**
+     * @param id 地址id
+     * @return 返回地址-用户 一对一对象
+     */
+    AddressAndUserVO AddrAndUserVo(Integer id);
+
+    AddressAndUserVO AddrAndUserVoTwo(Integer id);
 }

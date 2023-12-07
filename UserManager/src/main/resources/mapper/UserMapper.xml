@@ -4,8 +4,26 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="ink.onei.dao.IUserDao">
     <resultMap id="usermap" type="User" autoMapping="true">
-        <result column="createdate" property="createdate" jdbcType="DATE" />
+        <result column="createdate" property="createdate" jdbcType="DATE"/>
     </resultMap>
+
+    <!--  用户-地址 一对多关系 Mapper  -->
+    <resultMap id="UserAndAddressMap" type="UserAndAddressVO" autoMapping="true">
+        <id column="id" property="id"/>
+        <collection property="addressList"
+                    ofType="Address"
+                    column="id"
+                    select="ink.onei.dao.IAddressDao.getAddressByUserid"/>
+    </resultMap>
+
+    <!--  用户-地址 一对多关系 Mapper 使用连接语句 -->
+    <resultMap id="UserAndAddressMapWithJoin" type="UserAndAddressVO" autoMapping="true">
+        <id column="id" property="id"/>
+        <collection property="addressList" ofType="Address" javaType="list" column="id" autoMapping="true">
+            <id column="aid" property="id"/>
+        </collection>
+    </resultMap>
+
     <insert id="insert" parameterType="User">
         insert into user
             (username, password, sex, phone, email, birthday, nickname, createdate)
@@ -17,13 +35,14 @@
                 #{nickname},
                 #{createdate})
     </insert>
-    
+
     <insert id="insertBatch" parameterType="User">
         insert into user
-            (username, password, sex, phone, email, birthday, nickname, createdate) values
-            <foreach collection="list" item="user" separator=",">
-                (#{user.username}, #{user.password}, #{user.sex}, #{user.phone}, #{user.email}, #{user.birthday}, #{user.nickname}, #{user.createdate})
-            </foreach>
+        (username, password, sex, phone, email, birthday, nickname, createdate) values
+        <foreach collection="list" item="user" separator=",">
+            (#{user.username}, #{user.password}, #{user.sex}, #{user.phone}, #{user.email}, #{user.birthday},
+            #{user.nickname}, #{user.createdate})
+        </foreach>
     </insert>
 
     <update id="updateUserById" parameterType="User">
@@ -41,6 +60,7 @@
 
     <update id="updateUserDynamic" parameterType="User">
         update user
+        <!--    @formatter:off    -->
         <set>
             <if test="username != null and username != ''">username = #{username},</if>
             <if test="password != null and password != ''">password = #{password},</if>
@@ -50,6 +70,7 @@
             <if test="nickname != null and nickname != ''">nickname = #{nickname},</if>
             <if test="birthday != null">birthday = #{birthday}</if>
         </set>
+        <!--    @formatter:on    -->
         where id = #{id}
     </update>
 
@@ -62,6 +83,7 @@
     <select id="getUserDynamic" resultType="User">
         select *
         from user
+        <!--    @formatter:off    -->
         <where>
             <if test="id != null and id != ''">and id = #{id}</if>
             <if test="username != null and username != ''">and username = #{username}</if>
@@ -70,9 +92,10 @@
             <if test="phone != null and phone != ''">and phone = #{phone}</if>
             <if test="email != null and email != ''">and email = #{email}</if>
             <if test="nickname != null and nickname != ''">and nickname = #{nickname}</if>
-            <if test="birthday != null and birthday != ''">and birthday = #{birthday}</if>
-            <if test="createdate != null and createdate != ''">and createdate = #{createdate}</if>
+            <if test="birthday != null">and birthday = #{birthday}</if>
+            <if test="createdate != null">and createdate = #{createdate}</if>
         </where>
+        <!--    @formatter:on    -->
     </select>
 
     <select id="getUserById" parameterType="Integer" resultType="User">
@@ -81,8 +104,30 @@
         where id = #{id}
     </select>
 
-    <select id="getAllUser" resultType="ink.onei.entity.User">
+    <select id="getAllUser" resultType="User">
         select *
         from user
+    </select>
+
+    <select id="userAndAddress" parameterType="integer" resultMap="UserAndAddressMap">
+        select *
+        from user
+        where id = #{id}
+    </select>
+
+    <select id="userAndAddressTwo" resultMap="UserAndAddressMapWithJoin">
+        select u.*, a.*, a.id as aid
+        from user u
+                 left join address a on u.id = a.userid
+        where u.id = #{id}
+    </select>
+
+
+    <select id="getUserPage" resultType="User">
+        select * from user limit #{start},#{pageSize}
+    </select>
+
+    <select id="getUserCount" resultType="integer">
+        select count(*) from user
     </select>
 </mapper>

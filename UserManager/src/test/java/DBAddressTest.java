@@ -1,5 +1,6 @@
 import ink.onei.dao.IAddressDao;
 import ink.onei.entity.Address;
+import ink.onei.vo.AddressAndUserVO;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -94,6 +95,18 @@ public class DBAddressTest {
     public void selectList() {
         List<Address> allAddress = addressDao.getAllAddress();
         System.out.println(allAddress.size());
+    }
+
+    @Test
+    public void selectUserByAddr(){
+        AddressAndUserVO addressAndUserVO = addressDao.AddrAndUserVo(1);
+        System.out.println(addressAndUserVO);
+    }
+
+    @Test
+    public void selectUserByAddrWithJoin(){
+        AddressAndUserVO addressAndUserVO = addressDao.AddrAndUserVoTwo(1);
+        System.out.println(addressAndUserVO);
     }
 
     @After
