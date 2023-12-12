@@ -343,7 +343,7 @@ class User implements Comparable {
 
 比较器类 要添加的元素不需要实现这个接口
 
-`Integer`类中有默认升序的比较方法，假如想要降序的时候可以通过实现`Comparator`接口来重新定义排序规则；或者把不能排序的`Object`对象 **（没有实现`Comparable`接口）** 保存在`TreeSet`中时，还是需要`Comparator`来进行比较
+`Integer` 类中有默认升序的比较方法，假如想要降序的时候可以通过实现`Comparator`接口来重新定义排序规则；或者把不能排序的`Object`对象 **（没有实现`Comparable`接口）** 保存在`TreeSet`中时，还是需要`Comparator`来进行比较
 当保存的元素不能排序（没有实现`Comparable`接口）或者排序规则不符合我们的需求时均可实现`Comparator`接口并重写`compare()`方法进行排序
 
 *当`Comparator`比较器和`Comparable`比较器同时存在时，`Comparator`优先级高于`Comparable`*
