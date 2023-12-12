@@ -22,6 +22,11 @@ public class UserService implements IUserService {
     @Setter
     UserDao userDao = null;
 
+//    public UserService(UserDao userDao) {
+//        this.userDao = userDao;
+//        System.out.println("注入了" + userDao);
+//    }
+
 
     /**
      * 先进行校验 如果存在则抛出异常 不存在则进行添加
@@ -111,6 +116,7 @@ public class UserService implements IUserService {
 
     @Override
     public User test(Integer id) {
+        System.out.println(userDao);
         return userDao.test(id);
     }
 

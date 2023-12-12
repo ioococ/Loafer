@@ -102,6 +102,7 @@ public class UserDao implements IUserDao {
     }
 
     public User test(Integer id) {
+        System.out.println(UserDao.class.hashCode());
         user = new User();
         user.setId(1);
         user.setUsername("admin");

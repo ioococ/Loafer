@@ -1,5 +1,7 @@
+import ink.onei.dao.UserDao;
 import ink.onei.entity.User;
 import ink.onei.service.UserService;
+import lombok.Setter;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -17,5 +19,12 @@ public class BeanTest {
         UserService userService = (UserService) applicationContext.getBean("userService");
         User test = userService.test(1);
         System.out.println(test);
+    }
+
+    @Setter
+    UserDao userDao = null;
+
+    void m1() {
+        System.out.println(userDao);
     }
 }
