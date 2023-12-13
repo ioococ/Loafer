@@ -12,6 +12,15 @@ import java.util.List;
  */
 
 public interface IUserDao {
+    Boolean insert(User user) throws SQLException;
 
-    List<User> getAllUsers();
+    Boolean update(User user) throws SQLException;
+
+    Boolean delete(User user) throws SQLException;
+
+    User getSingleUser(String username, String password) throws SQLException;
+
+    User getUserById(Integer id) throws SQLException;
+
+    List<User> getAllUsers() throws SQLException;
 }

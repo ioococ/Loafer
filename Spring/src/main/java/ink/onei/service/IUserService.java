@@ -12,5 +12,11 @@ import java.util.List;
 
 public interface IUserService {
 
+    Boolean add(User user);
+
+    Boolean modify(User user);
+
+    Boolean delete(User user);
+
     List<User> getAllUsers();
 }

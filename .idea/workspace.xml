@@ -11,27 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d84bc766-44bf-4661-825d-923443328c98" name="Changes" comment="spring annotation">
-      <change afterPath="$PROJECT_DIR$/Spring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/test/java/BeanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringStarter/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/utils/DBUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/test/java/DBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/test/java/BeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/test/java/BeanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringStarter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/exception/UserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/exception/UserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/resources/applicationContent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringStarter/src/test/java/BeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/test/java/BeanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/Spring.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +37,7 @@
       <list>
         <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -84,24 +79,30 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-21&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/荣耀/IdeaProjects/Loafer/Spring/src/main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "zulu-21",
+    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/Spring/src/main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.customizations",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Spring\src\main" />
@@ -109,16 +110,58 @@
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\SpringStarter\src\main\java\ink\onei" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\SpringStarter\src\main\java\ink\onei\service" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BeanTest.bean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DBTest.add">
+    <configuration name="DBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BeanTest" />
-      <option name="METHOD_NAME" value="bean" />
+      <option name="MAIN_CLASS_NAME" value="DBTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DBTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DBTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBTest.getAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DBTest" />
+      <option name="METHOD_NAME" value="getAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DBTest" />
+      <option name="METHOD_NAME" value="getConnection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,13 +169,17 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BeanTest.bean" />
+        <item itemvalue="JUnit.DBTest.add" />
+        <item itemvalue="JUnit.DBTest" />
+        <item itemvalue="JUnit.DBTest.getConnection" />
+        <item itemvalue="JUnit.DBTest.getAllUsers" />
+        <item itemvalue="JUnit.DBTest.delete" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
-    <option name="beanDetailsProportion" value="0.3" />
+    <option name="beanDetailsProportion" value="0.13605443" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -145,7 +192,7 @@
       <workItem from="1702346478169" duration="16750000" />
       <workItem from="1702379854902" duration="7525000" />
       <workItem from="1702432942959" duration="5645000" />
-      <workItem from="1702438616342" duration="2240000" />
+      <workItem from="1702438616342" duration="14502000" />
     </task>
     <task id="LOCAL-00001" summary="spring leaf">
       <option name="closed" value="true" />
@@ -163,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702361945671</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="spring annotation">
+      <option name="closed" value="true" />
+      <created>1702448427946</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702448427946</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

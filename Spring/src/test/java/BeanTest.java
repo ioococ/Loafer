@@ -1,9 +1,8 @@
+import ink.onei.AppConfig;
 import ink.onei.entity.User;
 import ink.onei.service.UserService;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
 

@@ -69,6 +69,6 @@ public class User implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() {
-        System.out.println(this);
+//        System.out.println(this);
     }
 }
