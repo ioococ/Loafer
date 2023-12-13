@@ -2,6 +2,8 @@ package ink.onei.dao;
 
 import ink.onei.entity.User;
 import ink.onei.utils.DBUtils;
+import lombok.Setter;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,6 +16,7 @@ import java.util.List;
  */
 
 public class UserDao implements IUserDao {
+    @Setter
     User user = null;
     Connection conn = null;
 
@@ -102,10 +105,7 @@ public class UserDao implements IUserDao {
     }
 
     public User test(Integer id) {
-        System.out.println(UserDao.class.hashCode());
-        user = new User();
-        user.setId(1);
-        user.setUsername("admin");
+
         return user;
     }
 }

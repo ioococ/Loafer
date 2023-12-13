@@ -3,13 +3,35 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="Loafer" />
+      <module name="Spring" />
+    </loaded-modules>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84bc766-44bf-4661-825d-923443328c98" name="Changes" comment="spring leaf">
+    <list default="true" id="d84bc766-44bf-4661-825d-923443328c98" name="Changes" comment="spring annotation">
+      <change afterPath="$PROJECT_DIR$/Spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/test/java/BeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringStarter/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringStarter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/exception/UserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/exception/UserException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/main/java/ink/onei/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/resources/applicationContent.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/main/resources/applicationContent.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringStarter/src/main/resources/applicationContent.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringStarter/src/test/java/BeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/src/test/java/BeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/Spring.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -31,6 +55,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -38,6 +67,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="D:/Program Files/Maven" />
+        <option name="useMavenConfig" value="false" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -48,37 +78,44 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
+    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/SpringStarter/src/main/java/ink/onei",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.rainbow.brackets.root",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/荣耀/IdeaProjects/Loafer/Spring/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Spring\src\main" />
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Spring\src\main\java" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\SpringStarter\src\main\java\ink\onei" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\SpringStarter\src\main\java\ink\onei\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="BeanTest.bean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringStarter" />
+      <module name="Spring" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BeanTest" />
       <option name="METHOD_NAME" value="bean" />
@@ -105,7 +142,10 @@
       <option name="presentableId" value="Default" />
       <updated>1702345966432</updated>
       <workItem from="1702345967941" duration="488000" />
-      <workItem from="1702346478169" duration="6970000" />
+      <workItem from="1702346478169" duration="16750000" />
+      <workItem from="1702379854902" duration="7525000" />
+      <workItem from="1702432942959" duration="5645000" />
+      <workItem from="1702438616342" duration="2240000" />
     </task>
     <task id="LOCAL-00001" summary="spring leaf">
       <option name="closed" value="true" />
@@ -115,15 +155,28 @@
       <option name="project" value="LOCAL" />
       <updated>1702351413800</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="spring">
+      <option name="closed" value="true" />
+      <created>1702361945670</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702361945671</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnloadedModulesList">
+    <module name="SpringStarter" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring leaf" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring leaf" />
+    <MESSAGE value="spring" />
+    <MESSAGE value="spring annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring annotation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

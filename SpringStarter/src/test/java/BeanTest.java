@@ -13,18 +13,27 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 
 public class BeanTest {
-    @Test
-    public void bean() {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContent.xml");
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException {
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContent.xml");
         UserService userService = (UserService) applicationContext.getBean("userService");
+        Class<UserService> userServiceClass = UserService.class;
+        UserService userService1 = userServiceClass.newInstance();
+
+        System.out.println(1);
         User test = userService.test(1);
+        System.out.println(userService);
         System.out.println(test);
+
     }
-
-    @Setter
-    UserDao userDao = null;
-
-    void m1() {
-        System.out.println(userDao);
+    @Test
+    public void bean() throws InstantiationException, IllegalAccessException {
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserService userService = (UserService) applicationContext.getBean("userService");
+        UserDao userDao = (UserDao) applicationContext.getBean("userDao");
+        Class<UserService> userServiceClass = UserService.class;
+        User test = userDao.test(1);
+//        User test = userService.test(1);
+//        System.out.println(userService);
+        System.out.println(test);
     }
 }

@@ -1,5 +1,6 @@
 package ink.onei.service;
 
+import ink.onei.dao.IUserDao;
 import ink.onei.dao.UserDao;
 import ink.onei.entity.User;
 import ink.onei.exception.UserException;
@@ -17,15 +18,19 @@ import java.util.List;
 public class UserService implements IUserService {
     int rows = 0;
 
+    @Setter
     User user = null;
 
     @Setter
-    UserDao userDao = null;
+    IUserDao userDao = null;
 
-//    public UserService(UserDao userDao) {
-//        this.userDao = userDao;
-//        System.out.println("注入了" + userDao);
-//    }
+    public UserService(IUserDao userDao) {
+        this.userDao = userDao;
+    }
+
+    // 使用有参构造器时最好显式申明一个无参构造器
+    public UserService() {
+    }
 
 
     /**
@@ -116,8 +121,16 @@ public class UserService implements IUserService {
 
     @Override
     public User test(Integer id) {
-        System.out.println(userDao);
         return userDao.test(id);
     }
 
+    public void init() {
+//        System.out.println("初始化");
+//        System.out.println(this);
+//        System.out.println("UserDao对象为 " + userDao);
+    }
+
+    public void destroy() {
+//        System.out.println("销毁");
+    }
 }
