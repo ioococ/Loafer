@@ -75,6 +75,19 @@ public class UserService implements IUserService {
     }
 
     /**
+     * @param id
+     * @return
+     */
+    @Override
+    public User getUserById(Integer id) {
+        try {
+            return userDao.getUserById(id);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
      * @return 返回所有用户信息 类型为List<User>
      */
     @Override

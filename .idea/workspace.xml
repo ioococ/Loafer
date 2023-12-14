@@ -10,35 +10,41 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84bc766-44bf-4661-825d-923443328c98" name="Changes" comment="spring annotation">
-      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/utils/DBUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/src/test/java/DBTest.java" afterDir="false" />
+    <list default="true" id="d84bc766-44bf-4661-825d-923443328c98" name="Changes" comment="user manager use spring annotation">
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/annotation/Clear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/aspect/UserInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/exception/UserException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/IUserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/java/ink/onei/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring/src/test/java/BeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/test/java/BeanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringStarter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringStarter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/src/test/java/DBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/src/test/java/DBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/Spring.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="spring-beans.schema" />
-        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -49,6 +55,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;aotusoft&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3737a692-cdbe-416b-8cc6-20464402670a" />
+        <option name="url" value="https://github.com/aotusoft/Loafer.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -84,17 +104,17 @@
     "OverrideImplement.generate.javadoc": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "zulu-21",
-    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/Spring/src/main",
+    "jdk.selected.JAVA_MODULE": "zulu-11",
+    "last_opened_file_path": "C:/Users/荣耀/IdeaProjects/Loafer/Spring/src/main/resources/ink/onei",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.customizations",
+    "settings.editor.selected.configurable": "Errors",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -105,10 +125,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Spring\src\main\resources\ink\onei" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Spring\src\main" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Spring\src\main\java" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\SpringStarter\src\main\java\ink\onei" />
       <recent name="C:\Users\荣耀\IdeaProjects\Loafer\SpringStarter\src\main\java\ink\onei\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\荣耀\IdeaProjects\Loafer\Spring\src\main\java\ink\onei" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -117,7 +141,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DBTest.add">
+  <component name="RunManager" selected="JUnit.DBTest.getUserById">
     <configuration name="DBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring" />
       <option name="PACKAGE_NAME" value="" />
@@ -137,26 +161,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DBTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DBTest" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DBTest.getAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DBTest" />
-      <option name="METHOD_NAME" value="getAllUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DBTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring" />
       <option name="PACKAGE_NAME" value="" />
@@ -167,13 +171,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DBTest.getSingleUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DBTest" />
+      <option name="METHOD_NAME" value="getSingleUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBTest.getUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DBTest" />
+      <option name="METHOD_NAME" value="getUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DBTest.getUserById" />
         <item itemvalue="JUnit.DBTest.add" />
-        <item itemvalue="JUnit.DBTest" />
+        <item itemvalue="JUnit.DBTest.getSingleUser" />
         <item itemvalue="JUnit.DBTest.getConnection" />
-        <item itemvalue="JUnit.DBTest.getAllUsers" />
-        <item itemvalue="JUnit.DBTest.delete" />
+        <item itemvalue="JUnit.DBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +216,12 @@
       <workItem from="1702346478169" duration="16750000" />
       <workItem from="1702379854902" duration="7525000" />
       <workItem from="1702432942959" duration="5645000" />
-      <workItem from="1702438616342" duration="14502000" />
+      <workItem from="1702438616342" duration="14650000" />
+      <workItem from="1702517094610" duration="2934000" />
+      <workItem from="1702520242477" duration="827000" />
+      <workItem from="1702521091035" duration="1792000" />
+      <workItem from="1702534827945" duration="1865000" />
+      <workItem from="1702536746121" duration="14790000" />
     </task>
     <task id="LOCAL-00001" summary="spring leaf">
       <option name="closed" value="true" />
@@ -218,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702448427946</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="user manager use spring annotation">
+      <option name="closed" value="true" />
+      <created>1702470274968</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702470274968</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +268,8 @@
     <MESSAGE value="spring leaf" />
     <MESSAGE value="spring" />
     <MESSAGE value="spring annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring annotation" />
+    <MESSAGE value="user manager use spring annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="user manager use spring annotation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

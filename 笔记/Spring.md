@@ -2,15 +2,17 @@
 
 # 优点
 
-# 注入方式
+# IOC
 
-## 配置文件
+## 注入方式
 
-### Setter注入
+### 配置文件
 
-### 构造注入
+#### Setter注入
 
-## 注解
+#### 构造注入
+
+### 注解
 
 @Autowired
 @Repository
@@ -19,8 +21,23 @@
 @Component
 @Qualifier
 @Resource
+@Scope
+@P
+@PreDestroy
 
+## 生命周期
 
+# AOP
 
-# 生命周期
+- 连接点 JoinPoint
+- 切入点
+- 切面
+- 织入 Weaving
+- 通知 advice
+
+AOP 依赖于 IOC 实现
+
+切面使用
+
+@Aspect
 

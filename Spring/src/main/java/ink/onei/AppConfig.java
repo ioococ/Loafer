@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.PropertySource;
 
 /**
@@ -18,7 +19,8 @@ import org.springframework.context.annotation.PropertySource;
 @AllArgsConstructor
 @Configuration
 @ComponentScan(basePackages = "ink.onei.*")
-@PropertySource("jdbc.properties")
+@PropertySource("classpath:jdbc.properties")
+@EnableAspectJAutoProxy // 开启注解支持
 public class AppConfig {
     @Value("${jdbc.driver}")
     private String driver;

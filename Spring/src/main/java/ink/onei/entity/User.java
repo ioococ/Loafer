@@ -1,6 +1,7 @@
 package ink.onei.entity;
 
 
+import ink.onei.annotation.Clear;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,6 +27,8 @@ import java.time.LocalDateTime;
 public class User implements InitializingBean {
     private Integer id;
     private String username;
+
+    @Clear(clearStatus = true)
     private String password;
     private String sex;
     private String phone;

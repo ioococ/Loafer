@@ -19,6 +19,9 @@ public class UserDao implements IUserDao {
     @Autowired
     Connection connection;
 
+//    @Autowired
+//    User user;
+
     /**
      * @param user
      * @return
@@ -80,7 +83,7 @@ public class UserDao implements IUserDao {
      */
     public User getSingleUser(String username, String password) throws SQLException {
         User user = new User();
-        String sql = "select * from user where username = ? and password = ?";
+        String sql = "select * from user where username like ? and password like ?";
         PreparedStatement pstmt = connection.prepareStatement(sql);
         pstmt.setString(1, username);
         pstmt.setString(2, password);
@@ -99,6 +102,27 @@ public class UserDao implements IUserDao {
         }
         return user;
     }
+//    public User getSingleUser(String username, String password) throws SQLException {
+//        User user = new User();
+//        String sql = "select * from user where username = ? and password = ?";
+//        PreparedStatement pstmt = connection.prepareStatement(sql);
+//        pstmt.setString(1, username);
+//        pstmt.setString(2, password);
+//        ResultSet resultSet = pstmt.executeQuery();
+//        if (resultSet.next()) {
+//            user = new User(resultSet.getInt("id"),
+//                    resultSet.getString("username"),
+//                    resultSet.getString("password"),
+//                    resultSet.getString("sex"),
+//                    resultSet.getString("phone"),
+//                    resultSet.getString("email"),
+//                    resultSet.getDate("birthday"),
+//                    resultSet.getString("nickname"),
+//                    resultSet.getTimestamp("createdate")
+//            );
+//        }
+//        return user;
+//    }
 
     public User getUserById(Integer id) throws SQLException {
         User user = new User();
@@ -117,6 +141,23 @@ public class UserDao implements IUserDao {
                     resultSet.getString("nickname"),
                     resultSet.getTimestamp("createdate")
             );
+        }
+        return user;
+    }
+
+    /**
+     * @param username
+     * @return
+     * @throws SQLException
+     */
+    public User getUserByName(String username) throws SQLException {
+        User user = null;
+        String sql = "select * from user where username = ?";
+        PreparedStatement pstmt = connection.prepareStatement(sql);
+        pstmt.setString(1, username);
+        ResultSet resultSet = pstmt.executeQuery();
+        if (resultSet.next()) {
+            user = new User();
         }
         return user;
     }

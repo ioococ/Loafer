@@ -1,16 +1,15 @@
 import ink.onei.AppConfig;
+import ink.onei.dao.IUserDao;
+import ink.onei.dao.UserDao;
 import ink.onei.entity.User;
 import ink.onei.service.IUserService;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -23,13 +22,14 @@ import java.util.List;
 //@ContextConfiguration(locations = {"classpath*:**/applicationContext.xml"})
 public class DBTest {
 
-//    @Autowired
+    //    @Autowired
     Connection connection = null;
 
-//    @Autowired
+    //    @Autowired
     User user = null;
+    IUserDao userDao = null;
 
-//    @Autowired
+    //    @Autowired
     IUserService userService = null;
     ApplicationContext applicationContext = null;
 
@@ -39,8 +39,10 @@ public class DBTest {
         user = applicationContext.getBean("user", User.class);
         userService = applicationContext.getBean("userService", IUserService.class);
         connection = applicationContext.getBean("getConnection", Connection.class);
+        userDao = applicationContext.getBean("userDao", IUserDao.class);
     }
 
+    @Test
     public void getConnection() {
         System.out.println(connection);
     }
@@ -67,11 +69,30 @@ public class DBTest {
     }
 
     @Test
+    public void getSingleUser() {
+        try {
+            user = userDao.getSingleUser("admin", "%");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(user);
+    }
+
+    @Test
+    public void getUserById() {
+        try {
+            user = userDao.getUserById(1);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(user);
+    }
+
+    @Test
     public void getAllUsers() {
         List<User> allUsers = userService.getAllUsers();
         for (User user : allUsers) {
             System.out.println(user);
         }
     }
-
 }

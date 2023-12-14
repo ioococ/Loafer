@@ -14,7 +14,6 @@ import java.util.List;
 
 public class BeanTest {
 
-    @Test
     public void bean() {
 //        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);

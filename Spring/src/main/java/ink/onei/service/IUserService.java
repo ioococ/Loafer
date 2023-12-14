@@ -18,5 +18,7 @@ public interface IUserService {
 
     Boolean delete(User user);
 
+    User getUserById(Integer id);
+
     List<User> getAllUsers();
 }
