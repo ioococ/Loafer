@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.dao.IUserDao">
+    <insert id="insert" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        insert into user
+            (username, password, sex, phone, email, birthday, nickname, createdate)
+        values (#{username},
+                #{password},
+                #{sex}, #{phone},
+                #{email},
+                #{birthday},
+                #{nickname},
+                #{createdate})
+    </insert>
+
+    <update id="update" parameterType="User">
+        update user
+        set username   = #{username},
+            password   = #{password},
+            sex        = #{sex},
+            phone      = #{phone},
+            email      = #{email},
+            birthday   = #{birthday},
+            nickname   = #{nickname},
+            createdate = #{createdate}
+        where id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="integer">
+        delete
+        from user
+        where id = ${id}
+    </delete>
+
+    <select id="getSingleUser" resultType="User">
+    </select>
+
+    <select id="getUserById" parameterType="integer" resultType="User">
+        select *
+        from user
+        where id = #{id}
+    </select>
+
+    <select id="getUserByName" resultType="User">
+    </select>
+
+    <select id="getAllUsers" resultType="User">
+        select * from user
+    </select>
+
+    <delete id="deleteBatch" parameterType="integer">
+        delete from user where id in <foreach collection="list" item="id" open="(" separator="," close=")">${id}</foreach>
+    </delete>
+</mapper>

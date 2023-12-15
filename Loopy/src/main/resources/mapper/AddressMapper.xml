@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.dao.IAddressDao">
+    <insert id="insert" parameterType="Address">
+        insert into address(address, postcode, userid)
+        values (#{address},
+                #{postcode},
+                #{userid})
+    </insert>
+
+    <update id="update">
+    </update>
+
+    <delete id="delete" parameterType="integer">
+        delete
+        from address
+        where id = ${id}
+    </delete>
+
+    <select id="getAddressByUserId" resultType="Address">
+    </select>
+
+    <select id="getAllAddress" resultType="Address">
+    </select>
+
+    <insert id="insertBatch" parameterType="Address">
+        insert into address(address, postcode, user_id) values
+        <foreach collection="list" item="address" separator=",">
+            (#{address.address},#{address.postcode},#{address.userId})
+        </foreach>
+    </insert>
+</mapper>
