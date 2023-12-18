@@ -18,7 +18,6 @@ import java.io.InputStream;
 
 public class CarTest {
     ObjectMapper objectMapper = null;
-    ;
     Car car = null;
     Car[] cars = null;
 

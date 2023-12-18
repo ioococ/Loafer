@@ -28,10 +28,8 @@ public class Car {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Car{");
-        sb.append("brand=").append(brand);
-        sb.append(", doors=").append(doors);
-        sb.append('}');
+        StringBuffer sb = new StringBuffer("{");
+        sb.append("brand=").append(brand).append(", doors=").append(doors).append('}');
         return sb.toString();
     }
 
