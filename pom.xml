@@ -13,6 +13,7 @@
         <module>SpringStarter</module>
         <module>Spring</module>
         <module>Loopy</module>
+        <module>Shopping</module>
     </modules>
     <dependencies>
         <dependency>

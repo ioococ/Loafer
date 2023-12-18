@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.mapper.IUserMapper">
+    <insert id="insert" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        insert into shop_user
+            (username, nickname, password, sex, age, money)
+        values (#{username},
+                #{nickname},
+                #{password},
+                #{sex},
+                #{age},
+                #{money})
+    </insert>
+
+    <update id="update" parameterType="User">
+        update shop_user
+        set username = #{username},
+            nickname = #{nickname},
+            password = #{password},
+            sex      = #{sex},
+            age      = #{age},
+            money    = #{money}
+        where id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="integer">
+        delete
+        from shop_user
+        where id = ${id}
+    </delete>
+
+    <select id="getSingleUser" resultType="User">
+    </select>
+
+    <select id="getUserById" parameterType="integer" resultType="User">
+        select *
+        from shop_user
+        where id = #{id}
+    </select>
+
+    <select id="getUserByName" resultType="User">
+    </select>
+
+    <select id="getAllUsers" resultType="User">
+        select *
+        from shop_user
+    </select>
+
+    <resultMap id="UserDetailMap" type="UserDetailDTO">
+        <id column="did" property="id"/>
+        <result column="username" property="username"/>
+        <collection property="orderGoods" javaType="list" ofType="OrderGoods" column="id" autoMapping="true">
+            <id column="bid" property="id"/>
+            <result property="goodNum" column="good_num"/>
+            <association property="goods" javaType="Goods" autoMapping="true">
+                <id property="id" column="cid"/>
+                <result property="goodNames" column="goods_name"/>
+            </association>
+            <association property="order" javaType="Order" autoMapping="true">
+                <id property="id" column="aid"/>
+                <result property="userId" column="user_id"/>
+                <result property="orderName" column="order_name"/>
+            </association>
+        </collection>
+    </resultMap>
+    <select id="getDetailByUserId" resultMap="UserDetailMap">
+        SELECT a.id as 'aid',
+               username,
+               d.id as 'did',
+               good_num,
+               c.id as 'cid',
+               goods_name,
+               b.id as 'bid',
+               user_id,
+               order_name
+        FROM shop_order_goods a
+                 LEFT JOIN shop_order b ON a.order_id = b.id
+                 LEFT JOIN shop_goods c ON a.goods_id = c.id
+                 LEFT JOIN shop_user d ON b.user_id = d.id
+        WHERE d.id = #{userId}
+    </select>
+</mapper>

@@ -1,4 +1,4 @@
-package ink.onei.dao;
+package ink.onei.mapper;
 
 import ink.onei.entity.Address;
 

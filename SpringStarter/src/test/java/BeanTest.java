@@ -1,4 +1,4 @@
-import ink.onei.dao.UserDao;
+import ink.onei.mapper.UserDao;
 import ink.onei.entity.User;
 import ink.onei.service.UserService;
 import lombok.Setter;

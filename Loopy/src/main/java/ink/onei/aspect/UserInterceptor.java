@@ -1,6 +1,6 @@
 package ink.onei.aspect;
 
-import ink.onei.dao.IUserDao;
+import ink.onei.mapper.IUserDao;
 import ink.onei.entity.User;
 import ink.onei.exception.UserException;
 import org.aspectj.lang.JoinPoint;

@@ -1,7 +1,7 @@
 package ink.onei.service;
 
-import ink.onei.dao.IUserDao;
-import ink.onei.dao.UserDao;
+import ink.onei.mapper.IUserDao;
+import ink.onei.mapper.UserDao;
 import ink.onei.entity.User;
 import ink.onei.exception.UserException;
 import lombok.Setter;

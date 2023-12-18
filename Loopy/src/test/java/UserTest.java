@@ -1,4 +1,4 @@
-import ink.onei.dao.IUserDao;
+import ink.onei.mapper.IUserDao;
 import ink.onei.service.IUserService;
 import org.junit.Before;
 import org.junit.Test;

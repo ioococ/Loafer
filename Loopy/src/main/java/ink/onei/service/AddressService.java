@@ -1,7 +1,7 @@
 package ink.onei.service;
 
-import ink.onei.dao.IAddressDao;
-import ink.onei.dao.IUserDao;
+import ink.onei.mapper.IAddressDao;
+import ink.onei.mapper.IUserDao;
 import ink.onei.dto.UserAddressDTO;
 import ink.onei.entity.Address;
 import org.springframework.beans.factory.annotation.Autowired;

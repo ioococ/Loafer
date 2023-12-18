@@ -1,6 +1,6 @@
 package ink.onei.service;
 
-import ink.onei.dao.IUserDao;
+import ink.onei.mapper.IUserDao;
 import ink.onei.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

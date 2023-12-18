@@ -90,15 +90,15 @@ dataSource标签主要用于配置应用的数据源连接方式和数据库连�
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="ink.onei.dao.IUserDao">
-  <insert id="insert" parameterType="User">
-    insert into user
+<mapper namespace="ink.onei.mapper.IUserDao">
+    <insert id="insert" parameterType="User">
+        insert into user
         (username, password, sex, phone, email, birthday, nickname, createdate)
-    values (#{username},#{password},#{sex}, #{phone},#{email},#{birthday},#{nickname},#{createdate})
-  </insert>
-  <select id="select" parameterType="int" resultType="User">
-    select * from user where id = #{id}
-  </select>
+        values (#{username},#{password},#{sex}, #{phone},#{email},#{birthday},#{nickname},#{createdate})
+    </insert>
+    <select id="select" parameterType="int" resultType="User">
+        select * from user where id = #{id}
+    </select>
 </mapper>
 ```
 
@@ -208,9 +208,11 @@ sqlSession.close();
 ```
 
 如果Mapper接口名称和SQL映射文件名称相同，并在同一目录下，则可以使用包扫描的方式简化SQL映射文件的加载
+
 ```xml
+
 <mappers>
-  <package name="ink.onei.dao"/>
+    <package name="ink.onei.mapper"/>
 </mappers>
 ```
 
@@ -253,10 +255,11 @@ public interface IUserMapper {
 配置mybatis
 
 ```xml
+
 <mappers>
-  <!--配置到对应的包-->
-  <package name="ink.onei.dao"/>
- </mappers>
+    <!--配置到对应的包-->
+    <package name="ink.onei.mapper"/>
+</mappers>
 ```
 
 运行

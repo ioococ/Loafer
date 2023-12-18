@@ -1,4 +1,4 @@
-import ink.onei.dao.IUserDao;
+import ink.onei.mapper.IUserDao;
 import ink.onei.dto.UserAddressDTO;
 import ink.onei.entity.Address;
 import ink.onei.entity.User;
@@ -59,6 +59,7 @@ public class AddressTest {
         ArrayList<Address> addressList = new ArrayList<>();
         addressList.add(new Address("c", "040000"));
         addressList.add(new Address("d", "050000"));
+        addressList.add(new Address("e", "060000"));
         UserAddressDTO userAddressDTO = new UserAddressDTO(new User("c", "c"), addressList);
         addressService.addAddressByUser(userAddressDTO);
     }

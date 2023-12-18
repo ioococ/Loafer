@@ -1,6 +1,6 @@
 package ink.onei.aspect;
 
-import ink.onei.dao.IUserDao;
+import ink.onei.mapper.IUserDao;
 import ink.onei.dto.UserAddressDTO;
 import ink.onei.entity.Address;
 import ink.onei.entity.User;

@@ -1,6 +1,6 @@
 import ink.onei.AppConfig;
-import ink.onei.dao.IUserDao;
-import ink.onei.dao.UserDao;
+import ink.onei.mapper.IUserDao;
+import ink.onei.mapper.UserDao;
 import ink.onei.entity.User;
 import ink.onei.service.IUserService;
 import org.junit.Before;

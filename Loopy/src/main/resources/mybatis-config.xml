@@ -3,11 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <!--    <settings>-->
-    <!--        <setting name="logImpl" value="LOG4J"/>-->
-    <!--    </settings>-->
     <settings>
-<!--    启用从经典数据库列名A_COLUMN（下划线命名）到经典Java 属性名aColumn（驼峰命名） 的类似映射    -->
+        <!--        <setting name="logImpl" value="LOG4J"/>-->
+        <setting name="logImpl" value="LOG4J2"/>
+
+        <!--    启用从经典数据库列名A_COLUMN（下划线命名）到经典Java 属性名aColumn（驼峰命名） 的类似映射    -->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
     <typeAliases>

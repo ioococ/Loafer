@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.mapper.IOrderAndGoodsMapper">
+    <select id="getInfoById" parameterType="integer" resultType="OrderGoods">
+        select *
+        from shop_order_goods
+        where id = #{id}
+    </select>
+
+    <select id="getInfoByOrderId" parameterType="integer" resultType="OrderGoods">
+        select *
+        from shop_order_goods
+        where order_id = #{orderId}
+    </select>
+
+    <select id="getAllInfo" resultType="OrderGoods">
+        select *
+        from shop_order_goods
+    </select>
+
+    <resultMap id="OrderDetailMap" type="OrderDetailDTO" autoMapping="true">
+        <id column="aid" property="id"/>
+<!--        <collection property="goodsList" ofType="Goods" column="bid" javaType="list" autoMapping="true">-->
+<!--            <id column="bid" property="id"/>-->
+<!--            <id column="bname" property="goodNames"/>-->
+<!--        </collection>-->
+    </resultMap>
+
+    <select id="getOrderDetailByOrderId" resultMap="OrderDetailMap">
+        SELECT *,
+               a.id as 'aid',
+               b.id as 'bid',
+               b.goods_name as 'bname'
+        FROM shop_order_goods a
+                 LEFT JOIN shop_goods b ON a.goods_id = b.id
+        WHERE order_id = #{orderId}
+    </select>
+</mapper>
