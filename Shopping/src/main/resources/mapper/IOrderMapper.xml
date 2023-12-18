@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace 是用于调用的时候的映射
+ -->
+<mapper namespace="ink.onei.shopping.mapper.IOrderMapper">
+    <resultMap id="OrderDetailMap" type="OrderDetailVO">
+        <id column="id" property="id"/>
+        <result column="order_name" property="orderName"/>
+        <result column="order_describe" property="orderDescribe"/>
+        <result column="order_time" property="orderTime"/>
+        <result column="user_id" property="userId"/>
+        <association property="user" javaType="ink.onei.shopping.entity.User" autoMapping="true">
+            <id column="uid" property="id"/>
+        </association>
+        <collection property="goodsList" ofType="ink.onei.shopping.vo.GoodsVO" javaType="list" autoMapping="true">
+            <id column="gid" property="id"/>
+            <result column="goods_name" property="goodsName"/>
+            <result column="goods_price" property="goodsPrice"/>
+            <result column="goods_describe" property="goodsDescribe"/>
+            <result column="good_num" property="goodsNum"/>
+        </collection>
+    </resultMap>
+
+    <select id="getOrderDetail" parameterType="integer" resultMap="OrderDetailMap">
+        SELECT
+            o.*,u.*,sog.good_num,sg.*,u.id as uid,sg.id as gid
+        FROM shop_order as o
+                 left join shop_user as u on o.user_id=u.id
+                 left join shop_order_goods sog on o.id=sog.order_id
+                 left join shop_goods as sg on sg.id=sog.goods_id
+        where o.id=#{id}
+    </select>
+
+</mapper>

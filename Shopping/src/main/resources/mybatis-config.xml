@@ -4,19 +4,17 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <settings>
-<!--        <setting name="logImpl" value="LOG4J2"/>-->
+        <!--        <setting name="logImpl" value="LOG4J"/>-->
 
         <!--    启用从经典数据库列名A_COLUMN（下划线命名）到经典Java 属性名aColumn（驼峰命名） 的类似映射    -->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
     <typeAliases>
-        <package name="ink.onei.entity"/>
-        <package name="ink.onei.dto"/>
+        <package name="ink.onei.shopping.entity"/>
+        <package name="ink.onei.shopping.vo"/>
     </typeAliases>
     <mappers>
-        <mapper resource="mapper/UserMapper.xml"/>
-        <mapper resource="mapper/GoodsMapper.xml"/>
-        <mapper resource="mapper/OrderMapper.xml"/>
-        <mapper resource="mapper/OrderAndGoodsMapper.xml"/>
+        <mapper resource="mapper/IOrderMapper.xml"/>
+        <mapper resource="mapper/IUserMapper.xml"/>
     </mappers>
 </configuration>
