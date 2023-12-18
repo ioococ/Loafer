@@ -6,7 +6,19 @@
       <list>
         <option value="$PROJECT_DIR$/SpingStarter/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springWeek/pom.xml" />
+        <option value="$PROJECT_DIR$/JdbcTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/JdbcTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/Loopy/pom.xml" />
+        <option value="$PROJECT_DIR$/Shopping/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringStarter/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="zulu-11" project-jdk-type="JavaSDK">

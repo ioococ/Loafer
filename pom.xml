@@ -15,6 +15,7 @@
         <module>Loopy</module>
         <module>Shopping</module>
         <module>JdbcTemplate</module>
+        <module>SpringMVC</module>
     </modules>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

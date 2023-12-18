@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 使用XML进行映射
+                MVC框架基本两个点
+                                  1 url怎么映射进去进行处理
+                                  2 处理完如何找到视图
+        -->
+
+    <!-- 处理映射器配置-->
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+    <!-- 创建映射,配置映射器,name必须是 / 打头-->
+    <bean name="/hello" class="ink.onei.controller.HelloController"/>
+
+    <!-- 视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=".jsp"/>
+<!--        <property name="prefix" value="/WEB-INF/jsp/"/>-->
+    </bean>
+</beans>
+
