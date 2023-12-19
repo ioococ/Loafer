@@ -7,6 +7,6 @@
 <body>
 <h1><%= "Index" %></h1>
 <br/>
-<a href="hello">Hello Servlet</a>
+<a href="mvc/hello">Hello Servlet</a>
 </body>
 </html>
