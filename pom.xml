@@ -16,6 +16,7 @@
         <module>Shopping</module>
         <module>JdbcTemplate</module>
         <module>SpringMVC</module>
+        <module>SSM</module>
     </modules>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
