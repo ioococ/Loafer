@@ -18,9 +18,8 @@
         <header>登录</header>
         <input type="text" id="username" name="username" placeholder="用户名" required>
         <input type="password" id="password" name="password" placeholder="密码" required>
-        <div><a href="#">忘记密码</a>
-            <button onclick="login()" class="btn">登录</button>
-        </div>
+        <a href="#">忘记密码</a>
+        <button onclick="login()" class="btn">登录</button>
     </div>
 </section>
 </body>

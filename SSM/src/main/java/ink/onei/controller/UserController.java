@@ -32,29 +32,24 @@ public class UserController {
 
     @RequestMapping("/login")
     @ResponseBody
-    public String login(User user) {
+    public String login(User user) throws JsonProcessingException {
         User u = userService.getUserDynamic(user);
         if (u == null) {
             message = new Message(-1, "用户不存在");
-            try {
-                return objectMapper.writeValueAsString(message);
-            } catch (JsonProcessingException e) {
-                throw new RuntimeException(e);
-            }
+            return objectMapper.writeValueAsString(message);
         } else {
             session.setAttribute("user", u);
             message = new Message(1, "登陆成功");
-            try {
-                return objectMapper.writeValueAsString(message);
-            } catch (JsonProcessingException e) {
-                throw new RuntimeException(e);
-            }
+            return objectMapper.writeValueAsString(message);
+
         }
     }
+
     @RequestMapping("/userList")
-    public String userList(){
+    public String userList() {
         return "WEB-INF/info";
     }
+
     @RequestMapping("/info")
     @ResponseBody
     public String info() throws JsonProcessingException {

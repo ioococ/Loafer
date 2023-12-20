@@ -16,7 +16,6 @@
 %>
 <a href="signup.jsp">注册</a>
 <a href="signin.jsp">登录</a>
-<a href="info">用户信息</a>
 </body>
 <script>
     function logout() {
