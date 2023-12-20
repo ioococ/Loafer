@@ -12,14 +12,13 @@
 
     <context:component-scan base-package="ink.onei.*"/>
     <!--    解决响应乱码-->
-    <mvc:annotation-driven>
-        <mvc:message-converters register-defaults="true">
+    <mvc:annotation-driven conversion-service="conversionService">
+        <mvc:message-converters>
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
                 <property name="supportedMediaTypes" value="text/html;charset=UTF-8"/>
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
-
 
     <!-- 使用XML进行映射
                 MVC框架基本两个点
@@ -40,5 +39,15 @@
         <property name="suffix" value=".jsp"/>
         <!--<property name="prefix" value="/WEB-INF/jsp/"/>-->
     </bean>
+
+    <!-- 注册自定义类型转换器 -->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <!--  @formatter:off  -->
+            <set><bean class="ink.onei.service.DateConverter"/></set>
+            <!--  @formatter:on  -->
+        </property>
+    </bean>
+
 </beans>
 

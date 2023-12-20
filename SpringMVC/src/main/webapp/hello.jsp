@@ -11,7 +11,8 @@
 </head>
 <body>
 
-    <h1>Hello</h1>
+    <h1>Hello</h1><br>
 
+    <%=session.getAttribute("method")%>
 </body>
 </html>

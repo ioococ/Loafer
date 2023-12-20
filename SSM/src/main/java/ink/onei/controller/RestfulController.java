@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.sql.Date;
 
 @RestController
 @RequestMapping("/restful")
@@ -48,16 +47,14 @@ public class RestfulController {
 
     @RequestMapping("/requestParam")
     public String requestParam(@RequestParam String username, @RequestParam String password, @RequestParam Integer age, @RequestParam String birthday) {
-        User user = new User(username, password, age, null);
+        User user = new User();
         System.out.println(user);
         return "{\"status\":\"ok\"}";
     }
 
     @RequestMapping("/converter")
-    public String converter(@RequestParam String username, @RequestParam String password,
-                            @RequestParam Integer age, @RequestParam Date birthday) {
-        User user = new User(username, password, age, birthday);
-        System.out.println(birthday);
+    public String converter(@RequestParam String username, @RequestParam String password, @RequestParam Integer age, @RequestParam String birthday) {
+        User user = new User();
         System.out.println(user);
         return "{\"status\":\"ok\"}";
     }

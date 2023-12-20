@@ -1,5 +1,9 @@
 package ink.onei.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.sql.Date;
+
 /**
  * @Author: nekotako
  * @Description: User
@@ -11,14 +15,17 @@ public class User {
     private String username;
     private String password;
     private Integer age;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private Date birthday;
 
     public User() {
     }
 
-    public User(String username, String password, Integer age) {
+    public User(String username, String password, Integer age, Date birthday) {
         this.username = username;
         this.password = password;
         this.age = age;
+        this.birthday = birthday;
     }
 
     public Integer getId() {
@@ -53,10 +60,18 @@ public class User {
         this.age = age;
     }
 
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
     @Override
     public String toString() {
         StringBuffer sb = new StringBuffer("{");
-        sb.append("id=").append(id).append(", username=").append(username).append(", age=").append(age).append('}');
+        sb.append("id=").append(id).append(", username=").append(username).append(", age=").append(age).append(", birthday=").append(birthday).append('}');
         return sb.toString();
     }
 }
