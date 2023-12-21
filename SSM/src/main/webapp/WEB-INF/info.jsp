@@ -1,12 +1,18 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用户信息</title>
+    <title>信息页</title>
     <link rel="stylesheet" href="../static/styles/style.css">
+    <link rel="stylesheet" href="../static/styles/notyf.css">
     <script src="https://unpkg.com/jquery@3.4.0/dist/jquery.js"></script>
+    <script src="../static/scripts/notyf.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -14,7 +20,7 @@
     <h1>用户信息</h1>
     <table>
         <tbody>
-        <tr class="fixed" style="">
+        <tr class="fixed">
             <td class="name">用户</td>
             <td class="sex">性别</td>
             <td class="email">电子邮件</td>
@@ -27,33 +33,33 @@
     </table>
     <div class="info">
         <table>
-            <tbody id="body"></tbody>
+            <tbody id="body">
+            <c:if test="not empty ${sessionScope.users}">
+                <tr>
+                    <td>暂无数据</td>
+                </tr>
+            </c:if>
+            <c:forEach items="${sessionScope.users}" var="user">
+                <tr>
+                    <td>${user.getUsername()}</td>
+                    <td>${user.getNickname()}</td>
+                    <td>${user.getSex()}</td>
+                    <td>${user.getAge()}</td>
+                    <td>${user.getMoney()}</td>
+                    <td>
+                        <button class="detail-btn" onclick="detail(${user.getId()})">修改</button>
+                        <button class="del-btn" onclick="del(${user.getId()})">删除</button>
+                    </td>
+                </tr>
+            </c:forEach>
+            </tbody>
         </table>
     </div>
 </section>
 </body>
 <script>
-    let xhr = new XMLHttpRequest();
-    let rawData;
-    xhr.open("POST", "/info", false)
-    xhr.onreadystatechange = function (data) {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log(data);
-            rawData = JSON.parse(data.currentTarget.response);
-        }
-    }
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send()
-
-    let tbody = document.getElementById("body");
-    for (let i = 0; i < rawData.length; i++) {
-        let row = document.createElement("tr");
-        for (let key in rawData[i]) {
-            let cell = document.createElement("td");
-            cell.appendChild(document.createTextNode(rawData[i][key]));
-            row.appendChild(cell);
-        }
-        tbody.appendChild(row);
+    function detail(id) {
+        window.location.href = "detail?id=" + id;
     }
 
     function del(id) {

@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>中间页</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/notyf.min.css">
+    <link rel="stylesheet" href="./styles/notyf.css">
     <script src="https://unpkg.com/jquery@3.4.0/dist/jquery.js"></script>
-    <script src="./scripts/notyf.min.js" type="text/javascript"></script>
+    <script src="./scripts/notyf.js" type="text/javascript"></script>
 </head>
 
 <body>

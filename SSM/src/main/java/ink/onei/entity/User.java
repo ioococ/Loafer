@@ -15,4 +15,5 @@ public class User {
     private String sex;
     private Integer age;
     private Integer money;
+    private String avatar;
 }

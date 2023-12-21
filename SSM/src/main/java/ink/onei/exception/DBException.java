@@ -6,7 +6,7 @@ package ink.onei.exception;
  * @Date: 15/12/2023 16:37 Friday
  */
 
-public class DBException extends Exception{
+public class DBException extends RuntimeException{
     public DBException() {
         super();
     }

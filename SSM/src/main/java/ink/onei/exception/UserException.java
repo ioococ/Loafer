@@ -6,7 +6,7 @@ package ink.onei.exception;
  * @Date: 2023/11/10 18:50 星期五
  */
 
-public class UserException extends Exception {
+public class UserException extends RuntimeException {
     private static final long serialVersionUID = 3440731124511860598L;
 
     public UserException() {

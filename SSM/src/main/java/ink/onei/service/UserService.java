@@ -59,6 +59,14 @@ public class UserService implements IUserService {
         return userDao.getUserDynamic(user);
     }
 
+    public Integer updateUserDynamic(User user) {
+        if (user == null) {
+            return 0;
+        }
+        return userDao.updateUserDynamic(user);
+    }
+
+
     /**
      * @return 返回所有用户信息 类型为List<User>
      */

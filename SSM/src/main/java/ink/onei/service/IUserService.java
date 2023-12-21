@@ -23,6 +23,8 @@ public interface IUserService {
 
     User getUserDynamic(User user);
 
+    Integer updateUserDynamic(User user);
+
     List<User> getAllUsers();
 
     Integer deleteBatch(List<Integer> idList);

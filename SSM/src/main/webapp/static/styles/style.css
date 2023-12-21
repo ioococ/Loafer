@@ -157,7 +157,7 @@ body {
     cursor: pointer;
 }
 
-.login .btn, .del-btn {
+.login .btn, .detail-btn {
     background-color: #4070f4;
     color: #fff;
     border: none;
@@ -238,10 +238,17 @@ td {
     padding: 10px 20px;
 }
 
-.del-btn {
+.detail-btn, .del-btn {
+    margin: 0 10px;
     font-size: 14px;
     border-radius: 5px;
     padding: 0;
     width: 60px;
     height: 40px;
+}
+
+.del-btn {
+    background-color: #f44040;
+    color: #fff;
+    border: none;
 }

@@ -21,5 +21,7 @@ public interface IUserDao {
 
     User getUserDynamic(User user);
 
+    Integer updateUserDynamic(User user);
+
     List<User> getAllUsers();
 }

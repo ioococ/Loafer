@@ -81,17 +81,22 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <!-- 以下配置中，必须按顺序配置：mapping > exclude-mapping > bean  -->
-            <!-- 1.mapping：拦截路径 , 可以有多个mapping节点 -->
-            <mvc:mapping path="/**"/>
-            <!-- 不再拦截路径中的请求，完全不受理 -->
-            <!-- 2.exclude-mapping:白名单，可以配置多个 -->
-            <mvc:exclude-mapping path="/login"/>
-            <mvc:exclude-mapping path="/static/**"/>
-            <!-- 3.bean:配置拦截器类，只配置class即可 -->
-            <bean class="ink.onei.intercepter.AuthInterceptor"/>
-        </mvc:interceptor>
-    </mvc:interceptors>
+<!--    <mvc:interceptors>-->
+<!--        <mvc:interceptor>-->
+<!--            &lt;!&ndash; 以下配置中，必须按顺序配置：mapping > exclude-mapping > bean  &ndash;&gt;-->
+<!--            &lt;!&ndash; 1.mapping：拦截路径 , 可以有多个mapping节点 &ndash;&gt;-->
+<!--            <mvc:mapping path="/**"/>-->
+<!--            &lt;!&ndash; 不再拦截路径中的请求，完全不受理 &ndash;&gt;-->
+<!--            &lt;!&ndash; 2.exclude-mapping:白名单，可以配置多个 &ndash;&gt;-->
+<!--            <mvc:exclude-mapping path="/login"/>-->
+<!--            <mvc:exclude-mapping path="/static/**"/>-->
+<!--            &lt;!&ndash; 3.bean:配置拦截器类，只配置class即可 &ndash;&gt;-->
+<!--            <bean class="ink.onei.intercepter.AuthInterceptor"/>-->
+<!--        </mvc:interceptor>-->
+<!--    </mvc:interceptors>-->
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--单位b-->
+        <property name="maxUploadSize" value="5000000000"/>
+    </bean>
 </beans>

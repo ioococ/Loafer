@@ -24,6 +24,22 @@
 <!--  @formatter:on  -->
         </where>
     </select>
+
+    <update id="updateUserDynamic" parameterType="User">
+        update shop_user
+        <set>
+            <!--  @formatter:off  -->
+            <if test="id!=null and id !=''">id = #{id},</if>
+            <if test="username!=null and username !=''">username = #{username},</if>
+            <if test="password!=null and password !=''">password = #{password},</if>
+            <if test="nickname!=null and nickname !=''">nickname = #{nickname},</if>
+            <if test="sex!=null and sex !=''">sex = #{sex},</if>
+            <if test="age!=null and age !=''">age = #{age},</if>
+            <if test="avatar!=null and avatar !=''">avatar = #{avatar},</if>
+            <!--  @formatter:on  -->
+        </set>
+        where id = #{id}
+    </update>
     <select id="getAllUsers" resultType="User">
         SELECT * FROM shop_user
     </select>

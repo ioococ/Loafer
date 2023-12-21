@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>中间页</title>
     <link rel="stylesheet" href="./static/styles/style.css">
-    <link rel="stylesheet" href="./static/styles/notyf.min.css">
     <script src="https://unpkg.com/jquery@3.4.0/dist/jquery.js"></script>
-    <script src="./static/scripts/notyf.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="static/styles/notyf.css">
+    <script src="static/scripts/notyf.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -45,11 +45,11 @@
             notyf.alert(rawData.msg)
         } else if (rawData.status === 1) {
             notyf.confirm(rawData.msg)
-            location.href = "/userList"
+            location.href = "user/list"
         }
     }
 
-    let img = document.getElementById("captchaImg");
+    // let img = document.getElementById("captchaImg");
 
     function refresh() {
         let timestamp = new Date().getTime();
