@@ -1,4 +1,4 @@
-package ink.onei.dto;
+package ink.onei.vo;
 
 import org.springframework.stereotype.Component;
 
@@ -8,18 +8,18 @@ import org.springframework.stereotype.Component;
  * @Date: 20/12/2023 18:24 Wednesday
  */
 @Component
-public class Message {
+public class MessageVO {
     private Integer status;
     private String msg;
 
-    public Message() {
+    public MessageVO() {
     }
 
     public Integer getStatus() {
         return status;
     }
 
-    public Message(Integer status, String msg) {
+    public MessageVO(Integer status, String msg) {
         this.status = status;
         this.msg = msg;
     }
@@ -34,5 +34,14 @@ public class Message {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("{");
+        sb.append("\"status\":").append(status);
+        sb.append(", \"msg\":\"").append(msg).append("\"}");
+        System.out.println(sb);
+        return sb.toString();
     }
 }
