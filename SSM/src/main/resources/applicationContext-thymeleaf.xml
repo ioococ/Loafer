@@ -27,11 +27,11 @@
 
     <!--    解决响应乱码-->
     <mvc:annotation-driven>
-        <mvc:messageVO-converters>
+        <mvc:message-converters>
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
                 <property name="supportedMediaTypes" value="text/html;charset=UTF-8"/>
             </bean>
-        </mvc:messageVO-converters>
+        </mvc:message-converters>
     </mvc:annotation-driven>
 
     <!--告诉spring，要扫描ink.onei包下面的注解-->
