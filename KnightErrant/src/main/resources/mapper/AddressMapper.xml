@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.knighterrant.dao.IAddressDao">
+    <resultMap id="addressDetailMap" type="ink.onei.knighterrant.vo.AddressDetailVO" autoMapping="true">
+        <id column="aid" property="id"/>
+        <association property="user" javaType="User" autoMapping="true">
+            <id column="uid" property="id"/>
+        </association>
+    </resultMap>
+    <select id="getAddressDetail" resultMap="addressDetailMap">
+        SELECT *,
+               u.id as uid,
+               a.id as aid
+        FROM address a
+                 LEFT JOIN user u on a.user_id = u.id
+        WHERE a.id = #{id}
+    </select>
+</mapper>

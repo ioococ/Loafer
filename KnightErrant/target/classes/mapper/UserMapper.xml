@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.knighterrant.dao.IUserDao">
+    <insert id="insert">
+    </insert>
+    <update id="update">
+    </update>
+    <delete id="delete">
+    </delete>
+    <delete id="deleteBatch">
+    </delete>
+    <select id="getUserDynamic" resultType="User">
+        SELECT * FROM user
+        <where>
+            <!--  @formatter:off  -->
+            <if test="id!=null and id !=''">and id = #{id}</if>
+            <if test="userName!=null and userName !=''">and user_name = #{userName}</if>
+            <if test="age!=null and age !=''">and age = #{age}</if>
+            <if test="sectName!=null and sectName !=''">and sect_name = #{sectName}</if>
+<!--  @formatter:on  -->
+        </where>
+    </select>
+    <resultMap id="userMap" type="User" autoMapping="true">
+        <id property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="sectName" column="sect_name"/>
+    </resultMap>
+    <select id="getUserList" resultType="User">
+        SELECT *
+        FROM user
+    </select>
+
+    <update id="updateUserDynamic" parameterType="User">
+        update user
+        <set>
+            <!--  @formatter:off  -->
+            <if test="id!=null and id !=''">id = #{id},</if>
+            <if test="userName!=null and userName !=''">user_name = #{userName},</if>
+            <if test="age!=null and age !=''">age = #{age},</if>
+            <if test="sectName!=null and sectName !=''">sect_name = #{sectName},</if>
+            <!--  @formatter:on  -->
+        </set>
+        where id = #{id}
+    </update>
+    <select id="getAllUsers" resultType="User">
+        SELECT *
+        FROM user
+    </select>
+
+    <resultMap id="userDetailMap" type="ink.onei.knighterrant.vo.UserDetailVO" autoMapping="true">
+        <id column="uid" property="id"/>
+        <collection property="addressList" ofType="Address" javaType="list" autoMapping="true">
+            <id column="aid" property="id"/>
+        </collection>
+    </resultMap>
+    <select id="getUserDetail" resultMap="userDetailMap">
+        SELECT *,
+               u.id as uid,
+               a.id as aid
+        FROM user u
+                 LEFT JOIN address a on u.id = a.user_id
+        WHERE u.id = #{id}
+    </select>
+</mapper>
