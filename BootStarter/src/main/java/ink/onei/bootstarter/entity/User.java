@@ -11,7 +11,7 @@ import java.io.Serializable;
 /**
  * (User)实体类
  *
- * @author makejava
+ * @author nekotako
  * @since 2024-01-04 09:34:00
  */
 

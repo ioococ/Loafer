@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * (User)表数据库访问层
  *
- * @author makejava
+ * @author nekotako
  * @since 2024-01-04 09:33:58
  */
 public interface UserMapper {

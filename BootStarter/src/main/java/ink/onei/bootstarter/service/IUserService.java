@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * (User)表服务接口
  *
- * @author makejava
+ * @author nekotako
  * @since 2024-01-04 09:34:05
  */
 public interface IUserService {
