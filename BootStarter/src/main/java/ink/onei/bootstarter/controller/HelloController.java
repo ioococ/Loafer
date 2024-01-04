@@ -16,6 +16,8 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello(Model model) {
         var user = new User();
+        user.setUsername("onei");
+        user.setNickname("ioococ");
         model.addAttribute("msg", "SpringBoot");
         model.addAttribute("user", user);
         return "index";

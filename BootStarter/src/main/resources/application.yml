@@ -10,7 +10,7 @@ spring:
     # 静态资源文件匹配模式
     static-path-pattern: /**
   auto:
-    openurl: true
+    openurl: false
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test
@@ -21,3 +21,6 @@ spring:
     mode: HTML
 mybatis:
   type-aliases-package: ink.onei.bootstarter.entity
+mybatis-plus:
+  global-config:
+    banner: off

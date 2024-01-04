@@ -9,17 +9,20 @@
 </head>
 <body>
 <header th:replace="header.html"></header>
-<!--/*<p th:text="'Hello '${msg}"></p>*/-->
 
-<p th:inline="text">Hello [[${msg}]]</p>
-<a th:href="@{'/user/list/'}">列表</a>
-<!--/*
-<ul th:object="user">
-    <li th:text="*{user.username}"></li>
-    <li th:text="*{user.sex}"></li>
-    <li th:text="*{user.mail}"></li>
-</ul>
-*/-->
+<section class="body">
+    <!--/*<p th:text="'Hello '${msg}"></p>*/-->
+
+    <p th:inline="text">Hello [[${msg}]]</p>
+    <a th:href="@{'/user/list/'}">列表</a>
+
+    <ul th:unless="${user==null}" th:object="${user}">
+        <li th:text="*{username}"></li>
+        <li th:text="*{nickname}"></li>
+        <li th:text="*{email}"></li>
+    </ul>
+</section>
+
 <header th:replace="footer"></header>
 </body>
 <script th:inline="javascript">

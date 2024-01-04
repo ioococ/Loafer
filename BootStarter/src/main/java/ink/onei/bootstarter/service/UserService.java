@@ -3,9 +3,6 @@ package ink.onei.bootstarter.service;
 import ink.onei.bootstarter.entity.User;
 import ink.onei.bootstarter.mapper.UserMapper;
 import org.springframework.stereotype.Service;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -20,17 +17,6 @@ import java.util.List;
 public class UserService implements IUserService {
     @Resource
     private UserMapper userMapper;
-
-    /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    @Override
-    public User queryById(Integer id) {
-        return this.userMapper.queryById(id);
-    }
 
     /**
      * 分页查询
@@ -62,9 +48,8 @@ public class UserService implements IUserService {
      * @return 实例对象
      */
     @Override
-    public User update(User user) {
-        this.userMapper.update(user);
-        return this.queryById(user.getId());
+    public Integer update(User user) {
+        return this.userMapper.update(user);
     }
 
     /**

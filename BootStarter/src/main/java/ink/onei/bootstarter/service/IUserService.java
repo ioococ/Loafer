@@ -1,8 +1,6 @@
 package ink.onei.bootstarter.service;
 
 import ink.onei.bootstarter.entity.User;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 
 import java.util.List;
 
@@ -13,14 +11,6 @@ import java.util.List;
  * @since 2024-01-04 09:34:05
  */
 public interface IUserService {
-
-    /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    User queryById(Integer id);
 
     /**
      * 分页查询
@@ -44,7 +34,7 @@ public interface IUserService {
      * @param user 实例对象
      * @return 实例对象
      */
-    User update(User user);
+    Integer update(User user);
 
     /**
      * 通过主键删除数据

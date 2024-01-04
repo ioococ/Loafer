@@ -36,19 +36,9 @@ public class UserController {
         return "list";
     }
 
-    @GetMapping("{id}")
-    public ResponseEntity<User> queryById(@PathVariable("id") Integer id) {
-        return ResponseEntity.ok(this.userService.queryById(id));
-    }
-
     @PostMapping
     public ResponseEntity<User> add(User user) {
         return ResponseEntity.ok(this.userService.insert(user));
-    }
-
-    @PutMapping
-    public ResponseEntity<User> edit(User user) {
-        return ResponseEntity.ok(this.userService.update(user));
     }
 
     @DeleteMapping

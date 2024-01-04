@@ -14,7 +14,7 @@
     </tr>
     </thead>
     <tbody>
-        <tr th:each="user:${userList}">
+        <tr th:each="user,listInfo:${userList}">
             <td th:text="${user.getId()}"></td>
             <td th:text="${user.getUsername()}"></td>
             <td th:text="${user.getPassword()}"></td>
@@ -22,8 +22,8 @@
             <td th:text="${user.getPhone()}"></td>
             <td th:text="${user.getEmail()}"></td>
             <td th:text="${user.getNickname()}"></td>
-            <td th:text="${#dates.format(user.getBirthday(),'yyyy-MM-dd')}"></td>
-            <td th:text="${#dates.format(user.getCreatedate(),'yyyy-MM-dd HH:mm::ss')}"></td>
+            <td th:text="${#dates.format(user.getBirthday(),'MM/dd yyyy')}"></td>
+            <td th:text="${#dates.format(user.getCreatedate(),'MM/dd yyyy HH:mm:ss')}"></td>
         </tr>
     </tbody>
 </table>
