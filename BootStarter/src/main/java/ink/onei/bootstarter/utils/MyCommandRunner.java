@@ -20,9 +20,9 @@ public class MyCommandRunner implements CommandLineRunner {
     @Override
     public void run(String... args) {
         if (isOpen) {
-            System.out.println("自动加载指定的页面");
+//            System.out.println("自动加载指定的页面");
             try {
-                Runtime.getRuntime().exec("cmd /c start " + loginUrl);  // 可以指定自己的路径
+//                Runtime.getRuntime().exec("cmd /c start " + loginUrl);  // 可以指定自己的路径
             } catch (Exception ex) {
                 ex.printStackTrace();
                 System.out.println("浏览器打开页面异常");

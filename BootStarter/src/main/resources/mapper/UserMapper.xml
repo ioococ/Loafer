@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.bootstarter.mapper.UserMapper">
+    <resultMap type="ink.onei.bootstarter.entity.User" id="UserMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="sex" column="sex" jdbcType="VARCHAR"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="nickname" column="nickname" jdbcType="VARCHAR"/>
+        <result property="birthday" column="birthday" jdbcType="TIMESTAMP"/>
+        <result property="createdate" column="createdate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询指定行数据-->
+    <select id="getUserList" resultType="ink.onei.bootstarter.entity.User">
+        select *
+        from user
+        <!--  @formatter:off  -->
+        <where>
+            <if test="id != null">and id = #{id}</if>
+            <if test="username != null and username != ''">and username = #{username}</if>
+            <if test="password != null and password != ''">and password = #{password}</if>
+            <if test="sex != null and sex != ''">and sex = #{sex}</if>
+            <if test="phone != null and phone != ''">and phone = #{phone}</if>
+            <if test="email != null and email != ''">and email = #{email}</if>
+            <if test="nickname != null and nickname != ''">and nickname = #{nickname}</if>
+            <if test="birthday != null">and birthday = #{birthday}</if>
+            <if test="createdate != null">and createdate = #{createdate}</if>
+        </where>
+        <!--  @formatter:on  -->
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from user
+        <!--  @formatter:off  -->
+        <where>
+            <if test="id != null">and id = #{id}</if>
+            <if test="username != null and username != ''">and username = #{username}</if>
+            <if test="password != null and password != ''">and password = #{password}</if>
+            <if test="sex != null and sex != ''">and sex = #{sex}</if>
+            <if test="phone != null and phone != ''">and phone = #{phone}</if>
+            <if test="email != null and email != ''">and email = #{email}</if>
+            <if test="nickname != null and nickname != ''">and nickname = #{nickname}</if>
+            <if test="birthday != null">and birthday = #{birthday}</if>
+            <if test="createdate != null">and createdate = #{createdate}</if>
+        </where>
+        <!--  @formatter:on  -->
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into user(username, password, sex, phone, email, nickname, birthday, createdate)
+        values (#{username}, #{password}, #{sex}, #{phone}, #{email}, #{nickname}, #{birthday}, #{createdate})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into user(username,password,sex,phone,email,nickname,birthday,createdate)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.username},#{entity.password},#{entity.sex},#{entity.phone},#{entity.email},#{entity.nickname},#{entity.birthday},#{entity.createdate})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into user(username,password,sex,phone,email,nickname,birthday,createdate)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.username},#{entity.password},#{entity.sex},#{entity.phone},#{entity.email},#{entity.nickname},#{entity.birthday},#{entity.createdate})
+        </foreach>
+        on duplicate key update
+        username = values(username)password = values(password)sex = values(sex)phone = values(phone)email =
+        values(email)nickname = values(nickname)birthday = values(birthday)createdate = values(createdate)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update user
+        <!--  @formatter:off  -->
+        <set>
+            <if test="username != null and username != ''">username = #{username},</if>
+            <if test="password != null and password != ''">password = #{password},</if>
+            <if test="sex != null and sex != ''">sex = #{sex},</if>
+            <if test="phone != null and phone != ''">phone = #{phone},</if>
+            <if test="email != null and email != ''">email = #{email},</if>
+            <if test="nickname != null and nickname != ''">nickname = #{nickname},</if>
+            <if test="birthday != null">birthday = #{birthday},</if>
+            <if test="createdate != null">createdate = #{createdate},</if>
+        </set>
+        where id = #{id}
+        <!--  @formatter:on  -->
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from user
+        where id = #{id}
+    </delete>
+</mapper>
+

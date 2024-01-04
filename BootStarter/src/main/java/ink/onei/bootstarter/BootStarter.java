@@ -1,6 +1,7 @@
 package ink.onei.bootstarter;
 
 import lombok.extern.slf4j.Slf4j;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -19,6 +20,7 @@ import java.net.UnknownHostException;
 
 @SpringBootApplication
 @Slf4j
+@MapperScan("ink.onei.bootstarter.mapper")
 public class BootStarter {
     public static void main(String[] args) throws UnknownHostException {
         ConfigurableApplicationContext applicationContext = SpringApplication.run(BootStarter.class);

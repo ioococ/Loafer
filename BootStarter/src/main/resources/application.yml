@@ -3,12 +3,21 @@ server:
 spring:
   web:
     loginurl: http://localhost/
+    resources:
+      # 静态资源文件位置
+      static-locations: classpath:/
+  mvc:
+    # 静态资源文件匹配模式
+    static-path-pattern: /**
   auto:
     openurl: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/production
+    url: jdbc:mysql://localhost:3306/test
     username: root
     password: 123456
   thymeleaf:
     cache: false
+    mode: HTML
+mybatis:
+  type-aliases-package: ink.onei.bootstarter.entity

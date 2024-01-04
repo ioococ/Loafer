@@ -1,5 +1,6 @@
 package ink.onei.bootstarter.controller;
 
+import ink.onei.bootstarter.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
     @RequestMapping("/hello")
     public String hello(Model model) {
-        model.addAttribute("msg", "Hello SpringBoot");
-        return "hello";
+        var user = new User();
+        model.addAttribute("msg", "SpringBoot");
+        model.addAttribute("user", user);
+        return "index";
     }
 
     @RequestMapping("/hi")
