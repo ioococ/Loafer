@@ -13,14 +13,6 @@ import java.util.List;
 public interface IUserService {
 
     /**
-     * 分页查询
-     *
-     * @param user 筛选条件
-     * @return 查询结果
-     */
-    List<User> getUserList(User user);
-
-    /**
      * 新增数据
      *
      * @param user 实例对象
@@ -44,4 +36,13 @@ public interface IUserService {
      */
     boolean deleteById(Integer id);
 
+    /**
+     * 分页查询
+     *
+     * @param user 筛选条件
+     * @return 查询结果
+     */
+    List<User> getUserList(User user);
+
+    Boolean login(User user);
 }

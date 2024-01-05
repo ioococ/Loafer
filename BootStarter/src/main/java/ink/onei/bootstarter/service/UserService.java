@@ -1,7 +1,8 @@
 package ink.onei.bootstarter.service;
 
+import ink.onei.bootstarter.etc.OperaException;
 import ink.onei.bootstarter.entity.User;
-import ink.onei.bootstarter.mapper.UserMapper;
+import ink.onei.bootstarter.mapper.IUserMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -16,18 +17,7 @@ import java.util.List;
 @Service("userService")
 public class UserService implements IUserService {
     @Resource
-    private UserMapper userMapper;
-
-    /**
-     * 分页查询
-     *
-     * @param user 筛选条件
-     * @return 查询结果
-     */
-    @Override
-    public List<User> getUserList(User user) {
-        return userMapper.getUserList(user);
-    }
+    private IUserMapper userMapper;
 
     /**
      * 新增数据
@@ -61,5 +51,28 @@ public class UserService implements IUserService {
     @Override
     public boolean deleteById(Integer id) {
         return this.userMapper.deleteById(id) > 0;
+    }
+
+    /**
+     * 分页查询
+     *
+     * @param user 筛选条件
+     * @return 查询结果
+     */
+    @Override
+    public List<User> getUserList(User user) {
+        return userMapper.getUserList(user);
+    }
+
+    @Override
+    public Boolean login(User user) {
+// @formatter:off
+        User u = new User();u.setUsername(user.getUsername());
+        if (userMapper.getUser(u) == null) throw new OperaException("用户不存在");
+        else{
+            if (userMapper.getUser(user) == null) throw new OperaException("账号或密码错误");
+            else return true;
+        }
+// @formatter:on
     }
 }

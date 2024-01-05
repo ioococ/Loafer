@@ -1,4 +1,4 @@
-package ink.onei.bootstarter.status;
+package ink.onei.bootstarter.etc;
 
 /**
  * @Author: nekotako

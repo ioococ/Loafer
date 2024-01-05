@@ -12,6 +12,7 @@ spring:
   auto:
     openurl: false
   datasource:
+    type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test
     username: root
@@ -21,6 +22,12 @@ spring:
     mode: HTML
 mybatis:
   type-aliases-package: ink.onei.bootstarter.entity
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
 mybatis-plus:
   global-config:
     banner: off
+logging:
+  level:
+    ink.onei: DEBUG

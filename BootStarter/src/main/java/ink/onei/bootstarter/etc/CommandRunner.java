@@ -1,4 +1,4 @@
-package ink.onei.bootstarter.utils;
+package ink.onei.bootstarter.etc;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;

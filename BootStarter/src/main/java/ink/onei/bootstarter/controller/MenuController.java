@@ -3,6 +3,7 @@ package ink.onei.bootstarter.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 /**
  * @Author: nekotako
  * @Description: TODO
@@ -10,9 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Controller
-public class ErrorController {
-    @RequestMapping("404")
-    public String notFound(){
-        return "error";
-    }
+@RequestMapping("/menu")
+public class MenuController {
+
 }

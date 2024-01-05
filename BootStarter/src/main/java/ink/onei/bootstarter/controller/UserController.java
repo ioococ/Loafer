@@ -1,14 +1,20 @@
 package ink.onei.bootstarter.controller;
 
+import com.github.pagehelper.PageHelper;
+import ink.onei.bootstarter.etc.Constants;
+import ink.onei.bootstarter.etc.OperaException;
 import ink.onei.bootstarter.entity.User;
 import ink.onei.bootstarter.service.IUserService;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import ink.onei.bootstarter.vo.Result;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * (User)表控制层
@@ -16,35 +22,39 @@ import java.util.List;
  * @author nekotako
  * @since 2024-01-04 09:33:58
  */
-@Controller
-@RequestMapping("user")
+@RestController
+@RequestMapping("api")
 public class UserController {
-    @Resource
+
+    @Autowired
+    HttpSession session;
+
+    @Autowired
     private IUserService userService;
 
-//    @GetMapping("userList")
-//    public List<User> userList(User user, Model model) {
-//        List<User> userList = userService.getUserList(user);
-//        model.addAttribute("userList",userList);
-//        return userList;
-//    }
+    @RequestMapping("AjaxLogin")
+    public Result<Object> login(@RequestBody User user) {
+        Result<Object> result = new Result<>();
+        Boolean login = false;
+        try {
+            login = userService.login(user);
+        } catch (OperaException e) {
+            Integer code = Objects.equals(e.getMessage(), "用户不存在") ? 401 : 402;
+            result.setCode(code);
+            result.setMsg(e.getMessage());
+        }
+        if (login) session.setAttribute(Constants.LOGIN_USER_SESSION_KEY, user);
+        return result;
+    }
 
-    @RequestMapping("list")
-    public String userList(User user, Model model) {
+    @RequestMapping("userList")
+    public Result<User> userList(Integer pageNum, Integer pageSize, @RequestParam(required = false) User user) {
+        Result<User> result = new Result<>();
+        if (pageNum != null && pageSize != null)
+            PageHelper.startPage(pageNum, pageSize);
         List<User> userList = userService.getUserList(user);
-        model.addAttribute("userList",userList);
-        return "list";
+        result.setRows(userList);
+        return result;
     }
-
-    @PostMapping
-    public ResponseEntity<User> add(User user) {
-        return ResponseEntity.ok(this.userService.insert(user));
-    }
-
-    @DeleteMapping
-    public ResponseEntity<Boolean> deleteById(Integer id) {
-        return ResponseEntity.ok(this.userService.deleteById(id));
-    }
-
 }
 

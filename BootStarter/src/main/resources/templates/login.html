@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi"/>
+    <meta http-equiv="content-type" content="no-siteapp"/>
+    <link rel="stylesheet" th:href="@{/static/css/font.css}">
+    <link rel="stylesheet" th:href="@{/static/css/login.css}">
+    <link rel="stylesheet" th:href="@{/static/css/background.css}">
+    <link rel="stylesheet" th:href="@{/static/css/xadmin.css}">
+    <link rel="stylesheet" th:href="@{/static/lib/notfy/styles/notyf.css}">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script th:src="@{/static/js/jquery.min.js}"></script>
+    <script th:src="@{/static/lib/layui/layui.js}"></script>
+    <script th:src="@{/static/lib/notfy/scripts/notyf.js}"></script>
+</head>
+
+<body>
+<div id="main" class="login layui-anim layui-anim-upbit">
+    <div class="message">登录</div>
+    <div id="darkbannerwrap"></div>
+    <form method="post" class="layui-form">
+        <!-- layui-input -->
+        <input name="username" placeholder="用户名" type="text" lay-verify="required">
+        <hr class="hr15">
+        <input name="password" lay-verify="required" placeholder="密码" type="password">
+        <hr class="hr15">
+        <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
+        <hr class="hr20">
+    </form>
+</div>
+
+<script th:inline="javascript">
+    let ctx = [[${#httpServletRequest.getContextPath()}]];
+    let notyf = new Notyf({ delay: 2000 });
+    $(function () {
+        layui.use('form', function () {
+            let form = layui.form;
+
+            //监听提交
+            form.on('submit(login)', function (data) {
+                axios({
+                    url: ctx+"/api/AjaxLogin",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    method: "POST",
+                    data: JSON.stringify(data.field),
+                }).then(function (response) {
+                    if (response.data.code == 200) {
+                        location.href = '/'
+                    } else {
+                        notyf.alert(response.data.msg)
+                    }
+                }).catch(function (error) {
+                    notyf.alert(error.message)
+                })
+                return false;
+            });
+        });
+    })
+</script>
+<!-- 底部结束 -->
+
+</body>
+</html>

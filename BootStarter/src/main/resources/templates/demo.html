@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+</head>
+<body>
+<header th:replace="header"></header>
+
+<section class="body">
+    <!--/*<p th:text="'Hello '${msg}"></p>*/-->
+
+    <p th:inline="text">Hello [[${msg}]]</p>
+    <a th:href="@{'/user/list/'}">列表</a>
+
+    <ul th:unless="${user==null}" th:object="${user}">
+        <li th:text="*{username}"></li>
+        <li th:text="*{nickname}"></li>
+        <li th:text="*{email}"></li>
+    </ul>
+</section>
+
+<header th:replace="footer"></header>
+</body>
+<script th:inline="javascript">
+    let str = [[${user}]]
+    console.log(str)
+</script>
+</html>

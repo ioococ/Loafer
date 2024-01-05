@@ -1,0 +1,134 @@
+/*
+* @Author: xuebingsi
+* @Date:   2019-04-01 13:37:17
+* @Last Modified by:   nekotako
+* @Last Modified time: 2023-12-29 22:37:19
+*/
+.login a.logo {
+    display: block;
+    height: 58px;
+    width: 167px;
+    margin: 0 auto 30px auto;
+    background-size: 167px 42px;
+}
+
+.login .message {
+    margin: 10px 0 0 -58px;
+    /* padding: 18px 10px 18px 60px; */
+    padding: 16px 10px 16px 60px;
+    background-color: #ffec42;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    text-shadow: #00000060 0.1em 0.1em 0.2em;
+    box-shadow: 8px 17px 43px -21px #000000;
+}
+
+.login #darkbannerwrap {
+    background: url(../images/aiwrap.png);
+    width: 18px;
+    height: 10px;
+    margin: 0 0 20px -58px;
+    opacity: 0.6;
+    position: relative;
+}
+
+.login input[type=text],
+.login input[type=file],
+.login input[type=password],
+.login input[type=email],
+select {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background-color: #ffffff4d;
+    vertical-align: middle;
+    border-radius: 5px;
+    padding: 0px 16px;
+    color: #555555;
+    outline: none;
+    border: 1px solid #DCDEE0;
+    box-sizing: border-box;
+    box-shadow: 8px 17px 43px -21px #00000050;
+}
+
+.login input[type=text]:focus,
+.login input[type=file]:focus,
+.login input[type=password]:focus,
+.login input[type=email]:focus,
+select:focus {
+    border: 1px solid #ffe600;
+    transition: all .5s;
+    box-shadow:
+            0.5px 0.8px 24px rgba(255, 230, 0, 0.061),
+            0.3px 0.5px 44.8px rgba(255, 230, 0, 0.074),
+            1.2px 2px 68.9px rgba(255, 230, 0, 0.079),
+            31px 50px 161px rgba(255, 230, 0, 0.08);
+}
+
+.login input[type=submit] {
+    vertical-align: middle;
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #ffe600a4;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all .5s;
+    width: 100%;
+    text-shadow: #00000033 0.1em 0.1em 0.2em;
+    box-shadow:
+            2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+            6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+            12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+            22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+            41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+            100px 100px 80px rgba(0, 0, 0, 0.07)
+}
+
+.login input[type=submit]:hover {
+    background-color: #edd814;
+    transition: all .3s;
+    text-shadow: #00000033 0.1em 0.1em 0.2em;
+    box-shadow:
+            1.5px 1.5px 2.2px rgba(0, 0, 0, 0.033),
+            1.8px 1.8px 5.3px rgba(0, 0, 0, 0.041),
+            1.7px 1.7px 10px rgba(0, 0, 0, 0.046),
+            3.6px 3.6px 17.9px rgba(0, 0, 0, 0.048),
+            15.8px 15.8px 33.4px rgba(0, 0, 0, 0.049),
+            100px 100px 80px rgba(0, 0, 0, 0.05);
+}
+
+.login input[type=submit]:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+    box-shadow:
+            1.5px 1.5px 2.2px rgba(0, 0, 0, 0.02),
+            1.8px 1.8px 5.3px rgba(0, 0, 0, 0.025),
+            1.7px 1.7px 10px rgba(0, 0, 0, 0.027),
+            3.6px 3.6px 17.9px rgba(0, 0, 0, 0.029),
+            15.8px 15.8px 33.4px rgba(0, 0, 0, 0.029),
+            100px 100px 80px rgba(0, 0, 0, 0.03);
+}
+
+.login hr.hr15 {
+    height: 15px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.login hr.hr20 {
+    height: 20px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
