@@ -39,7 +39,7 @@ public class HelloController {
         return "hello";
     }
 
-    @RequestMapping("/index")
+    @RequestMapping({"/","/index"})
     public String index(Model model) {
         List<Menu> menuList = menuService.getMenuList();
         model.addAttribute(Constants.MENU_LIST_KEY,menuList);
