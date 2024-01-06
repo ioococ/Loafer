@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.bootstarter.mapper.CoursesDao">
+
+    <resultMap id="CoursesMap" type="ink.onei.bootstarter.entity.Courses" autoMapping="true">
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="CoursesMap">
+        select
+course_idnameteacher_idcreate_timeupdate_time
+        from courses
+        where course_id = #{courseId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="CoursesMap">
+        select
+course_idnameteacher_idcreate_timeupdate_time
+        from courses
+        <where>
+            <if test="courseId != null">
+                and course_id = #{courseId}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="teacherId != null">
+                and teacher_id = #{teacherId}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from courses
+        <where>
+            <if test="courseId != null">
+                and course_id = #{courseId}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="teacherId != null">
+                and teacher_id = #{teacherId}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="courseId" useGeneratedKeys="true">
+        insert into courses(nameteacher_idcreate_timeupdate_time)
+        values (#{name}#{teacherId}#{createTime}#{updateTime})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="courseId" useGeneratedKeys="true">
+        insert into courses(nameteacher_idcreate_timeupdate_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.name}#{entity.teacherId}#{entity.createTime}#{entity.updateTime})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="courseId" useGeneratedKeys="true">
+        insert into courses(nameteacher_idcreate_timeupdate_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.name}#{entity.teacherId}#{entity.createTime}#{entity.updateTime})
+        </foreach>
+        on duplicate key update
+name = values(name)teacher_id = values(teacher_id)create_time = values(create_time)update_time = values(update_time)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update courses
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="teacherId != null">
+                teacher_id = #{teacherId},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where course_id = #{courseId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from courses where course_id = #{courseId}
+    </delete>
+
+</mapper>
+

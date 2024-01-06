@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.bootstarter.mapper.ClassesDao">
+    <resultMap type="ink.onei.bootstarter.vo.ClassDetailVO" id="ClassesMap">
+        <result property="classId" column="class_id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="teacherId" column="teacher_id" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="studentNum" column="student_num" javaType="INTEGER"/>
+    </resultMap>
+
+    <select id="getClassesList" resultMap="ClassesMap">
+        SELECT c.*,COUNT(s.`name`) AS 'student_num' FROM classes c LEFT JOIN students s ON s.class_id = c.class_id
+        GROUP BY c.class_id
+    </select>
+
+</mapper>
+

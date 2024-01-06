@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ink.onei.bootstarter.mapper.CourseSelectionsDao">
+    <select id="getScoreList" resultType="ink.onei.bootstarter.vo.ScoreDetailVO">
+        SELECT
+        s.*, AVG(c.score) AS 'avg_score'
+        FROM
+        course_selections c
+        LEFT JOIN students s ON s.student_id = c.student_id
+        GROUP BY
+        s.student_id having 1 = 1
+        <if test="status == 0">and avg_score &gt;= 60</if>
+        <if test="status == 1">and avg_score &lt; 60</if>
+    </select>
+</mapper>
+
