@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <th:block th:replace="common::meta" />
     <title>用户列表</title>
-    <link rel="stylesheet" th:href="@{/static/css/style.css}">
 </head>
 <body>
-<header th:replace="header"></header>
+<header th:replace="common::header"></header>
 <table border="1" style="border-collapse: collapse">
     <thead><tr><td>编号</td><td>账号</td><td>密码</td><td>性别</td><td>电话</td><td>邮件</td><td>昵称</td><td>生日</td><td>创建时间</td></tr></thead>
     <tbody>
@@ -23,6 +22,6 @@
         </tr>
     </tbody>
 </table>
-<header th:replace="footer"></header>
+<footer th:replace="common::footer"></footer>
 </body>
 </html>

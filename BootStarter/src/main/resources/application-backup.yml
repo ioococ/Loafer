@@ -1,0 +1,33 @@
+server:
+  port: 233
+spring:
+  web:
+    loginurl: http://localhost/
+    resources:
+      # 静态资源文件位置
+      static-locations: classpath:/
+  mvc:
+    # 静态资源文件匹配模式
+    static-path-pattern: /**
+  auto:
+    openurl: false
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 123456
+  thymeleaf:
+    cache: false
+    mode: HTML
+mybatis:
+  type-aliases-package: ink.onei.bootstarter.entity
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+mybatis-plus:
+  global-config:
+    banner: off
+logging:
+  level:
+    ink.onei: DEBUG
