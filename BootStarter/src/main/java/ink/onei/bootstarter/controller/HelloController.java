@@ -51,8 +51,8 @@ public class HelloController {
         return "login";
     }
 
-    @RequestMapping("/user/list")
-    public String userList() {
-        return "list";
-    }
+//    @RequestMapping("/user/list")
+//    public String userList() {
+//        return "list";
+//    }
 }

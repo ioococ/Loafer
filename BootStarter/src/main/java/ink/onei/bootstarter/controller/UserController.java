@@ -23,7 +23,7 @@ import java.util.Objects;
  * @since 2024-01-04 09:33:58
  */
 @RestController
-@RequestMapping("api")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
@@ -47,11 +47,10 @@ public class UserController {
         return result;
     }
 
-    @RequestMapping("userList")
+    @RequestMapping("/list")
     public Result<User> userList(Integer pageNum, Integer pageSize, @RequestParam(required = false) User user) {
         Result<User> result = new Result<>();
-        if (pageNum != null && pageSize != null)
-            PageHelper.startPage(pageNum, pageSize);
+        if (pageNum != null || pageSize != null) PageHelper.startPage(pageNum, pageSize);
         List<User> userList = userService.getUserList(user);
         result.setRows(userList);
         return result;

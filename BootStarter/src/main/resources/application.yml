@@ -1,5 +1,7 @@
 server:
-  port: 80
+  port: 233
+  servlet:
+    context-path: /api/
 spring:
   web:
     loginurl: http://localhost/
