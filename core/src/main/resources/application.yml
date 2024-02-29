@@ -1,0 +1,15 @@
+# 开发环境配置
+server:
+  port: 8761
+spring:
+  application:
+    name: core
+eureka:
+  client:
+    enabled: true
+    fetchRegistry: false
+    registerWithEureka: false
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+  instance:
+    hostname: 127.0.0.1
