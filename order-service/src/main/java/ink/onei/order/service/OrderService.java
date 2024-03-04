@@ -1,5 +1,6 @@
 package ink.onei.order.service;
 
+import ink.onei.order.client.UserClient;
 import ink.onei.order.entity.Order;
 import ink.onei.order.entity.User;
 import ink.onei.order.mapper.OrderMapper;
@@ -15,15 +16,13 @@ import org.springframework.web.client.RestTemplate;
 public class OrderService {
     private final OrderMapper orderMapper;
     private final RestTemplate restTemplate;
+    private final UserClient userClient;
 
     public Order queryOrderById(Long orderId) {
         // 1.查询订单
         Order order = orderMapper.findById(orderId);
 
-        String url = "http://user-service/user/"+order.getUserId();
-        User user = restTemplate.getForObject(url, User.class);
-
-        order.setUser(user);
+        order.setUser(userClient.selectUserById(order.getUserId()));
 
         // 4.返回
         return order;
