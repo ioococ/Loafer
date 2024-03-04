@@ -19,13 +19,18 @@ spring:
       server-addr: 127.0.0.1:8848
       discovery:
         ephemeral: false
+feign:
+  client:
+    config:
+      order-service:
+        logger-level: basic
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
 
 #eureka:
 #  client:
 #    service-url:
 #      defaultZone: http://127.0.0.1:8761/eureka
-
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
 

@@ -19,6 +19,7 @@
         <module>user-service</module>
         <module>order-service</module>
         <module>core</module>
+        <module>watchdog</module>
     </modules>
     <properties>
         <java.version>11</java.version>
