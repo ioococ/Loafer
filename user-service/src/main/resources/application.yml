@@ -18,6 +18,9 @@ spring:
       server-addr: 127.0.0.1:8848
       discovery:
         ephemeral: false
+    sentinel:
+      transport:
+        dashboard: localhost:8888
 feign:
   client:
     config:
