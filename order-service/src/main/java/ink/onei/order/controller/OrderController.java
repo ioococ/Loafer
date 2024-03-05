@@ -23,4 +23,14 @@ public class OrderController {
         // 根据id查询订单并返回
         return orderService.queryOrderById(orderId);
     }
+
+    @RequestMapping("/query")
+    public String query() {
+        return "Query Success";
+    }
+
+    @RequestMapping("/modify")
+    public String modify() {
+        return "Modify Success";
+    }
 }

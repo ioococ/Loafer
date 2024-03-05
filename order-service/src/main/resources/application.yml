@@ -20,6 +20,7 @@ spring:
       discovery:
         ephemeral: false
     sentinel:
+      web-context-unify: false
       transport:
         dashboard: localhost:8888
 feign:
